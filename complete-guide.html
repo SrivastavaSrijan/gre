@@ -139,7 +139,13 @@
       border-radius: 8px;
       padding: 20px;
       border-left: 5px solid #deb4e8;
-      overflow-x: auto; /* Add horizontal scroll for tables */
+    }
+    
+    .group-title {
+      color: #deb4e8;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      font-weight: 600;
     }
     
     table {
@@ -148,7 +154,6 @@
       background: #2a2a3e;
       border-radius: 6px;
       overflow: hidden;
-      min-width: 600px; /* Ensure table doesn't get too cramped */
     }
     
     th {
@@ -235,57 +240,16 @@
         grid-template-columns: 1fr;
       }
       
-      .group {
-        padding: 15px;
-        margin-bottom: 25px;
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-      }
-      
-      table {
-        min-width: 500px;
-      }
-      
-      th, td {
-        padding: 8px 10px;
-        font-size: 0.9em;
+      td:nth-child(2) {
+        display: none;
       }
       
       td:first-child {
-        min-width: 100px;
-      }
-      
-      td:nth-child(2) {
-        min-width: 200px;
+        width: 40%;
       }
       
       td:last-child {
-        min-width: 150px;
-      }
-      
-      .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 1.3em;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 1.5em;
-      }
-      
-      header p {
-        font-size: 1em;
-      }
-      
-      .episode-header h2 {
-        font-size: 1.5em;
-      }
-      
-      .group-title {
-        font-size: 1.2em;
+        width: 60%;
       }
     }
   </style>
@@ -564,6 +528,13 @@
           </tbody>
         </table>
       </div>
+    </section>
+
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 2: Groups 5–9</h2>
+        <p>Building blocks</p>
+      </div>
 
       <div class="group" id="group5">
         <h3 class="group-title">Group 5</h3>
@@ -789,6 +760,13 @@
           </tbody>
         </table>
       </div>
+    </section>
+
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 3: Groups 10–14</h2>
+        <p>Advanced concepts</p>
+      </div>
 
       <div class="group" id="group10">
         <h3 class="group-title">Group 10</h3>
@@ -981,36 +959,36 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>Acquiesce</td><td>"Agree quietly." To accept something reluctantly without protest</td><td></td></tr>
-            <tr><td>Adroit</td><td>An Android phone is clever and skillful</td><td></td></tr>
-            <tr><td>Amend</td><td>To "a-mend" something is to fix or improve it by making minor changes</td><td></td></tr>
-            <tr><td>Animus</td><td>An animal can show hostility</td><td></td></tr>
-            <tr><td>Apologist</td><td>Someone who apologizes for something controversial by defending it</td><td></td></tr>
-            <tr><td>Astringent</td><td>A string that is pulled tight. Sharp or severe in manner</td><td></td></tr>
-            <tr><td>Collaborate</td><td>"Co-labor." To work jointly on a project</td><td></td></tr>
-            <tr><td>Competent</td><td>Someone who can compete is efficient and capable</td><td></td></tr>
-            <tr><td>Correlate</td><td>To have a co-relation or connection</td><td></td></tr>
-            <tr><td>Deride</td><td>To ride someone with ridicule</td><td></td></tr>
-            <tr><td>Dictate</td><td>What a dictator does; gives orders that must be obeyed</td><td></td></tr>
-            <tr><td>Discreet</td><td>"This secret" must be kept confidential through careful speech</td><td></td></tr>
-            <tr><td>Divorced</td><td>Like a divorce, separated from something</td><td></td></tr>
-            <tr><td>Elitist</td><td>Someone who acts like part of the elite with a superior attitude</td><td></td></tr>
-            <tr><td>Exacting</td><td>Demands the exact thing; very demanding</td><td></td></tr>
-            <tr><td>Flummoxed</td><td>As bewildered as if you were hit by a flying ox</td><td></td></tr>
-            <tr><td>Fruitful</td><td>Bearing fruit; fertile and productive</td><td></td></tr>
-            <tr><td>Inborn</td><td>Born with it. Natural to a person</td><td></td></tr>
-            <tr><td>Polymath</td><td>"Poly" (many) + "math." Someone with wide knowledge in many areas</td><td></td></tr>
-            <tr><td>Reticent</td><td>"Ready to listen," not revealing one's own feelings readily</td><td></td></tr>
-            <tr><td>Stringent</td><td>Like a string pulled tight. Strict and precise</td><td></td></tr>
-            <tr><td>Subservient</td><td>Like a sub-servant, prepared to obey others without question</td><td></td></tr>
-            <tr><td>Surreptitious</td><td>A serpent is sneaky and keeps its actions secret</td><td></td></tr>
-            <tr><td>Tantalizing</td><td>From Tantalus in Greek myth, who was tormented with the sight of something he could never obtain</td><td></td></tr>
-            <tr><td>Tantamount</td><td>"Tant-amount." The same amount; equivalent in seriousness</td><td></td></tr>
-            <tr><td>Torpor</td><td>The opposite of a torpedo; a state of inactivity or lethargy</td><td></td></tr>
-            <tr><td>Trenchant</td><td>A trench is a sharp cut. Vigorous or incisive in expression</td><td></td></tr>
-            <tr><td>Umbrage</td><td>Someone took my umbrella and I took offense</td><td></td></tr>
-            <tr><td>Versatile</td><td>Able to switch to another verse or function easily</td><td></td></tr>
-            <tr><td>Wayward</td><td>Goes their own way, making them difficult to control</td><td></td></tr>
+            <tr><td>Acquiesce</td><td>"Agree quietly." To accept something reluctantly without protest</td><td>accept something reluctantly without protest</td></tr>
+            <tr><td>Adroit</td><td>An Android phone is clever and skillful</td><td>clever or skillful</td></tr>
+            <tr><td>Amend</td><td>To "a-mend" something is to fix or improve it by making minor changes</td><td>improve by minor change</td></tr>
+            <tr><td>Animus</td><td>An animal can show hostility</td><td>hostility or ill feeling/ motivation to do something</td></tr>
+            <tr><td>Apologist</td><td>Someone who apologizes for something controversial by defending it</td><td>a person who offers an argument in defense of something controversial/defender</td></tr>
+            <tr><td>Astringent</td><td>A string that is pulled tight. Sharp or severe in manner</td><td>sharp or severe in manner or style/ causing the contraction of skin cells and other body tissues</td></tr>
+            <tr><td>Collaborate</td><td>"Co-labor." To work jointly on a project</td><td>work jointly on an activity or project/corporate</td></tr>
+            <tr><td>Competent</td><td>Someone who can compete is efficient and capable</td><td>efficient and capable</td></tr>
+            <tr><td>Correlate</td><td>To have a co-relation or connection</td><td>correspond, connect</td></tr>
+            <tr><td>Deride</td><td>To ride someone with ridicule</td><td>ridicule</td></tr>
+            <tr><td>Dictate</td><td>What a dictator does; gives orders that must be obeyed</td><td>an order or principle that must be obeyed/ give orders</td></tr>
+            <tr><td>Discreet</td><td>"This secret" must be kept confidential through careful speech</td><td>careful in order to keep something confidential/ intentionally unobtrusive</td></tr>
+            <tr><td>Divorced</td><td>Like a divorce, separated from something</td><td>separate from something typically with an undesirable effect</td></tr>
+            <tr><td>Elitist</td><td>Someone who acts like part of the elite with a superior attitude</td><td>demonstrating a superior attitude or behavior associated with an elite</td></tr>
+            <tr><td>Exacting</td><td>Demands the exact thing; very demanding</td><td>demanding/inflict (revenge) on someone</td></tr>
+            <tr><td>Flummoxed</td><td>As bewildered as if you were hit by a flying ox</td><td>bewildered or perplexed</td></tr>
+            <tr><td>Fruitful</td><td>Bearing fruit; fertile and productive</td><td>fertile, productive</td></tr>
+            <tr><td>Inborn</td><td>Born with it. Natural to a person</td><td>natural to a person, or animal</td></tr>
+            <tr><td>Polymath</td><td>"Poly" (many) + "math." Someone with wide knowledge in many areas</td><td>a person of wide knowledge or learning</td></tr>
+            <tr><td>Reticent</td><td>"Ready to listen," not revealing one's own feelings readily</td><td>reserved, not revealing one's feelings readily</td></tr>
+            <tr><td>Stringent</td><td>Like a string pulled tight. Strict and precise</td><td>strict, precise and exacting</td></tr>
+            <tr><td>Subservient</td><td>Like a sub-servant, prepared to obey others without question</td><td>prepared to obey others unquestioningly, subordinate</td></tr>
+            <tr><td>Surreptitious</td><td>A serpent is sneaky and keeps its actions secret</td><td>keep secret, especially because it would not be approved of</td></tr>
+            <tr><td>Tantalizing</td><td>From Tantalus in Greek myth, who was tormented with the sight of something he could never obtain</td><td>torment or teasing with the sight or promise of something unobtainable</td></tr>
+            <tr><td>Tantamount</td><td>"Tant-amount." The same amount; equivalent in seriousness</td><td>equivalent in seriousness to; virtually the same as</td></tr>
+            <tr><td>Torpor</td><td>The opposite of a torpedo; a state of inactivity or lethargy</td><td>a state of physical or mental inactivity, lethargy</td></tr>
+            <tr><td>Trenchant</td><td>A trench is a sharp cut. Vigorous or incisive in expression</td><td>vigorous or incisive in expression or style</td></tr>
+            <tr><td>Umbrage</td><td>Someone took my umbrella and I took offense</td><td>offense or annoyance</td></tr>
+            <tr><td>Versatile</td><td>Able to switch to another verse or function easily</td><td>adoptable to many different functions or activities</td></tr>
+            <tr><td>Wayward</td><td>Goes their own way, making them difficult to control</td><td>difficult to control or predict because of willful or perverse behavior</td></tr>
           </tbody>
         </table>
       </div>
@@ -1033,36 +1011,36 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>Alienate</td><td>To make someone feel like an alien; isolated or estranged</td><td></td></tr>
-            <tr><td>Apathy</td><td>"a" (without) + "pathy" (feeling). A lack of interest or concern</td><td></td></tr>
-            <tr><td>Apropos</td><td>Sounds like appropriate. Very appropriate to a particular situation</td><td></td></tr>
-            <tr><td>Apt</td><td>Someone with a high aptitude is quick to learn</td><td></td></tr>
-            <tr><td>Cloak</td><td>To hide or disguise something with a cloak</td><td></td></tr>
-            <tr><td>Consensus</td><td>"Con" (together) + "sensus" (feeling). A general agreement</td><td></td></tr>
-            <tr><td>Distort</td><td>To twist the truth out of its original shape</td><td></td></tr>
-            <tr><td>Divergent</td><td>To diverge and develop in different directions</td><td></td></tr>
-            <tr><td>Elated</td><td>Feeling so happy you feel elevated</td><td></td></tr>
-            <tr><td>Enchant</td><td>To fill someone with great delight, as if by chanting a magic spell</td><td></td></tr>
-            <tr><td>Entrenched</td><td>An idea so firmly established it's like it's in a trench and difficult to change</td><td></td></tr>
-            <tr><td>Exotic</td><td>From an "exit" or outside country; foreign and attractive</td><td></td></tr>
-            <tr><td>Exploitative</td><td>To exploit others unfairly to gain an advantage</td><td></td></tr>
-            <tr><td>Foreseeable</td><td>Able to be foreseen or predicted</td><td></td></tr>
-            <tr><td>Forsake</td><td>To abandon something for the sake of something else</td><td></td></tr>
-            <tr><td>Gratify</td><td>To give someone gratitude or pleasure</td><td></td></tr>
-            <tr><td>Heed</td><td>"You need to pay attention to my warning."</td><td></td></tr>
-            <tr><td>Judicious</td><td>Like a judge, showing good judgment</td><td></td></tr>
-            <tr><td>Lucid</td><td>Lucid dreams are expressed clearly and are easy to understand</td><td></td></tr>
-            <tr><td>Pertinent</td><td>It pertains to the matter; relevant</td><td></td></tr>
-            <tr><td>Propriety</td><td>Behavior that is proper and conforms to accepted standards</td><td></td></tr>
-            <tr><td>Scintillation</td><td>To shine brightly like a star</td><td></td></tr>
-            <tr><td>Sensational</td><td>It causes a public sensation of great interest and excitement</td><td></td></tr>
-            <tr><td>Sophisticated</td><td>Someone with worldly experience and knowledge, not a sophomore</td><td></td></tr>
-            <tr><td>Strife</td><td>Sounds like strike or fight. Angry or bitter disagreement</td><td></td></tr>
-            <tr><td>Understated</td><td>Stated in a subtle way, under the radar</td><td></td></tr>
-            <tr><td>Unscrupulous</td><td>Someone who has no scruples or moral principles</td><td></td></tr>
-            <tr><td>Veracity</td><td>Sounds like truthfulness; conformity to facts</td><td></td></tr>
-            <tr><td>Virulent</td><td>Like a virus that is extremely severe or harmful</td><td></td></tr>
-            <tr><td>Volatile</td><td>Liable to change rapidly, like a volcano that could erupt unpredictably</td><td></td></tr>
+            <tr><td>Alienate</td><td>To make someone feel like an alien; isolated or estranged</td><td>make someone feel isolated or estranged</td></tr>
+            <tr><td>Apathy</td><td>"a" (without) + "pathy" (feeling). A lack of interest or concern</td><td>lack of interest, enthusiasm or concern</td></tr>
+            <tr><td>Apropos</td><td>Sounds like appropriate. Very appropriate to a particular situation</td><td>very appropriate to a particular situation</td></tr>
+            <tr><td>Apt</td><td>Someone with a high aptitude is quick to learn</td><td>quick to learn</td></tr>
+            <tr><td>Cloak</td><td>To hide or disguise something with a cloak</td><td>something serving to hide or disguise something</td></tr>
+            <tr><td>Consensus</td><td>"Con" (together) + "sensus" (feeling). A general agreement</td><td>a general agreement</td></tr>
+            <tr><td>Distort</td><td>To twist the truth out of its original shape</td><td>pull or twist out of shape/give an misleading or false account of or impression of</td></tr>
+            <tr><td>Divergent</td><td>To diverge and develop in different directions</td><td>tending to be different or develop in different directions</td></tr>
+            <tr><td>Elated</td><td>Feeling so happy you feel elevated</td><td>make someone ecstatically happy</td></tr>
+            <tr><td>Enchant</td><td>To fill someone with great delight, as if by chanting a magic spell</td><td>fill someone with great delight/ put under a spell</td></tr>
+            <tr><td>Entrenched</td><td>An idea so firmly established it's like it's in a trench and difficult to change</td><td>(of an attitude, habit or belief) firmly established and difficult or unlikely to change; ingrained</td></tr>
+            <tr><td>Exotic</td><td>From an "exit" or outside country; foreign and attractive</td><td>organizing in or characteristic of a distant foreign country/attractive/ specially produced</td></tr>
+            <tr><td>Exploitative</td><td>To exploit others unfairly to gain an advantage</td><td>treating others unfairly in order to gain an advantage</td></tr>
+            <tr><td>Foreseeable</td><td>Able to be foreseen or predicted</td><td>able to foreseen or predicted</td></tr>
+            <tr><td>Forsake</td><td>To abandon something for the sake of something else</td><td>abandon, renounce</td></tr>
+            <tr><td>Gratify</td><td>To give someone gratitude or pleasure</td><td>give someone pleasure or satisfaction</td></tr>
+            <tr><td>Heed</td><td>"You need to pay attention to my warning."</td><td>pay attention to/ take notice of</td></tr>
+            <tr><td>Judicious</td><td>Like a judge, showing good judgment</td><td>having, showing or done with good judgment</td></tr>
+            <tr><td>Lucid</td><td>Lucid dreams are expressed clearly and are easy to understand</td><td>expressed clearly; easy to understand</td></tr>
+            <tr><td>Pertinent</td><td>It pertains to the matter; relevant</td><td>relevant to a particular matter, apposite</td></tr>
+            <tr><td>Propriety</td><td>Behavior that is proper and conforms to accepted standards</td><td>conformity to conventionally accepted standards of behavior/ the condition of being right</td></tr>
+            <tr><td>Scintillation</td><td>To shine brightly like a star</td><td>shining brightly/ brilliantly clever</td></tr>
+            <tr><td>Sensational</td><td>It causes a public sensation of great interest and excitement</td><td>causing great public interest and excitement</td></tr>
+            <tr><td>Sophisticated</td><td>Someone with worldly experience and knowledge, not a sophomore</td><td>having, revealing or involving a great deal of worldly experience and knowledge of fashion or culture</td></tr>
+            <tr><td>Strife</td><td>Sounds like strike or fight. Angry or bitter disagreement</td><td>angry or bitter disagreement over fundamental issues</td></tr>
+            <tr><td>Understated</td><td>Stated in a subtle way, under the radar</td><td>presented or expressed in a subtle and effective way</td></tr>
+            <tr><td>Unscrupulous</td><td>Someone who has no scruples or moral principles</td><td>having or showing no moral principles; not honest or fair</td></tr>
+            <tr><td>Veracity</td><td>Sounds like truthfulness; conformity to facts</td><td>conformity to facts; accuracy/habitual truthfulness</td></tr>
+            <tr><td>Virulent</td><td>Like a virus that is extremely severe or harmful</td><td>(of a disease or poison) extremely severe or harmful in its effects/ bitterly hostile</td></tr>
+            <tr><td>Volatile</td><td>Liable to change rapidly, like a volcano that could erupt unpredictably</td><td>liable to change rapidly and unpredictably, especially for the worse</td></tr>
           </tbody>
         </table>
       </div>
@@ -1245,6 +1223,13 @@
           </tbody>
         </table>
       </div>
+    </section>
+
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 5: Groups 20–24</h2>
+        <p>Deepening knowledge</p>
+      </div>
 
       <div class="group" id="group20">
         <h3 class="group-title">Group 20</h3>
@@ -1284,6 +1269,21 @@
             <tr><td>Supplicate</td><td>To supply a plea; to beg humbly</td><td>ask or beg something earnestly or humbly</td></tr>
             <tr><td>Terse</td><td>Brief, like a text message that's just a "terse" reply</td><td>sparing in the use of words, abrupt</td></tr>
             <tr><td>Tirade</td><td>A long, angry speech that leaves you tired</td><td>a long angry speech of criticism or accusation</td></tr>
+            <tr><td>Universal</td><td>Applicable to the whole universe</td><td>applicable to all cases/ ubiquitous</td></tr>
+            <tr><td>Vanquish</td><td>To bankrupt the enemy by defeating them thoroughly</td><td>defeat thoroughly, conquer</td></tr>
+            <tr><td>Woeful</td><td>Full of woe or misery</td><td>very bad/ causing sorrow or misery</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group21">
+        <h3 class="group-title">Group 21</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
             </tr>
           </thead>
           <tbody>
@@ -1925,4 +1925,3 @@
   <a href="#toc" class="back-to-top">↑</a>
 </body>
 </html>
-O

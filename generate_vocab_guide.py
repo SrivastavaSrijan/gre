@@ -566,17 +566,32 @@ def main():
     
     # Parse all responses
     all_groups = []
-    seen_groups = set()
+    group_lookup = {}  # Track groups by number to handle duplicates
+    
+    def count_complete_entries(group):
+        """Count entries that have both mnemonic and definition."""
+        return sum(1 for e in group['entries'] if e.get('mnemonic') and e.get('definition'))
     
     for i, response in enumerate(responses):
         print(f"Parsing response {i + 1}...")
         groups = parse_response(response)
         
         for group in groups:
-            if group['number'] not in seen_groups:
-                all_groups.append(group)
-                seen_groups.add(group['number'])
-                print(f"  Found Group {group['number']} with {len(group['entries'])} entries")
+            group_num = group['number']
+            complete_count = count_complete_entries(group)
+            
+            if group_num not in group_lookup:
+                # First time seeing this group
+                group_lookup[group_num] = group
+                print(f"  Found Group {group_num} with {len(group['entries'])} entries ({complete_count} complete)")
+            else:
+                # We've seen this group before - prefer the one with more complete entries
+                existing_complete = count_complete_entries(group_lookup[group_num])
+                if complete_count > existing_complete:
+                    print(f"  Replacing Group {group_num}: {existing_complete} -> {complete_count} complete entries")
+                    group_lookup[group_num] = group
+    
+    all_groups = list(group_lookup.values())
     
     print(f"\nTotal: {len(all_groups)} groups")
     print(f"Total words: {sum(len(g['entries']) for g in all_groups)}")
