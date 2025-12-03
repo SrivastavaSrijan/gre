@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRE Vocabulary - Complete Reference</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #e8e6f0;
+      background: linear-gradient(135deg, #2d3561 0%, #3d2d52 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #1e1e2e;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+    
+    header {
+      background: #b4a7d6;
+      color: #1e1e2e;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    
+    header p {
+      font-size: 1.2em;
+      opacity: 0.85;
+    }
+    
+    .toc {
+      background: #252535;
+      padding: 30px 40px;
+      border-bottom: 3px solid #8b9dc3;
+    }
+    
+    .toc h2 {
+      color: #b4a7d6;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+    
+    .toc-episodes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+    }
+    
+    .toc-episode {
+      background: #2a2a3e;
+      padding: 15px 20px;
+      border-radius: 8px;
+      border-left: 4px solid #8b9dc3;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .toc-episode:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(139, 157, 195, 0.3);
+    }
+    
+    .toc-episode h3 {
+      color: #a8c0ff;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+    
+    .toc-episode ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    
+    .toc-episode a {
+      color: #deb4e8;
+      text-decoration: none;
+      font-size: 0.9em;
+      padding: 4px 10px;
+      background: #353545;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    
+    .toc-episode a:hover {
+      background: #8b9dc3;
+      color: #1e1e2e;
+    }
+    
+    .episode {
+      padding: 40px;
+      border-bottom: 2px solid #2a2a3e;
+    }
+    
+    .episode:last-child {
+      border-bottom: none;
+    }
+    
+    .episode-header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #8b9dc3;
+    }
+    
+    .episode-header h2 {
+      color: #a8c0ff;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    
+    .episode-header p {
+      color: #b4a7d6;
+      font-size: 1.1em;
+    }
+    
+    .group {
+      margin-bottom: 40px;
+      background: #252535;
+      border-radius: 8px;
+      padding: 20px;
+      border-left: 5px solid #deb4e8;
+    }
+    
+    .group-title {
+      color: #deb4e8;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #2a2a3e;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    
+    th {
+      background: #b4a7d6;
+      color: #1e1e2e;
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #353545;
+      color: #e8e6f0;
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+    
+    tr:hover {
+      background: #2f2f45;
+    }
+    
+    td:first-child {
+      font-weight: 600;
+      color: #a8c0ff;
+      width: 40%;
+    }
+    
+    td:last-child {
+      color: #c9c4d9;
+    }
+    
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: linear-gradient(135deg, #8b9dc3 0%, #b4a7d6 100%);
+      color: #1e1e2e;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.5em;
+      box-shadow: 0 4px 12px rgba(139, 157, 195, 0.4);
+      transition: transform 0.2s;
+      font-weight: bold;
+    }
+    
+    .back-to-top:hover {
+      transform: scale(1.1);
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+      
+      header {
+        padding: 20px;
+      }
+      
+      header h1 {
+        font-size: 1.8em;
+      }
+      
+      .toc, .episode {
+        padding: 20px;
+      }
+      
+      .toc-episodes {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>GRE Vocabulary Reference</h1>
+      <p>Complete collection of 840 essential words across 34 groups</p>
+    </header>
+    
+    <nav class="toc" id="toc">
+      <h2>📚 Table of Contents</h2>
+      <div class="toc-episodes">
+        <div class="toc-episode">
+          <h3>Episode 1: Groups 1–4</h3>
+          <p style="margin-bottom: 10px; color: #666;">From abound to vacillate</p>
+          <ul>
+            <li><a href="#group1">Group 1</a></li>
+            <li><a href="#group2">Group 2</a></li>
+            <li><a href="#group3">Group 3</a></li>
+            <li><a href="#group4">Group 4</a></li>
+          </ul>
+        </div>
+        
+        <div class="toc-episode">
+          <h3>Episode 2: Groups 5–9</h3>
+          <p style="margin-bottom: 10px; color: #666;">From aloof to turbulent</p>
+          <ul>
+            <li><a href="#group5">Group 5</a></li>
+            <li><a href="#group6">Group 6</a></li>
+            <li><a href="#group7">Group 7</a></li>
+            <li><a href="#group8">Group 8</a></li>
+            <li><a href="#group9">Group 9</a></li>
+          </ul>
+        </div>
+        
+        <div class="toc-episode">
+          <h3>Episode 3: Groups 10–14</h3>
+          <p style="margin-bottom: 10px; color: #666;">From acumen to wayward</p>
+          <ul>
+            <li><a href="#group10">Group 10</a></li>
+            <li><a href="#group11">Group 11</a></li>
+            <li><a href="#group12">Group 12</a></li>
+            <li><a href="#group13">Group 13</a></li>
+            <li><a href="#group14">Group 14</a></li>
+          </ul>
+        </div>
+        
+        <div class="toc-episode">
+          <h3>Episode 4: Groups 15–19</h3>
+          <p style="margin-bottom: 10px; color: #666;">From alienate to viable</p>
+          <ul>
+            <li><a href="#group15">Group 15</a></li>
+            <li><a href="#group16">Group 16</a></li>
+            <li><a href="#group17">Group 17</a></li>
+            <li><a href="#group18">Group 18</a></li>
+            <li><a href="#group19">Group 19</a></li>
+          </ul>
+        </div>
+        
+        <div class="toc-episode">
+          <h3>Episode 5: Groups 20–24</h3>
+          <p style="margin-bottom: 10px; color: #666;">From abreast to buttress</p>
+          <ul>
+            <li><a href="#group20">Group 20</a></li>
+            <li><a href="#group21">Group 21</a></li>
+            <li><a href="#group22">Group 22</a></li>
+            <li><a href="#group23">Group 23</a></li>
+            <li><a href="#group24">Group 24</a></li>
+          </ul>
+        </div>
+        
+        <div class="toc-episode">
+          <h3>Episode 6: Groups 25–29</h3>
+          <p style="margin-bottom: 10px; color: #666;">From bereft to fraught</p>
+          <ul>
+            <li><a href="#group25">Group 25</a></li>
+            <li><a href="#group26">Group 26</a></li>
+            <li><a href="#group27">Group 27</a></li>
+            <li><a href="#group28">Group 28</a></li>
+            <li><a href="#group29">Group 29</a></li>
+          </ul>
+        </div>
+        
+        <div class="toc-episode">
+          <h3>Episode 7: Groups 30–34</h3>
+          <p style="margin-bottom: 10px; color: #b4a7d6;">From slovenly to feint</p>
+          <ul>
+            <li><a href="#group30">Group 30</a></li>
+            <li><a href="#group31">Group 31</a></li>
+            <li><a href="#group32">Group 32</a></li>
+            <li><a href="#group33">Group 33</a></li>
+            <li><a href="#group34">Group 34</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 1: Groups 1–4</h2>
+        <p>From abound to vacillate</p>
+      </div>
+      
+      <div class="group" id="group1">
+        <h3 class="group-title">Group 1</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abound</td><td>Large</td></tr>
+            <tr><td>Amorphous</td><td>Shapeless</td></tr>
+            <tr><td>Austere</td><td>Strict</td></tr>
+            <tr><td>Belie</td><td>Contradict</td></tr>
+            <tr><td>Capricious</td><td>Unpredictable</td></tr>
+            <tr><td>Cerebral</td><td>Intellectual</td></tr>
+            <tr><td>Congenial</td><td>Pleasant</td></tr>
+            <tr><td>Conspicuous</td><td>Visible</td></tr>
+            <tr><td>Cursory</td><td>Hasty</td></tr>
+            <tr><td>Daunting</td><td>Discouraging</td></tr>
+            <tr><td>Deify</td><td>Worship</td></tr>
+            <tr><td>Didactic</td><td>Instructive</td></tr>
+            <tr><td>Disseminate</td><td>Spread</td></tr>
+            <tr><td>Feasible</td><td>Possible</td></tr>
+            <tr><td>Flout</td><td>Disregard</td></tr>
+            <tr><td>Homogeneous</td><td>Same</td></tr>
+            <tr><td>Humdrum</td><td>Boring</td></tr>
+            <tr><td>Insipid</td><td>Tasteless</td></tr>
+            <tr><td>Loquacious</td><td>Talkative</td></tr>
+            <tr><td>Misanthropic</td><td>Dislike</td></tr>
+            <tr><td>Misnomer</td><td>Inaccurate</td></tr>
+            <tr><td>Negligent</td><td>Failing</td></tr>
+            <tr><td>Obsequious</td><td>Obedient</td></tr>
+            <tr><td>Placate</td><td>Calm</td></tr>
+            <tr><td>Proclivity</td><td>Tendency</td></tr>
+            <tr><td>Puerile</td><td>Silly</td></tr>
+            <tr><td>Quixotic</td><td>Impractical</td></tr>
+            <tr><td>Spendthrift</td><td>Irresponsible</td></tr>
+            <tr><td>Taciturn</td><td>Little</td></tr>
+            <tr><td>Wary</td><td>Cautious</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group2">
+        <h3 class="group-title">Group 2</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Adulterate</td><td>Poorer</td></tr>
+            <tr><td>Advocate</td><td>Support</td></tr>
+            <tr><td>Aggrandize</td><td>Increase</td></tr>
+            <tr><td>Alacrity</td><td>Readiness</td></tr>
+            <tr><td>Ambivalent</td><td>Mixed</td></tr>
+            <tr><td>Ameliorate</td><td>Better</td></tr>
+            <tr><td>Amenable</td><td>Open</td></tr>
+            <tr><td>Anachronistic</td><td>Against</td></tr>
+            <tr><td>Avaricious</td><td>Greedy</td></tr>
+            <tr><td>Banal</td><td>Boring</td></tr>
+            <tr><td>Benign</td><td>Gentle</td></tr>
+            <tr><td>Brazen</td><td>Bold</td></tr>
+            <tr><td>Calumny</td><td>False</td></tr>
+            <tr><td>Candid</td><td>Truthful</td></tr>
+            <tr><td>Castigate</td><td>Reprimand</td></tr>
+            <tr><td>Caustic</td><td>Sarcastic</td></tr>
+            <tr><td>Construed</td><td>Interpret</td></tr>
+            <tr><td>Contrite</td><td>Remorse</td></tr>
+            <tr><td>Convoluted</td><td>Complex</td></tr>
+            <tr><td>Covet</td><td>Yearn</td></tr>
+            <tr><td>Craven</td><td>Cowardly</td></tr>
+            <tr><td>Decorum</td><td>Propriety</td></tr>
+            <tr><td>Deft</td><td>Skillful</td></tr>
+            <tr><td>Demur</td><td>Reluctance</td></tr>
+            <tr><td>Derivative</td><td>Imitative</td></tr>
+            <tr><td>Desiccate</td><td>Dry</td></tr>
+            <tr><td>Diatribe</td><td>Attack</td></tr>
+            <tr><td>Incredulous</td><td>Unbelieving</td></tr>
+            <tr><td>Ingenuous</td><td>Innocent</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group3">
+        <h3 class="group-title">Group 3</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abate</td><td>Reduce</td></tr>
+            <tr><td>Abjure</td><td>Renounce</td></tr>
+            <tr><td>Anomalous</td><td>Deviating</td></tr>
+            <tr><td>Antipathy</td><td>Aversion</td></tr>
+            <tr><td>Arcane</td><td>Mysterious</td></tr>
+            <tr><td>Arduous</td><td>Strenuous</td></tr>
+            <tr><td>Artless</td><td>Natural</td></tr>
+            <tr><td>Ascetic</td><td>Austere</td></tr>
+            <tr><td>Assuage</td><td>Satisfy</td></tr>
+            <tr><td>Betray</td><td>Disloyal</td></tr>
+            <tr><td>Bucolic</td><td>Countryside</td></tr>
+            <tr><td>Burgeon</td><td>Flourish</td></tr>
+            <tr><td>Cacophonous</td><td>Harsh</td></tr>
+            <tr><td>Canonize</td><td>Significance</td></tr>
+            <tr><td>Censure</td><td>Disapproval</td></tr>
+            <tr><td>Chicanery</td><td>Deception</td></tr>
+            <tr><td>Coalesce</td><td>Combine</td></tr>
+            <tr><td>Cogent</td><td>Convincing</td></tr>
+            <tr><td>Compelling</td><td>Irresistible</td></tr>
+            <tr><td>Contend</td><td>Assert</td></tr>
+            <tr><td>Copious</td><td>Abundant</td></tr>
+            <tr><td>Cosmopolitan</td><td>Mixture</td></tr>
+            <tr><td>Deference</td><td>Respect</td></tr>
+            <tr><td>Desultory</td><td>Randomly</td></tr>
+            <tr><td>Diffident</td><td>Shy</td></tr>
+            <tr><td>Dilatory</td><td>Slow</td></tr>
+            <tr><td>Equivocate</td><td>Ambiguous</td></tr>
+            <tr><td>Polarize</td><td>Divide</td></tr>
+            <tr><td>Prodigal</td><td>Recklessly</td></tr>
+            <tr><td>Verbose</td><td>Wordy</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group4">
+        <h3 class="group-title">Group 4</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abstain</td><td>Restrain</td></tr>
+            <tr><td>Approbation</td><td>Approval</td></tr>
+            <tr><td>Cherish</td><td>Protect</td></tr>
+            <tr><td>Corroborate</td><td>Confirm</td></tr>
+            <tr><td>Disparate</td><td>Different</td></tr>
+            <tr><td>Emulate</td><td>Imitate</td></tr>
+            <tr><td>Enervate</td><td>Drained</td></tr>
+            <tr><td>Ephemeral</td><td>Short</td></tr>
+            <tr><td>Fervid</td><td>Enthusiastic</td></tr>
+            <tr><td>Garrulous</td><td>Talkative</td></tr>
+            <tr><td>Incendiary</td><td>Conflict</td></tr>
+            <tr><td>Inimical</td><td>Hostile</td></tr>
+            <tr><td>Intimate</td><td>Familiar</td></tr>
+            <tr><td>Invigorate</td><td>Energy</td></tr>
+            <tr><td>Mitigate</td><td>Less</td></tr>
+            <tr><td>Obsolete</td><td>Outdated</td></tr>
+            <tr><td>Opaque</td><td>Unclear</td></tr>
+            <tr><td>Paradigmatic</td><td>Typical</td></tr>
+            <tr><td>Pedantic</td><td>Details</td></tr>
+            <tr><td>Placid</td><td>Calm</td></tr>
+            <tr><td>Polemical</td><td>Critical</td></tr>
+            <tr><td>Precipitate</td><td>Suddenly</td></tr>
+            <tr><td>Profundity</td><td>Depth</td></tr>
+            <tr><td>Prophetic</td><td>Predicting</td></tr>
+            <tr><td>Prudent</td><td>Care</td></tr>
+            <tr><td>Punctilious</td><td>Detail</td></tr>
+            <tr><td>Recondite</td><td>Abstruse</td></tr>
+            <tr><td>Scrupulous</td><td>Careful</td></tr>
+            <tr><td>Tranquil</td><td>Calm</td></tr>
+            <tr><td>Vacillate</td><td>Waver</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 2: Groups 5–9</h2>
+        <p>From aloof to turbulent</p>
+      </div>
+      
+      <div class="group" id="group5">
+        <h3 class="group-title">Group 5</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Aloof</td><td>Distant</td></tr>
+            <tr><td>Clangor</td><td>Banging</td></tr>
+            <tr><td>Conventional</td><td>Traditional</td></tr>
+            <tr><td>Debunk</td><td>Expose</td></tr>
+            <tr><td>Diminutive</td><td>Small</td></tr>
+            <tr><td>Discernible</td><td>Perceptible</td></tr>
+            <tr><td>Enigmatic</td><td>Mysterious</td></tr>
+            <tr><td>Estranged</td><td>Alienated</td></tr>
+            <tr><td>Extravagant</td><td>Excessive</td></tr>
+            <tr><td>Fanciful</td><td>Unrealistic</td></tr>
+            <tr><td>Frivolous</td><td>Carefree</td></tr>
+            <tr><td>Heterogeneous</td><td>Diverse</td></tr>
+            <tr><td>Imperious</td><td>Arrogant</td></tr>
+            <tr><td>Impertinent</td><td>Irrelevant</td></tr>
+            <tr><td>Invasive</td><td>Harmfully</td></tr>
+            <tr><td>Irresolute</td><td>Uncertain</td></tr>
+            <tr><td>Laudable</td><td>Praise</td></tr>
+            <tr><td>Lax</td><td>Relaxed</td></tr>
+            <tr><td>Marginalize</td><td>Insignificant</td></tr>
+            <tr><td>Panache</td><td>Flamboyant</td></tr>
+            <tr><td>Plodding</td><td>Slow</td></tr>
+            <tr><td>Prosaic</td><td>Commonplace</td></tr>
+            <tr><td>Remedial</td><td>Cure</td></tr>
+            <tr><td>Restive</td><td>Boredom</td></tr>
+            <tr><td>Sporadic</td><td>Infrequent</td></tr>
+            <tr><td>Stigmatize</td><td>Disapproval</td></tr>
+            <tr><td>Undermine</td><td>Erode</td></tr>
+            <tr><td>Utterly</td><td>Completely</td></tr>
+            <tr><td>Weary</td><td>Tired</td></tr>
+            <tr><td>Zealous</td><td>Passionate</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group6">
+        <h3 class="group-title">Group 6</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Admonish</td><td>Reprimand</td></tr>
+            <tr><td>Aesthetic</td><td>Beauty</td></tr>
+            <tr><td>Affectation</td><td>Facade</td></tr>
+            <tr><td>Alleviate</td><td>Less</td></tr>
+            <tr><td>Analogous</td><td>Comparable</td></tr>
+            <tr><td>Bolster</td><td>Support</td></tr>
+            <tr><td>Chauvinistic</td><td>Patriotism</td></tr>
+            <tr><td>Connoisseur</td><td>Expert</td></tr>
+            <tr><td>Dissemble</td><td>Conceal</td></tr>
+            <tr><td>Dogged</td><td>Tenacity</td></tr>
+            <tr><td>Dupe</td><td>Trick</td></tr>
+            <tr><td>Empirical</td><td>Observation</td></tr>
+            <tr><td>Engender</td><td>Cause</td></tr>
+            <tr><td>Entitled</td><td>Right</td></tr>
+            <tr><td>Pertinacious</td><td>Firmly</td></tr>
+            <tr><td>Presumptuous</td><td>Inappropriate</td></tr>
+            <tr><td>Probity</td><td>Honesty</td></tr>
+            <tr><td>Proliferate</td><td>Multiply</td></tr>
+            <tr><td>Specious</td><td>Wrong</td></tr>
+            <tr><td>Spurious</td><td>Fake</td></tr>
+            <tr><td>Subjective</td><td>Personal</td></tr>
+            <tr><td>Subvert</td><td>Undermine</td></tr>
+            <tr><td>Tortuous</td><td>Twists</td></tr>
+            <tr><td>Tractable</td><td>Control</td></tr>
+            <tr><td>Transient</td><td>Short</td></tr>
+            <tr><td>Ubiquitous</td><td>Everywhere</td></tr>
+            <tr><td>Underscore</td><td>Emphasize</td></tr>
+            <tr><td>Venal</td><td>Bribery</td></tr>
+            <tr><td>Venerate</td><td>Respect</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group7">
+        <h3 class="group-title">Group 7</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Appease</td><td>Pacify</td></tr>
+            <tr><td>Arbitrary</td><td>Random</td></tr>
+            <tr><td>Archaic</td><td>Old</td></tr>
+            <tr><td>Clamorous</td><td>Noise</td></tr>
+            <tr><td>Dearth</td><td>Scarcity</td></tr>
+            <tr><td>Explicable</td><td>Explainable</td></tr>
+            <tr><td>Immutable</td><td>Unchanged</td></tr>
+            <tr><td>Indefatigable</td><td>Tireless</td></tr>
+            <tr><td>Indolent</td><td>Lazy</td></tr>
+            <tr><td>Insular</td><td>Uninterested</td></tr>
+            <tr><td>Intransigent</td><td>Uncompromising</td></tr>
+            <tr><td>Intrepid</td><td>Fearless</td></tr>
+            <tr><td>Irreverent</td><td>Respect</td></tr>
+            <tr><td>Loathe</td><td>Dislike</td></tr>
+            <tr><td>Malign</td><td>Evil</td></tr>
+            <tr><td>Malleable</td><td>Pliable</td></tr>
+            <tr><td>Neophyte</td><td>Beginner</td></tr>
+            <tr><td>Plastic</td><td>Artificial</td></tr>
+            <tr><td>Platitude</td><td>Flat</td></tr>
+            <tr><td>Prescient</td><td>Knowledge</td></tr>
+            <tr><td>Pristine</td><td>Spotless</td></tr>
+            <tr><td>Reproach</td><td>Disapproval</td></tr>
+            <tr><td>Robust</td><td>Vigorous</td></tr>
+            <tr><td>Salubrious</td><td>Healthy</td></tr>
+            <tr><td>Sanction</td><td>Permission</td></tr>
+            <tr><td>Sedulous</td><td>Diligence</td></tr>
+            <tr><td>Soporific</td><td>Boring</td></tr>
+            <tr><td>Stern</td><td>Strict</td></tr>
+            <tr><td>Tendentious</td><td>Controversial</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group8">
+        <h3 class="group-title">Group 8</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Accentuate</td><td>Noticeable</td></tr>
+            <tr><td>Conjectural</td><td>Speculative</td></tr>
+            <tr><td>Convivial</td><td>Friendly</td></tr>
+            <tr><td>Egregious</td><td>Bad</td></tr>
+            <tr><td>Evanescent</td><td>Fading</td></tr>
+            <tr><td>Flamboyant</td><td>Noticeable</td></tr>
+            <tr><td>Forestall</td><td>Prevent</td></tr>
+            <tr><td>Gainsay</td><td>Deny</td></tr>
+            <tr><td>Galvanize</td><td>Shock</td></tr>
+            <tr><td>Indiscriminate</td><td>Random</td></tr>
+            <tr><td>Innocuous</td><td>Harmless</td></tr>
+            <tr><td>Momentary</td><td>Brief</td></tr>
+            <tr><td>Mundane</td><td>Dull</td></tr>
+            <tr><td>Nettlesome</td><td>Annoying</td></tr>
+            <tr><td>Nullify</td><td>Invalidate</td></tr>
+            <tr><td>Obviate</td><td>Prevent</td></tr>
+            <tr><td>Oust</td><td>Expel</td></tr>
+            <tr><td>Palpable</td><td>Tangible</td></tr>
+            <tr><td>Perfidy</td><td>Deceitful</td></tr>
+            <tr><td>Profuse</td><td>Abundant</td></tr>
+            <tr><td>Pugnacious</td><td>Eager</td></tr>
+            <tr><td>Sagacious</td><td>Wise</td></tr>
+            <tr><td>Sanguine</td><td>Optimistic</td></tr>
+            <tr><td>Scant</td><td>Insufficient</td></tr>
+            <tr><td>Skulduggery</td><td>Dishonest</td></tr>
+            <tr><td>Trivial</td><td>Unimportant</td></tr>
+            <tr><td>Utilitarian</td><td>Useful</td></tr>
+            <tr><td>Vapid</td><td>Bland</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group9">
+        <h3 class="group-title">Group 9</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Boorish</td><td>Rough</td></tr>
+            <tr><td>Circumspect</td><td>Cautious</td></tr>
+            <tr><td>Comity</td><td>Benefit</td></tr>
+            <tr><td>Commensurate</td><td>Proportion</td></tr>
+            <tr><td>Cordial</td><td>Friendly</td></tr>
+            <tr><td>Deleterious</td><td>Harmful</td></tr>
+            <tr><td>Dichotomy</td><td>Division</td></tr>
+            <tr><td>Edify</td><td>Instruct</td></tr>
+            <tr><td>Elicit</td><td>Evoke</td></tr>
+            <tr><td>Erudite</td><td>Knowledge</td></tr>
+            <tr><td>Fecund</td><td>Fertile</td></tr>
+            <tr><td>Feeble</td><td>Weak</td></tr>
+            <tr><td>Felicitous</td><td>Pleasing</td></tr>
+            <tr><td>Forbear</td><td>Refrain</td></tr>
+            <tr><td>Hodgepodge</td><td>Mixture</td></tr>
+            <tr><td>Impede</td><td>Hinder</td></tr>
+            <tr><td>Impetuous</td><td>Quickly</td></tr>
+            <tr><td>Irascible</td><td>Angered</td></tr>
+            <tr><td>Mercenary</td><td>Money</td></tr>
+            <tr><td>Meticulous</td><td>Careful</td></tr>
+            <tr><td>Mordant</td><td>Biting</td></tr>
+            <tr><td>Outstrip</td><td>Overtake</td></tr>
+            <tr><td>Precarious</td><td>Uncertain</td></tr>
+            <tr><td>Quirky</td><td>Peculiar</td></tr>
+            <tr><td>Repudiate</td><td>Refuse</td></tr>
+            <tr><td>Tact</td><td>Sensitivity</td></tr>
+            <tr><td>Trifling</td><td>Unimportant</td></tr>
+            <tr><td>Turbulent</td><td>Unstable</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 3: Groups 10–14</h2>
+        <p>From acumen to wayward</p>
+      </div>
+      
+      <div class="group" id="group10">
+        <h3 class="group-title">Group 10</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Acumen</td><td>Judgments</td></tr>
+            <tr><td>Antithesis</td><td>Opposite</td></tr>
+            <tr><td>Ascribe</td><td>Belonging</td></tr>
+            <tr><td>Befuddled</td><td>Confused</td></tr>
+            <tr><td>Eschew</td><td>Avoid</td></tr>
+            <tr><td>Esoteric</td><td>Small</td></tr>
+            <tr><td>Evasive</td><td>Avoid</td></tr>
+            <tr><td>Exculpate</td><td>Guilty</td></tr>
+            <tr><td>Expedite</td><td>Sooner</td></tr>
+            <tr><td>Fastidious</td><td>Detail</td></tr>
+            <tr><td>Feign</td><td>Pretend</td></tr>
+            <tr><td>Furtive</td><td>Secretive</td></tr>
+            <tr><td>Hamper</td><td>Hinder</td></tr>
+            <tr><td>Indispensable</td><td>Necessary</td></tr>
+            <tr><td>Lament</td><td>Grief</td></tr>
+            <tr><td>Myopic</td><td>Short-sighted</td></tr>
+            <tr><td>Nonchalant</td><td>Calm</td></tr>
+            <tr><td>Partial</td><td>Biased</td></tr>
+            <tr><td>Pensive</td><td>Thought</td></tr>
+            <tr><td>Portend</td><td>Warning</td></tr>
+            <tr><td>Provincial</td><td>Narrow-minded</td></tr>
+            <tr><td>Rudimentary</td><td>Basic</td></tr>
+            <tr><td>Salutary</td><td>Beneficial</td></tr>
+            <tr><td>Sever</td><td>Cut</td></tr>
+            <tr><td>Slight</td><td>Small</td></tr>
+            <tr><td>Somnolent</td><td>Sleepy</td></tr>
+            <tr><td>Supersede</td><td>Replace</td></tr>
+            <tr><td>Tout</td><td>Sell</td></tr>
+            <tr><td>Wane</td><td>Decrease</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group11">
+        <h3 class="group-title">Group 11</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abhor</td><td>Hatred</td></tr>
+            <tr><td>Boisterous</td><td>Noisy</td></tr>
+            <tr><td>Chivalrous</td><td>Courteous</td></tr>
+            <tr><td>Churlish</td><td>Rude</td></tr>
+            <tr><td>Clandestine</td><td>Secret</td></tr>
+            <tr><td>Complacent</td><td>Self-satisfied</td></tr>
+            <tr><td>Cumbersome</td><td>Unwieldy</td></tr>
+            <tr><td>Debilitating</td><td>Weak</td></tr>
+            <tr><td>Deliberate</td><td>Intentionally</td></tr>
+            <tr><td>Eccentric</td><td>Unconventional</td></tr>
+            <tr><td>Fractious</td><td>Irritable</td></tr>
+            <tr><td>Limpid</td><td>Transparent</td></tr>
+            <tr><td>Mawkish</td><td>Sentimental</td></tr>
+            <tr><td>Obeisance</td><td>Respect</td></tr>
+            <tr><td>Ostentatious</td><td>Showy</td></tr>
+            <tr><td>Panacea</td><td>Remedy</td></tr>
+            <tr><td>Perfunctory</td><td>Interest</td></tr>
+            <tr><td>Perilous</td><td>Danger</td></tr>
+            <tr><td>Pervasive</td><td>Spreading</td></tr>
+            <tr><td>Preclude</td><td>Prevent</td></tr>
+            <tr><td>Predilection</td><td>Preference</td></tr>
+            <tr><td>Rapacious</td><td>Greedy</td></tr>
+            <tr><td>Relish</td><td>Enjoyment</td></tr>
+            <tr><td>Satirical</td><td>Mocking</td></tr>
+            <tr><td>Sham</td><td>Pretends</td></tr>
+            <tr><td>Skirt</td><td>Avoid</td></tr>
+            <tr><td>Sluggish</td><td>Slow</td></tr>
+            <tr><td>Spartan</td><td>Austerity</td></tr>
+            <tr><td>Truculent</td><td>Argue</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group12">
+        <h3 class="group-title">Group 12</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Acrimonious</td><td>Bitter</td></tr>
+            <tr><td>Belligerent</td><td>Hostile</td></tr>
+            <tr><td>Beneficent</td><td>Generous</td></tr>
+            <tr><td>Canny</td><td>Judgment</td></tr>
+            <tr><td>Cavalier</td><td>Concern</td></tr>
+            <tr><td>Dwindling</td><td>Diminishing</td></tr>
+            <tr><td>Eclipse</td><td>Deprive</td></tr>
+            <tr><td>Encyclopedia</td><td>Comprehensive</td></tr>
+            <tr><td>Exacerbate</td><td>Worse</td></tr>
+            <tr><td>Exasperated</td><td>Irritated</td></tr>
+            <tr><td>Fungible</td><td>Interchangeable</td></tr>
+            <tr><td>Hackneyed</td><td>Overused</td></tr>
+            <tr><td>Incongruous</td><td>Harmony</td></tr>
+            <tr><td>Interchangeable</td><td>Identical</td></tr>
+            <tr><td>Laconic</td><td>Few</td></tr>
+            <tr><td>Lucrative</td><td>Profit</td></tr>
+            <tr><td>Magisterial</td><td>Domineering</td></tr>
+            <tr><td>Onerous</td><td>Burdensome</td></tr>
+            <tr><td>Opprobrium</td><td>Criticism</td></tr>
+            <tr><td>Peripheral</td><td>Minor</td></tr>
+            <tr><td>Provocative</td><td>Reaction</td></tr>
+            <tr><td>Renounce</td><td>Abandonment</td></tr>
+            <tr><td>Tempestuous</td><td>Emotion</td></tr>
+            <tr><td>Tenable</td><td>Defensible</td></tr>
+            <tr><td>Transgression</td><td>Against</td></tr>
+            <tr><td>Urbane</td><td>Courteous</td></tr>
+            <tr><td>Verisimilitude</td><td>Real</td></tr>
+            <tr><td>Vitiate</td><td>Spoil</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group13">
+        <h3 class="group-title">Group 13</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Affinity</td><td>Liking</td></tr>
+            <tr><td>Altruistic</td><td>Selfless</td></tr>
+            <tr><td>Baroque</td><td>Ornate</td></tr>
+            <tr><td>Byzantine</td><td>Complicated</td></tr>
+            <tr><td>Compromise</td><td>Agreement</td></tr>
+            <tr><td>Conciliatory</td><td>Pacify</td></tr>
+            <tr><td>Countenance</td><td>Expression</td></tr>
+            <tr><td>Covert</td><td>Secret</td></tr>
+            <tr><td>Credible</td><td>Believable</td></tr>
+            <tr><td>Diffuse</td><td>Spread</td></tr>
+            <tr><td>Documentary</td><td>Comprehensive</td></tr>
+            <tr><td>Exhaustive</td><td>Comprehensive</td></tr>
+            <tr><td>Exhilarating</td><td>Thrilling</td></tr>
+            <tr><td>Extraneous</td><td>Irrelevant</td></tr>
+            <tr><td>Fervor</td><td>Passionate</td></tr>
+            <tr><td>Futile</td><td>Pointless</td></tr>
+            <tr><td>Illusory</td><td>Illusion</td></tr>
+            <tr><td>Invidious</td><td>Unpleasant</td></tr>
+            <tr><td>Lethargic</td><td>Sluggish</td></tr>
+            <tr><td>Metaphorical</td><td>Figurative</td></tr>
+            <tr><td>Mimic</td><td>Imitate</td></tr>
+            <tr><td>Obscure</td><td>Unknown</td></tr>
+            <tr><td>Overt</td><td>Openly</td></tr>
+            <tr><td>Pellucid</td><td>Clear</td></tr>
+            <tr><td>Perpetuate</td><td>Indefinitely</td></tr>
+            <tr><td>Rational</td><td>Logic</td></tr>
+            <tr><td>Scathing</td><td>Scornful</td></tr>
+            <tr><td>Subtle</td><td>Complex</td></tr>
+            <tr><td>Superficial</td><td>Surface</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group14">
+        <h3 class="group-title">Group 14</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Acquiesce</td><td>Reluctantly</td></tr>
+            <tr><td>Adroit</td><td>Skillful</td></tr>
+            <tr><td>Amend</td><td>Improve</td></tr>
+            <tr><td>Animus</td><td>Hostility</td></tr>
+            <tr><td>Apologist</td><td>Defender</td></tr>
+            <tr><td>Astringent</td><td>Sharp</td></tr>
+            <tr><td>Collaborate</td><td>Jointly</td></tr>
+            <tr><td>Competent</td><td>Capable</td></tr>
+            <tr><td>Correlate</td><td>Connect</td></tr>
+            <tr><td>Deride</td><td>Ridicule</td></tr>
+            <tr><td>Dictate</td><td>Orders</td></tr>
+            <tr><td>Discreet</td><td>Confidential</td></tr>
+            <tr><td>Divorced</td><td>Separate</td></tr>
+            <tr><td>Elitist</td><td>Superior</td></tr>
+            <tr><td>Exacting</td><td>Demanding</td></tr>
+            <tr><td>Flummoxed</td><td>Bewildered</td></tr>
+            <tr><td>Fruitful</td><td>Productive</td></tr>
+            <tr><td>Inborn</td><td>Natural</td></tr>
+            <tr><td>Polymath</td><td>Knowledge</td></tr>
+            <tr><td>Reticent</td><td>Reserved</td></tr>
+            <tr><td>Stringent</td><td>Strict</td></tr>
+            <tr><td>Subservient</td><td>Obey</td></tr>
+            <tr><td>Surreptitious</td><td>Secret</td></tr>
+            <tr><td>Tantalizing</td><td>Teasing</td></tr>
+            <tr><td>Tantamount</td><td>Equivalent</td></tr>
+            <tr><td>Torpor</td><td>Inactivity</td></tr>
+            <tr><td>Trenchant</td><td>Incisive</td></tr>
+            <tr><td>Umbrage</td><td>Offense</td></tr>
+            <tr><td>Versatile</td><td>Adaptable</td></tr>
+            <tr><td>Wayward</td><td>Control</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 4: Groups 15–19</h2>
+        <p>From alienate to viable</p>
+      </div>
+      
+      <div class="group" id="group15">
+        <h3 class="group-title">Group 15</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Alienate</td><td>Isolated</td></tr>
+            <tr><td>Apathy</td><td>Interest</td></tr>
+            <tr><td>Apropos</td><td>Appropriate</td></tr>
+            <tr><td>Apt</td><td>Quick</td></tr>
+            <tr><td>Cloak</td><td>Hide</td></tr>
+            <tr><td>Consensus</td><td>Agreement</td></tr>
+            <tr><td>Distort</td><td>Twist</td></tr>
+            <tr><td>Divergent</td><td>Different</td></tr>
+            <tr><td>Elated</td><td>Happy</td></tr>
+            <tr><td>Enchant</td><td>Delight</td></tr>
+            <tr><td>Entrenched</td><td>Ingrained</td></tr>
+            <tr><td>Exotic</td><td>Foreign</td></tr>
+            <tr><td>Exploitative</td><td>Unfairly</td></tr>
+            <tr><td>Foreseeable</td><td>Predicted</td></tr>
+            <tr><td>Forsake</td><td>Abandon</td></tr>
+            <tr><td>Gratify</td><td>Pleasure</td></tr>
+            <tr><td>Heed</td><td>Attention</td></tr>
+            <tr><td>Judicious</td><td>Judgment</td></tr>
+            <tr><td>Lucid</td><td>Clear</td></tr>
+            <tr><td>Pertinent</td><td>Relevant</td></tr>
+            <tr><td>Propriety</td><td>Proper</td></tr>
+            <tr><td>Scintillation</td><td>Brightly</td></tr>
+            <tr><td>Sensational</td><td>Excitement</td></tr>
+            <tr><td>Sophisticated</td><td>Experience</td></tr>
+            <tr><td>Strife</td><td>Disagreement</td></tr>
+            <tr><td>Understated</td><td>Subtle</td></tr>
+            <tr><td>Unscrupulous</td><td>Honest</td></tr>
+            <tr><td>Veracity</td><td>Accuracy</td></tr>
+            <tr><td>Virulent</td><td>Harmful</td></tr>
+            <tr><td>Volatile</td><td>Unpredictably</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group16">
+        <h3 class="group-title">Group 16</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Antedate</td><td>Precede</td></tr>
+            <tr><td>Banish</td><td>Away</td></tr>
+            <tr><td>Bridle</td><td>Control</td></tr>
+            <tr><td>Comply</td><td>Accordance</td></tr>
+            <tr><td>Crestfallen</td><td>Sad</td></tr>
+            <tr><td>Curtain</td><td>Disastrous</td></tr>
+            <tr><td>Elucidate</td><td>Clear</td></tr>
+            <tr><td>Evade</td><td>Escape</td></tr>
+            <tr><td>Feckless</td><td>Irresponsible</td></tr>
+            <tr><td>Iconoclastic</td><td>Criticizing</td></tr>
+            <tr><td>Immure</td><td>Confine</td></tr>
+            <tr><td>Improvise</td><td>Spontaneously</td></tr>
+            <tr><td>Inhibit</td><td>Prevent</td></tr>
+            <tr><td>Inscrutable</td><td>Impossible</td></tr>
+            <tr><td>Lionize</td><td>Attention</td></tr>
+            <tr><td>Monotonous</td><td>Dull</td></tr>
+            <tr><td>Peculiar</td><td>Strange</td></tr>
+            <tr><td>Premeditate</td><td>Plan</td></tr>
+            <tr><td>Profligate</td><td>Wasteful</td></tr>
+            <tr><td>Recondite</td><td>Abstruse</td></tr>
+            <tr><td>Relinquish</td><td>Cease</td></tr>
+            <tr><td>Ruminate</td><td>Think</td></tr>
+            <tr><td>Skittish</td><td>Unpredictable</td></tr>
+            <tr><td>Superfluous</td><td>Unnecessary</td></tr>
+            <tr><td>Synoptic</td><td>Summary</td></tr>
+            <tr><td>Thorough</td><td>Complete</td></tr>
+            <tr><td>Visionary</td><td>Imagination</td></tr>
+            <tr><td>Vociferous</td><td>Forceful</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group17">
+        <h3 class="group-title">Group 17</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Acclaim</td><td>Praise</td></tr>
+            <tr><td>Ascertain</td><td>Certain</td></tr>
+            <tr><td>Assertive</td><td>Confident</td></tr>
+            <tr><td>Bogus</td><td>Fake</td></tr>
+            <tr><td>Cataclysmic</td><td>Violent</td></tr>
+            <tr><td>Circumscribe</td><td>Restrict</td></tr>
+            <tr><td>Complementary</td><td>Enhance</td></tr>
+            <tr><td>Contentious</td><td>Controversial</td></tr>
+            <tr><td>Disingenuous</td><td>Sincere</td></tr>
+            <tr><td>Divulge</td><td>Reveal</td></tr>
+            <tr><td>Dogmatic</td><td>Opinionated</td></tr>
+            <tr><td>Fallacious</td><td>Mistaken</td></tr>
+            <tr><td>Hinder</td><td>Obstruct</td></tr>
+            <tr><td>Impair</td><td>Weaken</td></tr>
+            <tr><td>Impugn</td><td>Dispute</td></tr>
+            <tr><td>Incessant</td><td>Interruption</td></tr>
+            <tr><td>Inclined</td><td>Willing</td></tr>
+            <tr><td>Inveterate</td><td>Established</td></tr>
+            <tr><td>Miserly</td><td>Small</td></tr>
+            <tr><td>Patent</td><td>Recognizable</td></tr>
+            <tr><td>Petulant</td><td>Bad-tempered</td></tr>
+            <tr><td>Pithy</td><td>Terse</td></tr>
+            <tr><td>Sanctimonious</td><td>Superior</td></tr>
+            <tr><td>Sound</td><td>Competent</td></tr>
+            <tr><td>Tarnish</td><td>Less</td></tr>
+            <tr><td>Tepid</td><td>Lukewarm</td></tr>
+            <tr><td>Upbraid</td><td>Scold</td></tr>
+            <tr><td>Vexation</td><td>Annoyed</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group18">
+        <h3 class="group-title">Group 18</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abet</td><td>Assist</td></tr>
+            <tr><td>Accessible</td><td>Reached</td></tr>
+            <tr><td>Acquisitive</td><td>Acquiring</td></tr>
+            <tr><td>Amalgamate</td><td>Combine</td></tr>
+            <tr><td>Attenuate</td><td>Reduce</td></tr>
+            <tr><td>Augment</td><td>Increase</td></tr>
+            <tr><td>Blithe</td><td>Indifference</td></tr>
+            <tr><td>Contempt</td><td>Worthless</td></tr>
+            <tr><td>Dawdle</td><td>Waste</td></tr>
+            <tr><td>Deflect</td><td>Change</td></tr>
+            <tr><td>Discount</td><td>Unworthy</td></tr>
+            <tr><td>Dissident</td><td>Opposition</td></tr>
+            <tr><td>Efficacious</td><td>Successful</td></tr>
+            <tr><td>Equitable</td><td>Fair</td></tr>
+            <tr><td>Erratic</td><td>Unpredictable</td></tr>
+            <tr><td>Industrious</td><td>Diligent</td></tr>
+            <tr><td>Inform</td><td>Facts</td></tr>
+            <tr><td>Manacle</td><td>Shackles</td></tr>
+            <tr><td>Modest</td><td>Moderate</td></tr>
+            <tr><td>Noxious</td><td>Harmful</td></tr>
+            <tr><td>Pernicious</td><td>Harmful</td></tr>
+            <tr><td>Predicament</td><td>Difficult</td></tr>
+            <tr><td>Proficient</td><td>Skilled</td></tr>
+            <tr><td>Prolix</td><td>Lengthy</td></tr>
+            <tr><td>Scorn</td><td>Contempt</td></tr>
+            <tr><td>Subordinate</td><td>Secondary</td></tr>
+            <tr><td>Unseemly</td><td>Improper</td></tr>
+            <tr><td>Veritable</td><td>Emphasis</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group19">
+        <h3 class="group-title">Group 19</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Acolyte</td><td>Assistant</td></tr>
+            <tr><td>Anoint</td><td>Rubbing</td></tr>
+            <tr><td>Base</td><td>Sordid</td></tr>
+            <tr><td>Coercion</td><td>Force</td></tr>
+            <tr><td>Coin</td><td>Invent</td></tr>
+            <tr><td>Cunning</td><td>Deceit</td></tr>
+            <tr><td>Discomfort</td><td>Uneasy</td></tr>
+            <tr><td>Dissent</td><td>Disagreement</td></tr>
+            <tr><td>Distill</td><td>Purify</td></tr>
+            <tr><td>Dubious</td><td>Hesitating</td></tr>
+            <tr><td>Facetious</td><td>Flippant</td></tr>
+            <tr><td>Fallible</td><td>Mistakes</td></tr>
+            <tr><td>Florid</td><td>Red</td></tr>
+            <tr><td>Gawky</td><td>Awkward</td></tr>
+            <tr><td>Inveigle</td><td>Persuade</td></tr>
+            <tr><td>Jettison</td><td>Abandon</td></tr>
+            <tr><td>Mendacity</td><td>Untruthfulness</td></tr>
+            <tr><td>Munificent</td><td>Generosity</td></tr>
+            <tr><td>Naive</td><td>Innocent</td></tr>
+            <tr><td>Noble</td><td>Rank</td></tr>
+            <tr><td>Parochial</td><td>Narrow-minded</td></tr>
+            <tr><td>Pedestrian</td><td>Dull</td></tr>
+            <tr><td>Prevaricate</td><td>Evasive</td></tr>
+            <tr><td>Prime</td><td>Importance</td></tr>
+            <tr><td>Radical</td><td>Revolutionary</td></tr>
+            <tr><td>Recrudescence</td><td>Recurrence</td></tr>
+            <tr><td>Temporal</td><td>Secular</td></tr>
+            <tr><td>Transitory</td><td>Permanent</td></tr>
+            <tr><td>Viable</td><td>Feasible</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 5: Groups 20–24</h2>
+        <p>From abreast to buttress</p>
+      </div>
+      
+      <div class="group" id="group20">
+        <h3 class="group-title">Group 20</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abreast</td><td>Side</td></tr>
+            <tr><td>Confound</td><td>Confusion</td></tr>
+            <tr><td>Digression</td><td>Departure</td></tr>
+            <tr><td>Discrepancy</td><td>Inconsistency</td></tr>
+            <tr><td>Expedient</td><td>Convenient</td></tr>
+            <tr><td>Fabricate</td><td>Invent</td></tr>
+            <tr><td>Glum</td><td>Gloomy</td></tr>
+            <tr><td>Harbinger</td><td>Signals</td></tr>
+            <tr><td>Intrinsic</td><td>Essential</td></tr>
+            <tr><td>Largess</td><td>Generosity</td></tr>
+            <tr><td>Libertine</td><td>Pleasures</td></tr>
+            <tr><td>Malfeasance</td><td>Wrongdoing</td></tr>
+            <tr><td>Manifest</td><td>Obvious</td></tr>
+            <tr><td>Minute</td><td>Insignificant</td></tr>
+            <tr><td>Nascent</td><td>Beginning</td></tr>
+            <tr><td>Perennial</td><td>Everlasting</td></tr>
+            <tr><td>Pious</td><td>Religious</td></tr>
+            <tr><td>Providential</td><td>Favorable</td></tr>
+            <tr><td>Prowess</td><td>Expertise</td></tr>
+            <tr><td>Schism</td><td>Split</td></tr>
+            <tr><td>Slander</td><td>Defame</td></tr>
+            <tr><td>Stalwart</td><td>Loyal</td></tr>
+            <tr><td>Supplicate</td><td>Beg</td></tr>
+            <tr><td>Terse</td><td>Brief</td></tr>
+            <tr><td>Tirade</td><td>Speech</td></tr>
+            <tr><td>Vanquish</td><td>Defeat</td></tr>
+            <tr><td>Woeful</td><td>Bad</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group21">
+        <h3 class="group-title">Group 21</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abject</td><td>Unpleasant</td></tr>
+            <tr><td>Amicable</td><td>Friendliness</td></tr>
+            <tr><td>Animosity</td><td>Hostility</td></tr>
+            <tr><td>Aver</td><td>Verify</td></tr>
+            <tr><td>Barrage</td><td>Overwhelming</td></tr>
+            <tr><td>Cathartic</td><td>Relief</td></tr>
+            <tr><td>Decipher</td><td>Understanding</td></tr>
+            <tr><td>Delusion</td>Deception</td></tr>
+            <tr><td>Dispense</td><td>Supply</td></tr>
+            <tr><td>Eloquent</td><td>Clearly</td></tr>
+            <tr><td>Enthrall</td><td>Capture</td></tr>
+            <tr><td>Eradicate</td><td>Destroy</td></tr>
+            <tr><td>Fledgling</td><td>Inexperienced</td></tr>
+            <tr><td>Fortitude</td><td>Courage</td></tr>
+            <tr><td>Fortuitous</td><td>Chance</td></tr>
+            <tr><td>Goad</td><td>Provoke</td></tr>
+            <tr><td>Imminent</td><td>Happen</td></tr>
+            <tr><td>Incontrovertible</td><td>Undeniable</td></tr>
+            <tr><td>Itinerant</td><td>Traveling</td></tr>
+            <tr><td>Magnanimous</td><td>Generous</td></tr>
+            <tr><td>Meritorious</td><td>Deserving</td></tr>
+            <tr><td>Mutiny</td><td>Rebellion</td></tr>
+            <tr><td>Paradoxical</td><td>Absurd</td></tr>
+            <tr><td>Perseverance</td><td>Persistence</td></tr>
+            <tr><td>Render</td><td>Provide</td></tr>
+            <tr><td>Repertoire</td><td>Collection</td></tr>
+            <tr><td>Resilient</td><td>Recover</td></tr>
+            <tr><td>Resolute</td><td>Determined</td></tr>
+            <tr><td>Supple</td><td>Flexible</td></tr>
+            <tr><td>Valor</td><td>Courage</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group22">
+        <h3 class="group-title">Group 22</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Cumbersome</td><td>Unwieldy</td></tr>
+            <tr><td>Unprecedented</td><td>Unknown</td></tr>
+            <tr><td>Stinting</td><td>Ungenerous</td></tr>
+            <tr><td>Extrapolate</td><td>Estimate</td></tr>
+            <tr><td>Liability</td><td>Responsible</td></tr>
+            <tr><td>Euphoric</td><td>Excitement</td></tr>
+            <tr><td>Elementary</td><td>Basic</td></tr>
+            <tr><td>Heterodox</td><td>Different</td></tr>
+            <tr><td>Fervent</td><td>Passionate</td></tr>
+            <tr><td>Gaffe</td><td>Mistake</td></tr>
+            <tr><td>Temper</td><td>Neutralizing</td></tr>
+            <tr><td>Economy</td><td>Management</td></tr>
+            <tr><td>Qualm</td><td>Doubt</td></tr>
+            <tr><td>Exonerate</td><td>Absolve</td></tr>
+            <tr><td>Implicit</td><td>Implied</td></tr>
+            <tr><td>Phlegmatic</td><td>Calm</td></tr>
+            <tr><td>Propensity</td><td>Tendency</td></tr>
+            <tr><td>Foment</td><td>Instigate</td></tr>
+            <tr><td>Embellish</td><td>Decorate</td></tr>
+            <tr><td>Inviolate</td><td>Safe</td></tr>
+            <tr><td>Renege</td><td>Promise</td></tr>
+            <tr><td>Arresting</td><td>Eye-catching</td></tr>
+            <tr><td>Vivacious</td><td>Lively</td></tr>
+            <tr><td>Histrionic</td><td>Dramatic</td></tr>
+            <tr><td>Prodigious</td><td>Great</td></tr>
+            <tr><td>Tentative</td><td>Provisional</td></tr>
+            <tr><td>Falter</td><td>Lose</td></tr>
+            <tr><td>Chastise</td><td>Rebuke</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 6: Groups 25–29</h2>
+        <p>From bereft to fraught</p>
+      </div>
+      
+      <div class="group" id="group25">
+        <h3 class="group-title">Group 25</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Bereft</td><td>Deprived</td></tr>
+            <tr><td>Frailty</td><td>Weak</td></tr>
+            <tr><td>Pomposity</td><td>Self-importance</td></tr>
+            <tr><td>Delineate</td><td>Describe</td></tr>
+            <tr><td>Conclusive</td><td>Proving</td></tr>
+            <tr><td>Vitality</td><td>Energy</td></tr>
+            <tr><td>Steadfast</td><td>Loyal</td></tr>
+            <tr><td>Archetype</td><td>Example</td></tr>
+            <tr><td>Relent</td><td>Less</td></tr>
+            <tr><td>Grievance</td><td>Unfair</td></tr>
+            <tr><td>Harangue</td><td>Speech</td></tr>
+            <tr><td>Auspicious</td><td>Favorable</td></tr>
+            <tr><td>Yield</td><td>Produce</td></tr>
+            <tr><td>Rhetoric</td><td>Persuasive</td></tr>
+            <tr><td>Conspire</td><td>Plans</td></tr>
+            <tr><td>Whimsical</td><td>Fanciful</td></tr>
+            <tr><td>Proxy</td><td>Represent</td></tr>
+            <tr><td>Sparse</td><td>Scattered</td></tr>
+            <tr><td>Adverse</td><td>Harmful</td></tr>
+            <tr><td>Exhort</td><td>Encourage</td></tr>
+            <tr><td>Poise</td><td>Graceful</td></tr>
+            <tr><td>Adept</td><td>Skilled</td></tr>
+            <tr><td>Tedious</td><td>Dull</td></tr>
+            <tr><td>Rigor</td><td>Cold</td></tr>
+            <tr><td>Suspect</td><td>Doubt</td></tr>
+            <tr><td>Ploy</td><td>Plan</td></tr>
+            <tr><td>Captious</td><td>Fault</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group26">
+        <h3 class="group-title">Group 26</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Lugubrious</td><td>Sad</td></tr>
+            <tr><td>Transcend</td><td>Surpass</td></tr>
+            <tr><td>Flustered</td><td>Agitated</td></tr>
+            <tr><td>Incidental</td><td>Chance</td></tr>
+            <tr><td>Axiomatic</td><td>Self-evident</td></tr>
+            <tr><td>Macabre</td><td>Disturbing</td></tr>
+            <tr><td>Ingrained</td><td>Fixed</td></tr>
+            <tr><td>Tacit</td><td>Implicit</td></tr>
+            <tr><td>Exorbitant</td><td>High</td></tr>
+            <tr><td>Serene</td><td>Calm</td></tr>
+            <tr><td>Treatise</td><td>Work</td></tr>
+            <tr><td>Corporeal</td><td>Body</td></tr>
+            <tr><td>Figurative</td><td>Metaphorical</td></tr>
+            <tr><td>Morose</td><td>Sullen</td></tr>
+            <tr><td>Fickle</td><td>Changing</td></tr>
+            <tr><td>Ramification</td><td>Consequence</td></tr>
+            <tr><td>Eclectic</td><td>Diverse</td></tr>
+            <tr><td>Apprehensive</td><td>Anxiety</td></tr>
+            <tr><td>Insolent</td><td>Rude</td></tr>
+            <tr><td>Ardent</td><td>Enthusiastic</td></tr>
+            <tr><td>Doctrinaire</td><td>Rigid</td></tr>
+            <tr><td>Officious</td><td>Interfering</td></tr>
+            <tr><td>Cease</td><td>End</td></tr>
+            <tr><td>Lavish</td><td>Generous</td></tr>
+            <tr><td>Conductive</td><td>Conducting</td></tr>
+            <tr><td>Equanimity</td><td>Calmness</td></tr>
+            <tr><td>Supplant</td><td>Replace</td></tr>
+            <tr><td>Lampoon</td><td>Criticize</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group27">
+        <h3 class="group-title">Group 27</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Lambaste</td><td>Criticize</td></tr>
+            <tr><td>Undercut</td><td>Lower</td></tr>
+            <tr><td>Euphemism</td><td>Polite</td></tr>
+            <tr><td>Turpitude</td><td>Wicked</td></tr>
+            <tr><td>Peccadillo</td><td>Sin</td></tr>
+            <tr><td>Antagonistic</td><td>Hostile</td></tr>
+            <tr><td>Barren</td><td>Unproductive</td></tr>
+            <tr><td>Philistine</td><td>Indifferent</td></tr>
+            <tr><td>Relegate</td><td>Inferior</td></tr>
+            <tr><td>Dirge</td><td>Lament</td></tr>
+            <tr><td>Imperturbable</td><td>Calm</td></tr>
+            <tr><td>Curmudgeon</td><td>Bad-tempered</td></tr>
+            <tr><td>Swindle</td><td>Deception</td></tr>
+            <tr><td>Wheedle</td><td>Flattery</td></tr>
+            <tr><td>Sentimental</td><td>Tenderness</td></tr>
+            <tr><td>Miscreant</td><td>Wrong</td></tr>
+            <tr><td>Implacable</td><td>Unappeased</td></tr>
+            <tr><td>Haughty</td><td>Superior</td></tr>
+            <tr><td>Estimable</td><td>Respect</td></tr>
+            <tr><td>Tangible</td><td>Perceptible</td></tr>
+            <tr><td>Chary</td><td>Reluctant</td></tr>
+            <tr><td>Repugnant</td><td>Unacceptable</td></tr>
+            <tr><td>Xenophobic</td><td>Racist</td></tr>
+            <tr><td>Squander</td><td>Waste</td></tr>
+            <tr><td>Cajole</td><td>Persuade</td></tr>
+            <tr><td>Unalloyed</td><td>Pure</td></tr>
+            <tr><td>Heady</td><td>Intoxicating</td></tr>
+            <tr><td>Exigent</td><td>Demanding</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group28">
+        <h3 class="group-title">Group 28</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Quibble</td><td>Criticism</td></tr>
+            <tr><td>Gauche</td><td>Awkward</td></tr>
+            <tr><td>Wily</td><td>Skilled</td></tr>
+            <tr><td>Sophistry</td><td>Fallacious</td></tr>
+            <tr><td>Agitated</td><td>Troubled</td></tr>
+            <tr><td>Coy</td><td>Shyness</td></tr>
+            <tr><td>Hysterical</td><td>Emotion</td></tr>
+            <tr><td>Recant</td><td>Retract</td></tr>
+            <tr><td>Quandary</td><td>Uncertainty</td></tr>
+            <tr><td>Affront</td><td>Insult</td></tr>
+            <tr><td>Endemic</td><td>Native</td></tr>
+            <tr><td>Abstract</td><td>Theoretical</td></tr>
+            <tr><td>Burnish</td><td>Polish</td></tr>
+            <tr><td>Disperse</td><td>Scatter</td></tr>
+            <tr><td>Enmity</td><td>Animosity</td></tr>
+            <tr><td>Retiring</td><td>Shy</td></tr>
+            <tr><td>Ravage</td><td>Devastate</td></tr>
+            <tr><td>Inchoate</td><td>Beginning</td></tr>
+            <tr><td>Impudent</td><td>Respect</td></tr>
+            <tr><td>Redoubtable</td><td>Formidable</td></tr>
+            <tr><td>Shrill</td><td>High-pitched</td></tr>
+            <tr><td>Deprecate</td><td>Disapproval</td></tr>
+            <tr><td>Disdain</td><td>Scorn</td></tr>
+            <tr><td>Quash</td><td>Reject</td></tr>
+            <tr><td>Distend</td><td>Swell</td></tr>
+            <tr><td>Penchant</td><td>Liking</td></tr>
+            <tr><td>August</td><td>Respected</td></tr>
+            <tr><td>Substantiate</td><td>Prove</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 7: Groups 30–34</h2>
+        <p>From slovenly to feint</p>
+      </div>
+      
+      <div class="group" id="group30">
+        <h3 class="group-title">Group 30</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Slovenly</td><td>Messy</td></tr>
+            <tr><td>Factious</td><td>Divided</td></tr>
+            <tr><td>Spurn</td><td>Reject</td></tr>
+            <tr><td>Callow</td><td>Inexperienced</td></tr>
+            <tr><td>Flagrant</td><td>Offensive</td></tr>
+            <tr><td>Remuneration</td><td>Payment</td></tr>
+            <tr><td>Bravado</td><td>Boldness</td></tr>
+            <tr><td>Obstreperous</td><td>Noisy</td></tr>
+            <tr><td>Temerity</td><td>Confidence</td></tr>
+            <tr><td>Deportment</td><td>Behavior</td></tr>
+            <tr><td>Precocious</td><td>Advanced</td></tr>
+            <tr><td>Abide</td><td>Continue</td></tr>
+            <tr><td>Verve</td><td>Vigor</td></tr>
+            <tr><td>Intrigue</td><td>Planning</td></tr>
+            <tr><td>Aberrant</td><td>Deviant</td></tr>
+            <tr><td>Fallow</td><td>Uncultivated</td></tr>
+            <tr><td>Tenuous</td><td>Slight</td></tr>
+            <tr><td>Obdurate</td><td>Stubbornly</td></tr>
+            <tr><td>Gratuitous</td><td>Uncalled</td></tr>
+            <tr><td>Indecorous</td><td>Improper</td></tr>
+            <tr><td>Soliloquy</td><td>Monologue</td></tr>
+            <tr><td>Capitulate</td><td>Surrender</td></tr>
+            <tr><td>Extemporize</td><td>Improvise</td></tr>
+            <tr><td>Cogitate</td><td>Think</td></tr>
+            <tr><td>Nominal</td><td>Token</td></tr>
+            <tr><td>Plucky</td><td>Brave</td></tr>
+            <tr><td>Grovel</td><td>Crawl</td></tr>
+            <tr><td>Feint</td><td>Bluff</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group31">
+        <h3 class="group-title">Group 31</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abrogate</td><td>Repeal</td></tr>
+            <tr><td>Aghast</td><td>Horror</td></tr>
+            <tr><td>Apprise</td><td>Inform</td></tr>
+            <tr><td>Beguile</td><td>Charm</td></tr>
+            <tr><td>Boon</td><td>Beneficial</td></tr>
+            <tr><td>Callous</td><td>Insensitive</td></tr>
+            <tr><td>Coddle</td><td>Indulgent</td></tr>
+            <tr><td>Crescendo</td><td>Increase</td></tr>
+            <tr><td>Extenuating</td><td>Lessen</td></tr>
+            <tr><td>Frenetic</td><td>Energetic</td></tr>
+            <tr><td>Fringe</td><td>Marginal</td></tr>
+            <tr><td>Hapless</td><td>Unfortunate</td></tr>
+            <tr><td>Immaculate</td><td>Clean</td></tr>
+            <tr><td>Obfuscate</td><td>Obscure</td></tr>
+            <tr><td>Ossify</td><td>Rigid</td></tr>
+            <tr><td>Pastiche</td><td>Imitates</td></tr>
+            <tr><td>Perspicacious</td><td>Insight</td></tr>
+            <tr><td>Ponderous</td><td>Slow</td></tr>
+            <tr><td>Recluse</td><td>Solitary</td></tr>
+            <tr><td>Retaliate</td><td>Attack</td></tr>
+            <tr><td>Rhapsody</td><td>Enthusiastic</td></tr>
+            <tr><td>Serendipitous</td><td>Chance</td></tr>
+            <tr><td>Shirk</td><td>Avoid</td></tr>
+            <tr><td>Sinecure</td><td>Benefit</td></tr>
+            <tr><td>Sinuous</td><td>Curves</td></tr>
+            <tr><td>Sordid</td><td>Immoral</td></tr>
+            <tr><td>Stanch</td><td>Stop</td></tr>
+            <tr><td>Surfeit</td><td>Excessive</td></tr>
+            <tr><td>Ulterior</td><td>Hidden</td></tr>
+            <tr><td>Voluble</td><td>Incessantly</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group32">
+        <h3 class="group-title">Group 32</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abstruse</td><td>Difficult</td></tr>
+            <tr><td>Auxiliary</td><td>Supplementary</td></tr>
+            <tr><td>Caricature</td><td>Exaggeration</td></tr>
+            <tr><td>Depravity</td><td>Corruption</td></tr>
+            <tr><td>Dilettante</td><td>Dabbles</td></tr>
+            <tr><td>Effrontery</td><td>Insolent</td></tr>
+            <tr><td>Encroach</td><td>Intrude</td></tr>
+            <tr><td>Endow</td><td>Provide</td></tr>
+            <tr><td>Entreat</td><td>Ask</td></tr>
+            <tr><td>Gregarious</td><td>Sociable</td></tr>
+            <tr><td>Indictment</td><td>Charge</td></tr>
+            <tr><td>Indignant</td><td>Anger</td></tr>
+            <tr><td>Ineluctable</td><td>Inescapable</td></tr>
+            <tr><td>Inquisitive</td><td>Curious</td></tr>
+            <tr><td>Latitude</td><td>Freedom</td></tr>
+            <tr><td>Levity</td><td>Humor</td></tr>
+            <tr><td>Malevolent</td><td>Evil</td></tr>
+            <tr><td>Mediate</td><td>Intervene</td></tr>
+            <tr><td>Occlude</td><td>Obstruct</td></tr>
+            <tr><td>Pacify</td><td>Quell</td></tr>
+            <tr><td>Paragon</td><td>Example</td></tr>
+            <tr><td>Patron</td><td>Customer</td></tr>
+            <tr><td>Penurious</td><td>Poor</td></tr>
+            <tr><td>Piquant</td><td>Sharp</td></tr>
+            <tr><td>Rampant</td><td>Flourishing</td></tr>
+            <tr><td>Remote</td><td>Distant</td></tr>
+            <tr><td>Reprobate</td><td>Unprincipled</td></tr>
+            <tr><td>Turbid</td><td>Cloudy</td></tr>
+            <tr><td>Turgid</td><td>Swollen</td></tr>
+            <tr><td>Vacuous</td><td>Mindless</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group33">
+        <h3 class="group-title">Group 33</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Affluent</td><td>Wealthy</td></tr>
+            <tr><td>Allegorical</td><td>Symbolic</td></tr>
+            <tr><td>Allude</td><td>Hint</td></tr>
+            <tr><td>Amplify</td><td>Increase</td></tr>
+            <tr><td>Catastrophic</td><td>Damage</td></tr>
+            <tr><td>Conundrum</td><td>Problem</td></tr>
+            <tr><td>Defame</td><td>Damage</td></tr>
+            <tr><td>Detract</td><td>Reduce</td></tr>
+            <tr><td>Detrimental</td><td>Harm</td></tr>
+            <tr><td>Devious</td><td>Underhanded</td></tr>
+            <tr><td>Dormant</td><td>Suspended</td></tr>
+            <tr><td>Draconian</td><td>Harsh</td></tr>
+            <tr><td>Egalitarian</td><td>Equal</td></tr>
+            <tr><td>Elusive</td><td>Difficult</td></tr>
+            <tr><td>Erstwhile</td><td>Former</td></tr>
+            <tr><td>Gloat</td><td>Dwell</td></tr>
+            <tr><td>Harrowing</td><td>Distressing</td></tr>
+            <tr><td>Indefinite</td><td>Unknown</td></tr>
+            <tr><td>Ingenious</td><td>Clever</td></tr>
+            <tr><td>Keen</td><td>Eagerness</td></tr>
+            <tr><td>Multifaceted</td><td>Many</td></tr>
+            <tr><td>Omniscient</td><td>Knowing</td></tr>
+            <tr><td>Remarkable</td><td>Striking</td></tr>
+            <tr><td>Stem from</td><td>Originate</td></tr>
+            <tr><td>Subdued</td><td>Quiet</td></tr>
+            <tr><td>Token</td><td>Representation</td></tr>
+            <tr><td>Unravel</td><td>Solve</td></tr>
+            <tr><td>Withstand</td><td>Resist</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="group" id="group34">
+        <h3 class="group-title">Group 34</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abrasive</td><td>Harsh</td></tr>
+            <tr><td>Artful</td><td>Clever</td></tr>
+            <tr><td>Avert</td><td>Prevent</td></tr>
+            <tr><td>Avid</td><td>Enthusiasm</td></tr>
+            <tr><td>Brevity</td><td>Concise</td></tr>
+            <tr><td>Bromide</td><td>Trite</td></tr>
+            <tr><td>Circumstantial</td><td>Indirectly</td></tr>
+            <tr><td>Cloying</td><td>Sweet</td></tr>
+            <tr><td>Counterfeit</td><td>Imitation</td></tr>
+            <tr><td>Denigrate</td><td>Criticize</td></tr>
+            <tr><td>Disciple</td><td>Follower</td></tr>
+            <tr><td>Extol</td><td>Praise</td></tr>
+            <tr><td>Ideologue</td><td>Adherent</td></tr>
+            <tr><td>Impediment</td><td>Hindrance</td></tr>
+            <tr><td>Imperative</td><td>Crucial</td></tr>
+            <tr><td>Impulsive</td><td>Forethought</td></tr>
+            <tr><td>Interminable</td><td>Endless</td></tr>
+            <tr><td>Intuitive</td><td>Feeling</td></tr>
+            <tr><td>Lassitude</td><td>Weariness</td></tr>
+            <tr><td>Omit</td><td>Exclude</td></tr>
+            <tr><td>Ornate</td><td>Intricate</td></tr>
+            <tr><td>Paltry</td><td>Small</td></tr>
+            <tr><td>Pejorative</td><td>Contempt</td></tr>
+            <tr><td>Prefigure</td><td>Indication</td></tr>
+            <tr><td>Presage</td><td>Warning</td></tr>
+            <tr><td>Prescribe</td><td>Authorize</td></tr>
+            <tr><td>Prevail</td><td>Victorious</td></tr>
+            <tr><td>Propitiate</td><td>Regain</td></tr>
+            <tr><td>Recapitulate</td><td>Summarize</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  
+  <a href="#toc" class="back-to-top">↑</a>
+</body>
+</html>
