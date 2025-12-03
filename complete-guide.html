@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRE Vocabulary - Complete Reference</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #e8e6f0;
+      background: linear-gradient(135deg, #2d3561 0%, #3d2d52 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #1e1e2e;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+    
+    header {
+      background: #b4a7d6;
+      color: #1e1e2e;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    
+    header p {
+      font-size: 1.2em;
+      opacity: 0.85;
+    }
+    
+    .toc {
+      background: #252535;
+      padding: 30px 40px;
+      border-bottom: 3px solid #8b9dc3;
+    }
+    
+    .toc h2 {
+      color: #b4a7d6;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+    
+    .toc-episodes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+    }
+    
+    .toc-episode {
+      background: #2a2a3e;
+      padding: 15px 20px;
+      border-radius: 8px;
+      border-left: 4px solid #8b9dc3;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .toc-episode:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(139, 157, 195, 0.3);
+    }
+    
+    .toc-episode h3 {
+      color: #a8c0ff;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+    
+    .toc-episode ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    
+    .toc-episode a {
+      color: #deb4e8;
+      text-decoration: none;
+      font-size: 0.9em;
+      padding: 4px 10px;
+      background: #353545;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    
+    .toc-episode a:hover {
+      background: #8b9dc3;
+      color: #1e1e2e;
+    }
+    
+    .episode {
+      padding: 40px;
+      border-bottom: 2px solid #2a2a3e;
+    }
+    
+    .episode:last-child {
+      border-bottom: none;
+    }
+    
+    .episode-header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #8b9dc3;
+    }
+    
+    .episode-header h2 {
+      color: #a8c0ff;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    
+    .episode-header p {
+      color: #b4a7d6;
+      font-size: 1.1em;
+    }
+    
+    .group {
+      margin-bottom: 40px;
+      background: #252535;
+      border-radius: 8px;
+      padding: 20px;
+      border-left: 5px solid #deb4e8;
+      overflow-x: auto; /* Add horizontal scroll for tables */
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #2a2a3e;
+      border-radius: 6px;
+      overflow: hidden;
+      min-width: 600px; /* Ensure table doesn't get too cramped */
+    }
+    
+    th {
+      background: #b4a7d6;
+      color: #1e1e2e;
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #353545;
+      color: #e8e6f0;
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+    
+    tr:hover {
+      background: #2f2f45;
+    }
+    
+    td:first-child {
+      font-weight: 600;
+      color: #a8c0ff;
+      width: 20%;
+    }
+    
+    td:nth-child(2) {
+      color: #c9c4d9;
+      width: 50%;
+      font-style: italic;
+    }
+    
+    td:last-child {
+      color: #e8e6f0;
+      width: 30%;
+    }
+    
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: linear-gradient(135deg, #8b9dc3 0%, #b4a7d6 100%);
+      color: #1e1e2e;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.5em;
+      box-shadow: 0 4px 12px rgba(139, 157, 195, 0.4);
+      transition: transform 0.2s;
+      font-weight: bold;
+    }
+    
+    .back-to-top:hover {
+      transform: scale(1.1);
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+      
+      header {
+        padding: 20px;
+      }
+      
+      header h1 {
+        font-size: 1.8em;
+      }
+      
+      .toc, .episode {
+        padding: 20px;
+      }
+      
+      .toc-episodes {
+        grid-template-columns: 1fr;
+      }
+      
+      .group {
+        padding: 15px;
+        margin-bottom: 25px;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+      }
+      
+      table {
+        min-width: 500px;
+      }
+      
+      th, td {
+        padding: 8px 10px;
+        font-size: 0.9em;
+      }
+      
+      td:first-child {
+        min-width: 100px;
+      }
+      
+      td:nth-child(2) {
+        min-width: 200px;
+      }
+      
+      td:last-child {
+        min-width: 150px;
+      }
+      
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3em;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      
+      header p {
+        font-size: 1em;
+      }
+      
+      .episode-header h2 {
+        font-size: 1.5em;
+      }
+      
+      .group-title {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>GRE Vocabulary Reference</h1>
+      <p>Complete collection of 1019 essential words across 34 groups</p>
+    </header>
+    
+    <nav class="toc" id="toc">
+      <h2>📚 Table of Contents</h2>
+      <div class="toc-episodes">
+        <div class="toc-episode">
+          <h3>Episode 1: Groups 1–4</h3>
+          <p style="margin-bottom: 10px; color: #b4a7d6;">Foundation vocabulary</p>
+          <ul>
+            <li><a href="#group1">Group 1</a></li>
+            <li><a href="#group2">Group 2</a></li>
+            <li><a href="#group3">Group 3</a></li>
+            <li><a href="#group4">Group 4</a></li>
+          </ul>
+        </div>
+        <div class="toc-episode">
+          <h3>Episode 2: Groups 5–9</h3>
+          <p style="margin-bottom: 10px; color: #b4a7d6;">Building blocks</p>
+          <ul>
+            <li><a href="#group5">Group 5</a></li>
+            <li><a href="#group6">Group 6</a></li>
+            <li><a href="#group7">Group 7</a></li>
+            <li><a href="#group8">Group 8</a></li>
+            <li><a href="#group9">Group 9</a></li>
+          </ul>
+        </div>
+        <div class="toc-episode">
+          <h3>Episode 3: Groups 10–14</h3>
+          <p style="margin-bottom: 10px; color: #b4a7d6;">Advanced concepts</p>
+          <ul>
+            <li><a href="#group10">Group 10</a></li>
+            <li><a href="#group11">Group 11</a></li>
+            <li><a href="#group12">Group 12</a></li>
+            <li><a href="#group13">Group 13</a></li>
+            <li><a href="#group14">Group 14</a></li>
+          </ul>
+        </div>
+        <div class="toc-episode">
+          <h3>Episode 4: Groups 15–19</h3>
+          <p style="margin-bottom: 10px; color: #b4a7d6;">Expanding horizons</p>
+          <ul>
+            <li><a href="#group15">Group 15</a></li>
+            <li><a href="#group16">Group 16</a></li>
+            <li><a href="#group17">Group 17</a></li>
+            <li><a href="#group18">Group 18</a></li>
+            <li><a href="#group19">Group 19</a></li>
+          </ul>
+        </div>
+        <div class="toc-episode">
+          <h3>Episode 5: Groups 20–24</h3>
+          <p style="margin-bottom: 10px; color: #b4a7d6;">Deepening knowledge</p>
+          <ul>
+            <li><a href="#group20">Group 20</a></li>
+            <li><a href="#group21">Group 21</a></li>
+            <li><a href="#group22">Group 22</a></li>
+            <li><a href="#group23">Group 23</a></li>
+            <li><a href="#group24">Group 24</a></li>
+          </ul>
+        </div>
+        <div class="toc-episode">
+          <h3>Episode 6: Groups 25–29</h3>
+          <p style="margin-bottom: 10px; color: #b4a7d6;">Mastery level</p>
+          <ul>
+            <li><a href="#group25">Group 25</a></li>
+            <li><a href="#group26">Group 26</a></li>
+            <li><a href="#group27">Group 27</a></li>
+            <li><a href="#group28">Group 28</a></li>
+            <li><a href="#group29">Group 29</a></li>
+          </ul>
+        </div>
+        <div class="toc-episode">
+          <h3>Episode 7: Groups 30–34</h3>
+          <p style="margin-bottom: 10px; color: #b4a7d6;">Expert vocabulary</p>
+          <ul>
+            <li><a href="#group30">Group 30</a></li>
+            <li><a href="#group31">Group 31</a></li>
+            <li><a href="#group32">Group 32</a></li>
+            <li><a href="#group33">Group 33</a></li>
+            <li><a href="#group34">Group 34</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 1: Groups 1–4</h2>
+        <p>Foundation vocabulary</p>
+      </div>
+
+      <div class="group" id="group1">
+        <h3 class="group-title">Group 1</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abound</td><td>Imagine things are in such large numbers they are about to bound out of the container</td><td>large numbers or amounts</td></tr>
+            <tr><td>Amorphous</td><td>"a" (without) + "morph" (shape). Literally, without shape</td><td>without a clearly defined shape or form</td></tr>
+            <tr><td>Austere</td><td>Sounds like "Oh, steer clear." You would steer clear of a person who is very strict and lives without luxuries</td><td>strict in manner, having no comforts or luxuries</td></tr>
+            <tr><td>Belie</td><td>To be a lie. Something that belies the facts is a lie and contradicts the truth</td><td>fail to give true impression of something, contradict, fail to justify</td></tr>
+            <tr><td>Capricious</td><td>Think of capri pants. Wearing them might be a sudden, unpredictable fashion choice depending on your mood</td><td>sudden change of mood, unpredictable, fickle</td></tr>
+            <tr><td>Cerebral</td><td>Relates to the cerebrum part of the brain. So, it's about being intellectual</td><td>of the cerebrum of the brain, intellectual rather than physical</td></tr>
+            <tr><td>Congenial</td><td>"con" (with) + "genial" (friendly). A person who is friendly and pleasant to be with</td><td>pleasant or agreeable because suited to one's taste</td></tr>
+            <tr><td>Conspicuous</td><td>"con" (with) + "spic" (see). Something you can easily see with your eyes is conspicuous</td><td>clearly visible, attracting notice or attention</td></tr>
+            <tr><td>Cursory</td><td>Think of a computer cursor, which moves hastily across the page. A cursory glance is a hasty one</td><td>hasty and therefore not through or detailed</td></tr>
+            <tr><td>Daunting</td><td>Sounds like haunting. A difficult task can be haunting and discouraging</td><td>difficult to deal with, discourage through fear</td></tr>
+            <tr><td>Deify</td><td>From deity, which means god. To deify someone is to treat them like a god</td><td>worship or regard as a god</td></tr>
+            <tr><td>Didactic</td><td>Sounds like "didactic-tic-tic," like a professor ticking off points while teaching, sometimes in a patronizing way</td><td>instructive, particularly so as to appear patronizing</td></tr>
+            <tr><td>Disseminate</td><td>"dis" (apart) + "seminate" (seed). Imagine spreading or scattering seeds widely</td><td>spread widely</td></tr>
+            <tr><td>Feasible</td><td>Sounds like "easy-ble." Something that is able to be done easy</td><td>possible to do easily or conveniently</td></tr>
+            <tr><td>Flout</td><td>Sounds like flung out. You have flung out the rules, showing you openly disregard them</td><td>openly disregard, mock, scoff</td></tr>
+            <tr><td>Homogeneous</td><td>"homo" means same. A group of things of the same kind</td><td>of the same kind</td></tr>
+            <tr><td>Humdrum</td><td>Sounds like someone humming a dull drum beat over and over. It's boring and monotonous</td><td>lacking excitement or variety; boringly monotonous</td></tr>
+            <tr><td>Insipid</td><td>"in" (not) + "sipid" (tasty). If you wouldn't even sip it, it must be tasteless and uninteresting</td><td>tasteless, lacking interest</td></tr>
+            <tr><td>Loquacious</td><td>The root "loq" means talk (like in eloquent). Loquacious means very talkative</td><td>talkative</td></tr>
+            <tr><td>Misanthropic</td><td>"mis" (hate) + "anthro" (mankind). Someone who dislikes people</td><td>having or showing dislike of other people</td></tr>
+            <tr><td>Misnomer</td><td>"mis" (wrong) + "nomer" (name). A wrong or inaccurate name</td><td>a wrong or inaccurate name or designation</td></tr>
+            <tr><td>Negligent</td><td>Similar to neglect. Someone who neglects their duties is failing to take proper care</td><td>failing to take proper care over something</td></tr>
+            <tr><td>Obsequious</td><td>Sounds like obsessed with pleasing. An obedient, servile follower</td><td>obedient to an excessive or servile degree</td></tr>
+            <tr><td>Placate</td><td>You can often placate someone with a plate of cake</td><td>make less angry</td></tr>
+            <tr><td>Proclivity</td><td>"pro" (forward) + "clivity" (slope). You have a forward slope or natural tendency towards something</td><td>a tendency to choose or do something regularly</td></tr>
+            <tr><td>Puerile</td><td>Sounds like purely silly. It means childishly silly</td><td>childishly silly</td></tr>
+            <tr><td>Quixotic</td><td>Comes from Don Quixote, the famously idealistic and impractical knight</td><td>extremely idealistic, unrealistic, impractical</td></tr>
+            <tr><td>Spendthrift</td><td>Someone who spends with no sense of thrift (careful use of money)</td><td>a person who spends money in an irresponsible way</td></tr>
+            <tr><td>Taciturn</td><td>Sounds like they reluctantly take their turn to speak, but say little</td><td>saying little</td></tr>
+            <tr><td>Wary</td><td>Sounds like beware. You should be cautious or wary of things you are told to beware of</td><td>feeling or showing caution about possible dangers</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group2">
+        <h3 class="group-title">Group 2</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Adulterate</td><td>Adding something to a product as an adult might do to "fix" it, but it actually makes the quality poorer</td><td>render poorer in quality by adding another substance</td></tr>
+            <tr><td>Advocate</td><td>An advocate (like a lawyer) is someone who publicly supports a cause</td><td>publicly recommend or support</td></tr>
+            <tr><td>Aggrandize</td><td>To make something seem more grand or bigger than it is</td><td>increase power, status, reputation of someone</td></tr>
+            <tr><td>Alacrity</td><td>Sounds like a lack of pity. If someone is working with brisk readiness, they have no time for pity</td><td>brisk and cheerful readiness</td></tr>
+            <tr><td>Ambivalent</td><td>"ambi" means both (like ambidextrous). Having both feelings about something at once</td><td>having mixed feelings or contradictory ideas</td></tr>
+            <tr><td>Ameliorate</td><td>Sounds like Emilio rated the situation as being better after it improved</td><td>make something bad better</td></tr>
+            <tr><td>Amenable</td><td>Sounds like amend-able. Something that can be easily changed or is open to suggestion</td><td>open to suggestions, easily persuaded, susceptible</td></tr>
+            <tr><td>Anachronistic</td><td>"ana" (against) + "chronos" (time). Something that is against the correct time period</td><td>belonging to a period other than that being portrayed conspicuously old-fashioned</td></tr>
+            <tr><td>Audacious</td><td>Having the audacity to take bold, surprising risks</td><td>willingness to take surprisingly bold risks, showing impudent lack of respect</td></tr>
+            <tr><td>Avaricious</td><td>Sounds like have our riches. Someone who is avaricious is extremely greedy and wants to have all the riches</td><td>showing extreme greed for wealth or material gain</td></tr>
+            <tr><td>Banal</td><td>Sounds like you should ban all things that are so obvious and boring</td><td>lacking in originality as to be obvious and boring</td></tr>
+            <tr><td>Benign</td><td>Think "be nice." Benign means gentle and kind</td><td>gentle and kind, not harmful to the environment</td></tr>
+            <tr><td>Brazen</td><td>Sounds like blazing. To act with a blazing, shameless boldness</td><td>bold and without shame</td></tr>
+            <tr><td>Calumny</td><td>Sounds like column. Imagine a gossip columnist writing false, slanderous statements about people</td><td>false and slanderous statement about someone</td></tr>
+            <tr><td>Candid</td><td>A candid photo is one that is truthful and not posed</td><td>truthful and straightforward</td></tr>
+            <tr><td>Castigate</td><td>Sounds like caste gate. In some societies, people of a lower caste were severely reprimanded if they passed through the wrong gate</td><td>reprimand severely</td></tr>
+            <tr><td>Caustic</td><td>Sounds like it cost him his friend, because of his sarcastic and bitter words</td><td>sarcastic in a bitter way, chemical</td></tr>
+            <tr><td>Construed</td><td>You construct meaning from what someone says. How you interpret it is how you construe it</td><td>interpret in a particular way</td></tr>
+            <tr><td>Contrite</td><td>"Count right." The sinner wants to count his sins right so he can express remorse for them</td><td>feeling or expressing remorse that one has done wrong</td></tr>
+            <tr><td>Convoluted</td><td>Like a "convoy" of trucks that has gotten twisted and is now difficult to follow</td><td>extremely complex and difficult to follow and twisted</td></tr>
+            <tr><td>Covet</td><td>To cover it and desire to possess it, even though it belongs to someone else</td><td>yearn to possess something belonging to another</td></tr>
+            <tr><td>Craven</td><td>Sounds like a scared raven, lacking in courage</td><td>lacking in courage, cowardly</td></tr>
+            <tr><td>Decorum</td><td>"Decorate them" properly. Behavior that is in keeping with good taste and propriety</td><td>behavior in keeping with good taste and propriety</td></tr>
+            <tr><td>Deft</td><td>The opposite of daft. Someone who is deft is skillful and clever</td><td>demonstrating skill and cleverness</td></tr>
+            <tr><td>Demur</td><td>Sounds like demure, or shy. A demure person might raise objections or show reluctance</td><td>raise objections or show reluctance</td></tr>
+            <tr><td>Derivative</td><td>In calculus, a derivative is derived from another function. In art, a derivative work is imitative of another</td><td>imitative of the work of another</td></tr>
+            <tr><td>Desiccate</td><td>Think of a desert cake that has been left in the sun to become completely dry</td><td>cause to become completely dry</td></tr>
+            <tr><td>Diatribe</td><td>"dia" (through) + "tribe". He verbally attacked the whole tribe</td><td>a forceful and bitter verbal attack</td></tr>
+            <tr><td>Incredulous</td><td>In-credible. You find it so incredible that you are unable to believe it</td><td>unwilling or unable to believe something</td></tr>
+            <tr><td>Ingenuous</td><td>A genuine person is often innocent and unsuspecting</td><td>innocent, naive or unsuspecting</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group3">
+        <h3 class="group-title">Group 3</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abate</td><td>Sounds like rebate. A rebate reduces the price, just as abate means to become less intense</td><td>become less intense or widespread, remove or reduce law</td></tr>
+            <tr><td>Abjure</td><td>To injure your old beliefs by renouncing them</td><td>solemnly renounce (a belief, cause or claim)</td></tr>
+            <tr><td>Anomalous</td><td>"a" (not) + "nomalous" (normal). Not normal, deviating from the standard</td><td>deviating from what is standard</td></tr>
+            <tr><td>Antipathy</td><td>Anti-sympathy. If you have no sympathy for someone, you probably have a deep-seated feeling of aversion to them</td><td>a deep-seated feeling of aversion</td></tr>
+            <tr><td>Arcane</td><td>Sounds like our cane. The secret knowledge of how to use our family's magic cane is understood by few</td><td>understood by few, mysterious or secret</td></tr>
+            <tr><td>Arduous</td><td>Sounds like "hard for us." Something that is hard for us to do is arduous</td><td>involving or requiring strenuous effort, tiring</td></tr>
+            <tr><td>Artless</td><td>Less art, more natural. Without deception or pretentiousness</td><td>without deception, effort or pretentiousness, natural</td></tr>
+            <tr><td>Ascetic</td><td>Sounds like "acidic." An ascetic person lives a life of severe self-discipline, which might feel like putting acid on worldly pleasures</td><td>severe self-discipline, austere</td></tr>
+            <tr><td>Assuage</td><td>Sounds like a massage, which can make an unpleasant feeling of stress less intense</td><td>satisfy, make an unpleasant feeling less intense</td></tr>
+            <tr><td>Betray</td><td>To be a traitor. Not just disloyal, but also unintentionally revealing something</td><td>gravely disloyal, unintentionally reveal, be evidence of</td></tr>
+            <tr><td>Bucolic</td><td>Sounds like blue colic. You get a stomach ache from eating too many blueberries in the pleasant countryside</td><td>relating to the pleasant aspects of the countryside</td></tr>
+            <tr><td>Burgeon</td><td>Like a burg (town) that begins to grow rapidly</td><td>begin to grow or increase rapidly, flourish</td></tr>
+            <tr><td>Cacophonous</td><td>Sounds like a cacophony of horrible sounds, like a coffin falling down the stairs</td><td>involving or producing harsh sounds</td></tr>
+            <tr><td>Canonize</td><td>To put someone or something into the official canon of important works</td><td>treat of great significance, place in or regard as belonging to a canon of literacy or artistic works</td></tr>
+            <tr><td>Censure</td><td>Related to censor. If you disapprove of something, you might censor it. Censure is the act of expressing severe disapproval</td><td>express severe disapproval, especially in formal statement</td></tr>
+            <tr><td>Chicanery</td><td>Sounds like chickens running around in a tricky, deceptive way to avoid being caught</td><td>use of deception or subterfuge</td></tr>
+            <tr><td>Coalesce</td><td>"co" (together). Like coal pieces coming together to form one mass</td><td>come together to from one mass or whole</td></tr>
+            <tr><td>Cogent</td><td>A co-agent in an argument must be clear, logical, and convincing</td><td>clear, logical and convincing</td></tr>
+            <tr><td>Compelling</td><td>It is so interesting that it is compelling you to pay attention</td><td>evoking interest in a powerful irresistible way</td></tr>
+            <tr><td>Contend</td><td>A contender in a fight struggles to surmount difficulty</td><td>struggle to surmount a difficulty, assert something as a position in an argument</td></tr>
+            <tr><td>Copious</td><td>There are enough copies for everyone because the supply is abundant</td><td>abundant in supply</td></tr>
+            <tr><td>Cosmopolitan</td><td>A cosmos is the whole universe. A cosmopolitan place has a mixture of cultures from all over</td><td>mixture of cultures</td></tr>
+            <tr><td>Deference</td><td>Showing polite respect by deferring to someone else's opinion or wishes</td><td>polite submission and respect</td></tr>
+            <tr><td>Desultory</td><td>"De-result." Any action that lacks a plan or purpose will not lead to a result</td><td>lacking plan, purpose or enthusiasm, occurring randomly</td></tr>
+            <tr><td>Diffident</td><td>Difficult to be confident. A diffident person is shy due to a lack of self-confidence</td><td>modest or shy because of a lack of self-confidence</td></tr>
+            <tr><td>Dilatory</td><td>Sounds like delay-tory. Intended to cause a delay</td><td>slow to act, intended to cause delay</td></tr>
+            <tr><td>Equivocate</td><td>To speak in a way that sounds equally vocal for two opposing sides, using ambiguous language to avoid commitment</td><td>use ambiguous language</td></tr>
+            <tr><td>Polarize</td><td>To divide into two opposite poles, like the North and South Pole</td><td>divide or cause it divide into two sharply contrasting group</td></tr>
+            <tr><td>Prodigal</td><td>A proud gal who spends money recklessly to show off</td><td>spending money recklessly</td></tr>
+            <tr><td>Verbose</td><td>A person full of verbs, nouns, and adjectives; using more words than needed</td><td>using or expressed in more words that are needed</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group4">
+        <h3 class="group-title">Group 4</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abstain</td><td>"ab" (away) + "stain". Stay away from getting a stain on your record by restraining yourself</td><td>restrain oneself from doing</td></tr>
+            <tr><td>Approbation</td><td>Sounds like approve. It means approval or praise</td><td>approval or praise</td></tr>
+            <tr><td>Cherish</td><td>Sounds like cherry-ish. You would protect and care for a sweet cherry lovingly</td><td>protect and care for lovingly</td></tr>
+            <tr><td>Corroborate</td><td>Sounds like co-robber-ate. Your co-robber ate the same food as you, which helps confirm your alibi</td><td>confirm or give support to a statement, theory or finding</td></tr>
+            <tr><td>Disparate</td><td>"This parrot" and "that parrot" are disparate; they are essentially different</td><td>essentially different in kind, notable to be compared</td></tr>
+            <tr><td>Emulate</td><td>Sounds like imitate. To imitate someone in order to match or surpass them</td><td>match or surpass a person or achievement, typically by imitation</td></tr>
+            <tr><td>Enervate</td><td>"e" (out of) + "nerv" (nerve/energy). To take the energy out of someone</td><td>make someone feel drained of energy, lacking in energy</td></tr>
+            <tr><td>Ephemeral</td><td>Sounds like "a funeral." It's a reminder that life is short and lasts for a very short time</td><td>lasting for a very short time</td></tr>
+            <tr><td>Fervid</td><td>Sounds like fever. When you have a fever, you are intensely hot. Fervid means intensely enthusiastic</td><td>intensely enthusiastic or passionate, especially to an excessive degree</td></tr>
+            <tr><td>Garrulous</td><td>Sounds like gorillas that are excessively talkative about trivial matters</td><td>excessively talkative, especially on trivial matters</td></tr>
+            <tr><td>Incendiary</td><td>An incense stick that you light can stir up smoke, just as an incendiary comment can stir up conflict</td><td>tending to stir up conflict</td></tr>
+            <tr><td>Inimical</td><td>Sounds like enemy-cal. An enemy is unfriendly and hostile</td><td>tending to obstruct, unfriendly hostile</td></tr>
+            <tr><td>Intimate</td><td>When you are intimate with someone, you are closely acquainted. Intimate knowledge of a subject is detailed and thorough</td><td>closely acquainted, familiar, detailed or thorough</td></tr>
+            <tr><td>Invigorate</td><td>To put vigor or energy into someone</td><td>give strength or energy to</td></tr>
+            <tr><td>Mitigate</td><td>Sounds like middle gate. The guard opened the middle gate to make the long line less severe</td><td>make something bad less severe, serious or painful</td></tr>
+            <tr><td>Obsolete</td><td>This technology is absolutely out of date</td><td>out of date</td></tr>
+            <tr><td>Opaque</td><td>Sounds like it's unclear; you can't see through it. Not transparent</td><td>unclear, not transparent</td></tr>
+            <tr><td>Paradigmatic</td><td>A paradigm is a typical example of something</td><td>serving as a typical example of something</td></tr>
+            <tr><td>Pedantic</td><td>Imagine a pedal antique expert who is excessively concerned with minor details about old bicycle pedals</td><td>excessively concerned with minor details, over-scrupulous</td></tr>
+            <tr><td>Placid</td><td>Sounds like placate. A placid person is calm and not easily upset</td><td>not easily upset or excited, calm and peaceful</td></tr>
+            <tr><td>Polemical</td><td>Sounds like political. Political writing is often strongly critical</td><td>of or involving strongly critical writing or speech</td></tr>
+            <tr><td>Precipitate</td><td>Sounds like pre-anticipate. To cause something to happen before you anticipated it, suddenly</td><td>cause to happen suddenly, unexpectedly or premature</td></tr>
+            <tr><td>Profundity</td><td>From profound, meaning great depth</td><td>great depth of insight or knowledge</td></tr>
+            <tr><td>Prophetic</td><td>A prophet accurately predicts the future</td><td>accurately predicting what will happen in future</td></tr>
+            <tr><td>Prudent</td><td>A true student is often prudent, acting with care for the future</td><td>acting with or showing care and thought for future</td></tr>
+            <tr><td>Punctilious</td><td>Sounds like punctual. A punctual person shows great attention to the detail of being on time</td><td>showing great attention to detail or correct behavior</td></tr>
+            <tr><td>Recondite</td><td>Sounds like you have to re-conduct the experiment because the subject is little known and abstruse</td><td>little known, abstruse</td></tr>
+            <tr><td>Scrupulous</td><td>A sculptor must be very careful and thorough with details</td><td>careful, thorough, and extremely attentive to details</td></tr>
+            <tr><td>Tranquil</td><td>Think of tranquilizers, which make you calm and free from disturbance</td><td>free from disturbance, calm</td></tr>
+            <tr><td>Vacillate</td><td>Sounds like vaccine late. You might waver between different opinions on whether to get a vaccine late</td><td>waver between different opinions or actions, be indecisive</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group5">
+        <h3 class="group-title">Group 5</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Aloof</td><td>Sounds like a roof. Someone who stays on a roof is distant from everyone else</td><td>not friendly, distant, detached</td></tr>
+            <tr><td>Clangor</td><td>The clang of a hammer makes a continuously loud banging sound</td><td>a continuously loud banging or ringing sound</td></tr>
+            <tr><td>Conventional</td><td>A convention is a traditional meeting; something conventional follows traditional forms</td><td>following traditional forms and genres</td></tr>
+            <tr><td>Debunk</td><td>To remove the junk, or falseness, from an idea</td><td>expose the falseness or hollowness of an idea or belief</td></tr>
+            <tr><td>Diminutive</td><td>Diminish means to make smaller. Diminutive means extremely small</td><td>extremely or unusually small</td></tr>
+            <tr><td>Discernible</td><td>If you can discern it, you are able to see it. Perceptible</td><td>able to be discerned, perceptible, visible, noticeable</td></tr>
+            <tr><td>Enigmatic</td><td>Sounds like the Enigma machine from WWII, which was difficult to understand. Mysterious</td><td>difficult to understand, mysterious</td></tr>
+            <tr><td>Estranged</td><td>To make someone a stranger. No longer close to someone</td><td>no longer close to someone, alienated</td></tr>
+            <tr><td>Extravagant</td><td>Extra-vagrant. Going extra beyond what is necessary; excessive</td><td>excessive, elaborate</td></tr>
+            <tr><td>Fanciful</td><td>Full of fancy. Over-imaginative and unrealistic</td><td>over-imaginative, unrealistic, highly ornamental</td></tr>
+            <tr><td>Frivolous</td><td>Sounds like free-for-us. Things that are free are sometimes treated without serious purpose</td><td>carefree, not having any serious purpose</td></tr>
+            <tr><td>Heterogeneous</td><td>"hetero" means different. Diverse in character or content</td><td>diverse in character or content</td></tr>
+            <tr><td>Imperious</td><td>Someone who acts like an emperor is arrogant and domineering</td><td>arrogant and domineering</td></tr>
+            <tr><td>Impertinent</td><td>The opposite of pertinent (relevant). Someone who makes irrelevant comments shows a lack of respect</td><td>not showing proper respect, irrelevant</td></tr>
+            <tr><td>Invasive</td><td>Weeds that invade your garden tend to spread very quickly and harmfully</td><td>tending to spread very quickly or undesirably, harmfully</td></tr>
+            <tr><td>Irresolute</td><td>Not resolute. Someone who is not resolute is uncertain and hesitant</td><td>showing or feeling hesitancy; uncertain</td></tr>
+            <tr><td>Laudable</td><td>To give an applaud-able performance, which is deserving of praise</td><td>deserving praise and commendation</td></tr>
+            <tr><td>Lax</td><td>Sounds like relax. If you are too relaxed about the rules, you are not being strict enough</td><td>not sufficiently strict or careful, negligible / of muscle(relaxed)</td></tr>
+            <tr><td>Marginalize</td><td>To put someone in the margins, treating them as insignificant</td><td>treat a person, group as insignificant or peripheral</td></tr>
+            <tr><td>Panache</td><td>Sounds like a mustache worn with flamboyant confidence and style</td><td>flamboyant confidence of style or manner</td></tr>
+            <tr><td>Plodding</td><td>The sound "plod, plod, plod" suggests a slow-moving and unexciting walk</td><td>slow moving and unexciting</td></tr>
+            <tr><td>Prosaic</td><td>The opposite of poetic. Prose is ordinary writing, so prosaic means commonplace and unromantic</td><td>lacking originality, commonplace, unromantic</td></tr>
+            <tr><td>Remedial</td><td>A remedy is intended as a cure. Remedial classes are intended for students with learning difficulties</td><td>intended as cure/ provided or intended for children with learning difficulties</td></tr>
+            <tr><td>Restive</td><td>A person who cannot rest is unable to remain still, perhaps due to boredom</td><td>unable to remain still, silent, or submissive, especially because of boredom</td></tr>
+            <tr><td>Sporadic</td><td>Opposite of periodic. Happening infrequently and at scattered intervals</td><td>infrequent, scattered or isolated, occasional</td></tr>
+            <tr><td>Stigmatize</td><td>A stigma is a mark of disgrace. To stigmatize is to show great disapproval</td><td>great disapproval</td></tr>
+            <tr><td>Undermine</td><td>To dig a mine under the base of something to lessen its effectiveness</td><td>erode the base/ lessen the effectiveness</td></tr>
+            <tr><td>Utterly</td><td>You utter a complete thought. Utterly means completely</td><td>completely or without qualification, absolutely</td></tr>
+            <tr><td>Weary</td><td>You wear out your energy and become extremely tired</td><td>tired(extreme)</td></tr>
+            <tr><td>Zealous</td><td>Sounds like jealous. A jealous person might show a passionate, or zealous, devotion to someone</td><td>showing zeal, fervent, passionate, fervid, ardent</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group6">
+        <h3 class="group-title">Group 6</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Admonish</td><td>A monk might admonish you, or warn you firmly, about your behavior</td><td>warn or reprimand someone firmly</td></tr>
+            <tr><td>Aesthetic</td><td>Relates to the appreciation of art and beauty</td><td>concerned with beauty</td></tr>
+            <tr><td>Affectation</td><td>To put on an affection that isn't real; a facade</td><td>pretension, facade</td></tr>
+            <tr><td>Alleviate</td><td>Sounds like a leave. Taking a leave from work can make suffering less severe</td><td>make suffering less severe</td></tr>
+            <tr><td>Analogous</td><td>Similar to an analogy, which shows how two things are comparable</td><td>comparable in certain respects</td></tr>
+            <tr><td>Bolster</td><td>A bolster pillow is used to support you</td><td>support or strength</td></tr>
+            <tr><td>Chauvinistic</td><td>From Nicolas Chauvin, a French soldier with excessive patriotism</td><td>displaying aggressive patriotism, displaying excessive support for their own cause, group or sex</td></tr>
+            <tr><td>Connoisseur</td><td>A connoisseur knows "can I sewer" this fabric? They are an expert judge</td><td>an expert judge in matters of taste</td></tr>
+            <tr><td>Dissemble</td><td>It's the opposite of resemble. You make your feelings not resemble what they truly are, thus concealing them</td><td>conceal or disguise one's true feelings or beliefs</td></tr>
+            <tr><td>Dogged</td><td>Like a dog that won't let go of a bone, showing grim persistence</td><td>showing tenacity and grim persistence</td></tr>
+            <tr><td>Dupe</td><td>If you are duped, you are a victim of a trick or deception</td><td>trick, a victim of deception</td></tr>
+            <tr><td>Empirical</td><td>Based on an empire of observed facts, not just theory</td><td>based on observation rather than theory</td></tr>
+            <tr><td>Engender</td><td>To generate a certain feeling or situation; to cause it</td><td>cause or give rise to a feeling situation</td></tr>
+            <tr><td>Entitled</td><td>You are given the title or legal right to something</td><td>give someone a legal right</td></tr>
+            <tr><td>Pertinacious</td><td>He pertains to his opinion. He holds firmly to his opinion</td><td>holding firmly to an opinion or a cause of action</td></tr>
+            <tr><td>Presumptuous</td><td>You presume it's okay, failing to observe the limits of what is appropriate</td><td>failing to observe limits of what is appropriate/brazen</td></tr>
+            <tr><td>Probity</td><td>A person with probity has strong moral principles, like someone who would never agree to a dishonest probe</td><td>having strong moral principles, honesty and decency</td></tr>
+            <tr><td>Proliferate</td><td>Like pro-life, which is associated with an increase in the number of people</td><td>increase rapidly in number, multiply</td></tr>
+            <tr><td>Specious</td><td>It seems plausible, but it's actually wrong</td><td>superficially plausible but actually wrong</td></tr>
+            <tr><td>Spurious</td><td>A spur-of-the-moment story is often false or fake</td><td>not being what it purports to be, false or fake</td></tr>
+            <tr><td>Subjective</td><td>It’s about the subject (the person), not the object, so it's influenced by personal feelings</td><td>influenced by personal feelings, tastes, opinions</td></tr>
+            <tr><td>Subvert</td><td>"sub" (under) + "vert" (turn). To turn from under; to undermine power</td><td>undermine the power and authority of system</td></tr>
+            <tr><td>Timorous</td><td>A timid mouse is easily frightened</td><td>lack of confidence, easily frightened</td></tr>
+            <tr><td>Tortuous</td><td>Like a tortoise's path, full of twists and turns</td><td>full of twists and turns excessively complex</td></tr>
+            <tr><td>Tractable</td><td>It can be pulled by a tractor, meaning it's easy to control or influence</td><td>easy to control or influence, easy to deal with</td></tr>
+            <tr><td>Transient</td><td>Like a train, it's only here for a short time</td><td>lasting for a short time</td></tr>
+            <tr><td>Ubiquitous</td><td>Sounds like "you be quiet, I see us" everywhere. Present everywhere</td><td>present, appearing or found everywhere, omnipresent</td></tr>
+            <tr><td>Underscore</td><td>An underscore on a keyboard is used to emphasize a word</td><td>emphasize</td></tr>
+            <tr><td>Venal</td><td>You can pay this politician through your Venmo; they are open to bribery</td><td>bribery, corrupt</td></tr>
+            <tr><td>Venerate</td><td>Sounds like "when you rate" someone highly, you regard them with great respect</td><td>regard with great respect, reverence</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group7">
+        <h3 class="group-title">Group 7</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Appease</td><td>Offer a piece of cake to pacify someone</td><td>pacify or placate, assuage or satisfy</td></tr>
+            <tr><td>Arbitrary</td><td>It was a random choice, as if chosen by throwing a bit of tar at a map</td><td>based on random choice/ unrestrained and autocratic in the use of authority</td></tr>
+            <tr><td>Archaic</td><td>From archaeology, the study of very old things</td><td>very old or old-fashioned</td></tr>
+            <tr><td>Clamorous</td><td>Full of clamor or a loud, confused noise</td><td>making loud and confused noise/expressing or characterized by vehement protects or demands</td></tr>
+            <tr><td>Dearth</td><td>The opposite of earth's abundance; a scarcity or death of supply</td><td>a scarcity or lack of something</td></tr>
+            <tr><td>Explicable</td><td>Able to be explained</td><td>able to be accounted for or understood, explainable</td></tr>
+            <tr><td>Hyperbole</td><td>A hyper bowl that's exaggerated to be the size of a stadium</td><td>exaggerated statements or claims not meant to be taken literally</td></tr>
+            <tr><td>Immutable</td><td>Not mutable; unable to be changed or mutated</td><td>unable to be changed</td></tr>
+            <tr><td>Indefatigable</td><td>Not fatigable; unable to become tired; tireless</td><td>persisting tireless, tireless, untiring</td></tr>
+            <tr><td>Indolent</td><td>Sounds like indoor lent. Someone who stays indoors all of Lent is probably lazy</td><td>lazy, idle/ (of medicine) no or little pain</td></tr>
+            <tr><td>Insular</td><td>Related to insulation, which keeps things separate. Uninterested in outside cultures or ideas</td><td>uninterested in cultures, ideas, or peoples outside one's own experience, lacking contact with other people</td></tr>
+            <tr><td>Intransigent</td><td>An in-transit agent who is unwilling to change your travel plans. Uncompromising</td><td>unwilling to change one's views, uncompromising</td></tr>
+            <tr><td>Intrepid</td><td>Not trepid (fearful). Fearless and adventurous</td><td>fearless, adventurous (often used for humorous effect)</td></tr>
+            <tr><td>Irreverent</td><td>Not reverent. Showing a lack of respect for serious things</td><td>showing lack of respect for people or things that are generally taken seriously</td></tr>
+            <tr><td>Loathe</td><td>You feel so much disgust it makes you want to lather yourself clean</td><td>intense dislike or disgust for</td></tr>
+            <tr><td>Malign</td><td>To speak about someone in a way that is mal (bad or evil)</td><td>evil in nature, speak about someone in a spitefully critical manner</td></tr>
+            <tr><td>Malleable</td><td>Like malleable metal, which can be easily shaped. Easily influenced</td><td>easily influenced, pliable</td></tr>
+            <tr><td>Neophyte</td><td>A "new fighter" in a subject or religion. A beginner</td><td>a person who is new to a subject, activity, or religion</td></tr>
+            <tr><td>Plastic</td><td>Plastic can be easily shaped</td><td>easily shaped/artificial/offering scope for creativity</td></tr>
+            <tr><td>Platitude</td><td>A phrase that falls flat because it has been used too often</td><td>used too often to be interesting or thoughtful</td></tr>
+            <tr><td>Prescient</td><td>"pre" (before) + "science" (knowledge). Having knowledge of events before they happen</td><td>showing knowledge of events before they take place</td></tr>
+            <tr><td>Pristine</td><td>Looks like it was just cleaned by Mr. Clean; spotless</td><td>spotless, clean and fresh, immaculate</td></tr>
+            <tr><td>Reproach</td><td>When you re-approach someone to express your disapproval</td><td>expression of disapproval</td></tr>
+            <tr><td>Robust</td><td>Like a robot, strong and able to withstand adverse conditions</td><td>vigorous/ able to withstand adverse conditions/forceful</td></tr>
+            <tr><td>Salubrious</td><td>You salute a place that is healthy and pleasant</td><td>healthy, pleasant</td></tr>
+            <tr><td>Sanction</td><td>Can be confusing. It can mean official permission (a positive sanction) or a penalty (a negative sanction)</td><td>official permission/ a threatened penalty for disobeying rule</td></tr>
+            <tr><td>Sedulous</td><td>To see us through, you have to be dedicated and diligent</td><td>showing dedication and diligence</td></tr>
+            <tr><td>Soporific</td><td>It's so poor a movie that it makes you fall asleep. Tediously boring</td><td>tediously boring or monotonous</td></tr>
+            <tr><td>Stern</td><td>The stern of a ship is the hard, back part. A stern person is serious and severe</td><td>serious, strict and severe</td></tr>
+            <tr><td>Tendentious</td><td>Has a tendency to promote a controversial point of view</td><td>intending to promote a point of view (controversial one)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group8">
+        <h3 class="group-title">Group 8</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Accentuate</td><td>To add an accent to a word to make it more prominent</td><td>make more noticeable or prominent</td></tr>
+            <tr><td>Conjectural</td><td>Related to conjecture or an educated guess</td><td>based on or involving conjecture, speculative</td></tr>
+            <tr><td>Convivial</td><td>"con" (with) + "vivid". Someone who is lively and enjoyable to be with</td><td>friendly, lively and enjoyable</td></tr>
+            <tr><td>Decadent</td><td>Sounds like decaying. Characterized by a state of moral or cultural decline</td><td>characterized by a state of moral or cultural decline, person who is luxuriously self-indulgent</td></tr>
+            <tr><td>Egregious</td><td>Sounds like aggressive. An outstandingly bad error can feel aggressive in its wrongness</td><td>outstandingly bad, shocking</td></tr>
+            <tr><td>Evanescent</td><td>Sounds like vanish. It will soon pass out of sight or memory</td><td>soon passing out of sight, memory or existence, quickly fading or disappearing</td></tr>
+            <tr><td>Flamboyant</td><td>Like a flame, it's bright, colorful, and attracts attention</td><td>tending to attract attention because of confidence, stylishness/bright, colorful and noticeable</td></tr>
+            <tr><td>Forestall</td><td>To fore (before) stall someone's plan. To prevent it by taking advance action</td><td>prevent or obstruct by taking advanced action</td></tr>
+            <tr><td>Gainsay</td><td>To speak against something is to deny or contradict it</td><td>deny, contradict, speak against or oppose</td></tr>
+            <tr><td>Galvanize</td><td>From Luigi Galvani, who found that electric shocks could make frog legs twitch into action</td><td>shock or excite someone into taking action</td></tr>
+            <tr><td>Indiscriminate</td><td>Not discriminating. Done at random or without careful judgment</td><td>done at random or without careful judgment</td></tr>
+            <tr><td>Innocuous</td><td>Sounds like innocent. Not harmful or offensive</td><td>not harmful or offensive</td></tr>
+            <tr><td>Momentary</td><td>Lasting for just a moment</td><td>lasting very short time, brief</td></tr>
+            <tr><td>Mundane</td><td>Sounds like Monday. Mondays can feel dull and lacking excitement</td><td>lacking interest or excitement, dull</td></tr>
+            <tr><td>Nettlesome</td><td>Like being stung by nettles, which is annoying and difficult</td><td>causing annoyance or difficulty</td></tr>
+            <tr><td>Nullify</td><td>To make null or void; to invalidate</td><td>make null and void, invalidate</td></tr>
+            <tr><td>Obviate</td><td>To make a path obvious and remove any difficulties</td><td>remove, avoid or prevent</td></tr>
+            <tr><td>Omnipresent</td><td>"omni" (all) + "present". Present everywhere</td><td>widespread, constantly encountered</td></tr>
+            <tr><td>Oust</td><td>To push out. To drive out from a position or place</td><td>drive out or expel from a position or place</td></tr>
+            <tr><td>Palpable</td><td>A doctor palpates an area to feel it. It means able to be touched or felt</td><td>so intense as to seem, almost tangible/plain to see or comprehend, able to be touched or felt</td></tr>
+            <tr><td>Perfidy</td><td>"per" (through) + "fidy" (faith). To go through or break someone's faith; deceitfulness</td><td>state of being deceitful and untrustworthy</td></tr>
+            <tr><td>Profuse</td><td>Sounds like pro-use. Someone who is pro-use of their money is abundant with it</td><td>abundant</td></tr>
+            <tr><td>Pugnacious</td><td>Sounds like a pug, a dog breed that can be aggressive and eager to fight</td><td>eager to argue, quarrel or fight</td></tr>
+            <tr><td>Sagacious</td><td>A sage is a very wise person</td><td>wise or shrewd, intelligent</td></tr>
+            <tr><td>Sanguine</td><td>A singing penguin is cheerful and optimistic</td><td>optimistic, positive/blood-red</td></tr>
+            <tr><td>Scant</td><td>Sounds like you "can't" have any more because the supply is insufficient</td><td>insufficient or barely sufficient</td></tr>
+            <tr><td>Skulduggery</td><td>Digging up skulls is a dishonest activity</td><td>dishonest behavior or activities/trickery</td></tr>
+            <tr><td>Trivial</td><td>Relating to "trivia," which is of little importance</td><td>of little value or importance</td></tr>
+            <tr><td>Utilitarian</td><td>Focused on utility or usefulness rather than beauty</td><td>designed to be useful or practical rather</td></tr>
+            <tr><td>Vapid</td><td>Sounds like rapid. A rapid speech can sometimes lack substance and be unstimulating</td><td>offering nothing that is stimulating or challenging/bland</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group9">
+        <h3 class="group-title">Group 9</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Boorish</td><td>Sounds like boar-ish. A wild boar can be rough and bad-mannered</td><td>rough and bad-mannered, coarse</td></tr>
+            <tr><td>Brook</td><td>A brook (a small stream) has to tolerate all the fish and rocks in it</td><td>tolerate</td></tr>
+            <tr><td>Circumspect</td><td>"circum" (around) + "spect" (look). To look around cautiously</td><td>wary, cautious</td></tr>
+            <tr><td>Comity</td><td>From "come" and "unite." An association for mutual benefit or considerate behavior</td><td>an association of nations for their mutual benefit/ considerate behavior towards others</td></tr>
+            <tr><td>Commensurate</td><td>"co" (together) + "measure". To have the same measure; corresponding in size or degree</td><td>corresponding in size or degree, in proportion</td></tr>
+            <tr><td>Cordial</td><td>A cordial drink is warm and friendly</td><td>warm and friendly</td></tr>
+            <tr><td>Deleterious</td><td>Sounds like delete. Something harmful should be deleted</td><td>causing harm</td></tr>
+            <tr><td>Dichotomy</td><td>"di" (two) + "tomy" (cut). A cut or division into two opposite things</td><td>a division or contrast between two things that are or are represented as being opposed or entirely different</td></tr>
+            <tr><td>Edify</td><td>To build up someone's morals, like building an edifice (a large building)</td><td>instruct or improve (someone) morally or intellectually</td></tr>
+            <tr><td>Elicit</td><td>To draw out a reaction, like getting an illicit secret out of someone</td><td>evoke or draw out (a reaction answer) from someone</td></tr>
+            <tr><td>Erudite</td><td>Sounds like "I read it." Someone who has read a lot shows great knowledge</td><td>having or showing great knowledge or learning</td></tr>
+            <tr><td>Fecund</td><td>The opposite of feeble. Highly fertile and productive</td><td>highly fertile</td></tr>
+            <tr><td>Feeble</td><td>Sounds like "feel bad." When you feel bad, you lack physical strength</td><td>lacking physical strength/lacking strength of character/ failing to convince or impress</td></tr>
+            <tr><td>Felicitous</td><td>From felicity, meaning happiness. Something well chosen or pleasing</td><td>well chosen or suited to the circumstances/pleasing</td></tr>
+            <tr><td>Forbear</td><td>To hold back like a forefather bear refraining from attacking</td><td>refrain from doing something</td></tr>
+            <tr><td>Haphazard</td><td>Occurring by hap (chance) or hazard. Lacking any obvious organization</td><td>lacking any obvious principle of organization</td></tr>
+            <tr><td>Hodgepodge</td><td>A messy mixture, like a hot pot with everything thrown in</td><td>a confused mixture</td></tr>
+            <tr><td>Impede</td><td>To get in the way of the feet and hinder progress</td><td>hinder</td></tr>
+            <tr><td>Impetuous</td><td>An impulsive pet that acts quickly without thought</td><td>acting or done quickly and without thought or care</td></tr>
+            <tr><td>Irascible</td><td>An irritable person who is easily angered</td><td>having or showing a tendency to be easily angered</td></tr>
+            <tr><td>Mercenary</td><td>Someone who will do anything for mercy (a word for money), even at the expense of ethics</td><td>making money at the expense of ethics/ a professional soldier hired to serve in a foreign army</td></tr>
+            <tr><td>Meticulous</td><td>Sounds like "me-tickle-us." If someone tickles me, I'm very careful and precise about how I react</td><td>very careful and precious</td></tr>
+            <tr><td>Mordant</td><td>More dent. Biting humor that leaves a mark or a dent</td><td>(humor) having or showing a sharp or critical quality, biting</td></tr>
+            <tr><td>Outstrip</td><td>To move so fast you take off your outer strip of clothing to overtake someone</td><td>move faster and overtake/ exceed</td></tr>
+            <tr><td>Precarious</td><td>Pray for us. The situation is dangerously uncertain</td><td>not securely held or in position; dangerously likely to fall or collapse/ uncertain</td></tr>
+            <tr><td>Quirky</td><td>Has peculiar quirks</td><td>having or characterized by peculiar or unexpected traits or aspects</td></tr>
+            <tr><td>Repudiate</td><td>Sounds like refuse to date. To refuse to accept something</td><td>refuse to accept/ deny the truth or validity</td></tr>
+            <tr><td>Tact</td><td>Like the sense of touch; having skill and sensitivity in dealing with others</td><td>skill and sensitivity in dealing with others or with difficult issues</td></tr>
+            <tr><td>Trifling</td><td>As unimportant as a trifle, a small dessert</td><td>unimportant or trivial</td></tr>
+            <tr><td>Turbulent</td><td>Like an airplane experiencing turbulence, not stable and characterized by conflict</td><td>characterized by conflict, disorder/ not stable</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group10">
+        <h3 class="group-title">Group 10</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Acumen</td><td>Accurate men have the ability to make good judgments</td><td>the ability to make good judgments and take quick decisions</td></tr>
+            <tr><td>Antithesis</td><td>Anti-thesis. The direct opposite of a thesis or idea</td><td>contrast or opposition between two things</td></tr>
+            <tr><td>Ascribe</td><td>You subscribe to the idea that a certain quality belongs to someone</td><td>regard a quality as belonging to</td></tr>
+            <tr><td>Befuddled</td><td>To be as confused as if you were in a puddle of fog</td><td>unable to think clearly</td></tr>
+            <tr><td>Eschew</td><td>Sounds like "ah-choo!" You deliberately avoid someone who is sneezing</td><td>deliberately avoid using; abstain from</td></tr>
+            <tr><td>Esoteric</td><td>Sounds like "so-terrible" to understand because it's only known by a small number of people</td><td>likely to be understood by only a small number of people</td></tr>
+            <tr><td>Evasive</td><td>To evade a question; tending to avoid commitment</td><td>tending to avoid commitment or self-revelation</td></tr>
+            <tr><td>Exculpate</td><td>To make someone an ex-culprit; to show they are not guilty</td><td>show or declare that someone is not guilty of wrongdoing</td></tr>
+            <tr><td>Expedite</td><td>To make something happen at express speed</td><td>make (an action) happen sooner or be accomplished more quickly</td></tr>
+            <tr><td>Fastidious</td><td>Someone so concerned with detail that they do things fast, yet are never satisfied</td><td>very attentive and concerned about accuracy and detail</td></tr>
+            <tr><td>Feign</td><td>To fake an injury or feeling</td><td>pretend to be affected by (a feeling, state or injury)</td></tr>
+            <tr><td>Furtive</td><td>A fugitive makes secretive, furtive movements to avoid being caught</td><td>secretive/suggestive of guilty nervousness</td></tr>
+            <tr><td>Hamper</td><td>A laundry hamper can hinder your movement if it's in the way</td><td>hinder</td></tr>
+            <tr><td>Indispensable</td><td>Not dispensable; absolutely necessary</td><td>absolutely necessary</td></tr>
+            <tr><td>Lament</td><td>To cry over a lame end to something; a passionate expression of grief</td><td>a passionate expression of grief or sorrow</td></tr>
+            <tr><td>Myopic</td><td>"my" + "opia" (vision condition). Short-sighted vision</td><td>short-sighted</td></tr>
+            <tr><td>Nonchalant</td><td>Not challenged by anxiety; calm and relaxed</td><td>calm and relaxed/ not displaying anxiety</td></tr>
+            <tr><td>Partial</td><td>To take a part or side; biased</td><td>incomplete/biased/ having a liking for</td></tr>
+            <tr><td>Pensive</td><td>You use a pen when you are engaged in serious thought</td><td>engaged in serious thought</td></tr>
+            <tr><td>Portend</td><td>A sign that pours from the end of the sky, warning of something calamitous</td><td>be a sign or warning that something calamitous is likely to happen</td></tr>
+            <tr><td>Provincial</td><td>Concerning a province, which is often regarded as narrow-minded compared to a capital city</td><td>concerning a province of a country/religions regarded as narrow-minded</td></tr>
+            <tr><td>Rudimentary</td><td>A rude elementary student only has a basic, limited understanding</td><td>limited to basic principles/relating to immature form</td></tr>
+            <tr><td>Salutary</td><td>Like a salute, which is a sign of a good, beneficial effect</td><td>producing good efforts/ beneficial</td></tr>
+            <tr><td>Sever</td><td>To cut something severely</td><td>divide by cutting or slicing, suddenly and forcibly/ put to an end/ break off</td></tr>
+            <tr><td>Slight</td><td>To treat someone as if they are light and small in degree; an insult</td><td>small in degree/inconsiderate/ insult by treating without proper respect</td></tr>
+            <tr><td>Somnolent</td><td>Sounds like "insomnia-lent," as if someone lent you their insomnia, but you are still sleepy</td><td>sleepy, drowsy</td></tr>
+            <tr><td>Stoic</td><td>Someone who can endure pain without complaining, as if they were made of stone</td><td>a person who can endure pain without complaining</td></tr>
+            <tr><td>Supersede</td><td>A super seed. This new seed is so good it will take the place of the old one</td><td>take the place of other/supplant</td></tr>
+            <tr><td>Tout</td><td>To shout about the merits of something to try and sell it</td><td>attempt to sell/ attempt to persuade people of the merits of</td></tr>
+            <tr><td>Wane</td><td>Like the waning moon, it decreases in vigor or extent</td><td>decrease in vigor or extent, become weaker</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group11">
+        <h3 class="group-title">Group 11</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abhor</td><td>You hate something so much you'd pay a wh*re to get rid of it. To regard with disgust and hatred</td><td>regard with disgust and hatred</td></tr>
+            <tr><td>Boisterous</td><td>A group of boys can be noisy, energetic, and cheerful</td><td>noisy, energetic and cheerful/(of weather) stormy</td></tr>
+            <tr><td>Chivalrous</td><td>A knight showing chivalry is courteous and gallant toward women</td><td>courteous and gallant especially towards women</td></tr>
+            <tr><td>Churlish</td><td>A church boy who is rude and mean-spirited is unexpected</td><td>rude in a mean-spirited and surly way</td></tr>
+            <tr><td>Clandestine</td><td>The clan's destiny was kept secret</td><td>kept secret or done secretively</td></tr>
+            <tr><td>Complacent</td><td>"Completely placed." You feel so satisfied with where you are placed that you're uncritical of yourself</td><td>showing smug or uncritical satisfaction with oneself or one's achievements/self-satisfied</td></tr>
+            <tr><td>Cumbersome</td><td>"Come-bear-some." It's large and heavy, so come bear some of the weight</td><td>large or heavy and therefore difficult to carry or use/ unwieldy/complicated, inefficient</td></tr>
+            <tr><td>Debilitating</td><td>De-ability. Takes away your ability, making you weak</td><td>make someone weak and infirm/hinder, delay</td></tr>
+            <tr><td>Deliberate</td><td>Done consciously and intentionally, not by accident</td><td>done consciously and intentionally</td></tr>
+            <tr><td>Droll</td><td>A troll can be curious or unusual in a way that provokes dry amusement</td><td>curious or unusual in a way that provokes dry amusement/funny/comic/amusing</td></tr>
+            <tr><td>Eccentric</td><td>"Out of center." Unconventional and slightly strange</td><td>(of a person) unconventional and slightly strange</td></tr>
+            <tr><td>Fractious</td><td>Like a fraction, easily broken into irritable pieces</td><td>irritable and quarrelsome/ difficult to control, unruly</td></tr>
+            <tr><td>Limpid</td><td>As clear as the lymph fluid in your body; completely transparent</td><td>completely clear and transparent/accessible or melodious</td></tr>
+            <tr><td>Mawkish</td><td>"Ma's kiss" can feel overly sentimental in an exaggerated way</td><td>sentimental in an exaggerated or false way</td></tr>
+            <tr><td>Obeisance</td><td>You show respect by obeying and bowing</td><td>deferential respect, bow or curtsy</td></tr>
+            <tr><td>Ostentatious</td><td>Sounds like "Stunt-atious." A showy display designed to impress</td><td>characterized by pretentious or showy display; designed to impress</td></tr>
+            <tr><td>Panacea</td><td>A pan that can cure all (pan-); a remedy for all difficulties</td><td>a solution or remedy for all difficulties or diseases</td></tr>
+            <tr><td>Perfunctory</td><td>Performed in a factory line, without real interest or feeling</td><td>carried out without real interest, feeling/desultory</td></tr>
+            <tr><td>Perilous</td><td>Full of peril or danger</td><td>fall of danger or risk</td></tr>
+            <tr><td>Pervasive</td><td>Something that pervades everything, spreading widely</td><td>(unwelcome influence) spreading widely throughout an area or a group of people</td></tr>
+            <tr><td>Preclude</td><td>To prevent the conclusion</td><td>prevent from happening; make impossible</td></tr>
+            <tr><td>Predilection</td><td>"Pre-direction." A bias or special liking that directs you toward something beforehand</td><td>a preference or special liking for something/ bias in favor</td></tr>
+            <tr><td>Rapacious</td><td>A rapper who is aggressively greedy for fame and money</td><td>aggressively greedy or grasping</td></tr>
+            <tr><td>Relish</td><td>You add relish to a hot dog for great enjoyment</td><td>great enjoyment/ pleasurable anticipation</td></tr>
+            <tr><td>Satirical</td><td>Using satire to mock another's weakness</td><td>containing or using satire/ mocking another's weakness</td></tr>
+            <tr><td>Sham</td><td>Something that is a shame because it's a fake</td><td>a person who pretends to be someone or something they are not</td></tr>
+            <tr><td>Skirt</td><td>To go around the skirt or edge of an issue to avoid dealing with it</td><td>be situated along or around the edge of/ avoid dealing with</td></tr>
+            <tr><td>Sluggish</td><td>Moving slowly like a slug</td><td>slow moving, lacking energy or alertness</td></tr>
+            <tr><td>Spartan</td><td>Like the ancient Spartans, who lived with austerity and a lack of comfort</td><td>austerity or lack of comfort or luxury/harsh/hard/frugal</td></tr>
+            <tr><td>Truculent</td><td>Like a truck driver who is aggressively defiant and eager to argue</td><td>eager to argue; aggressively defiant</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group12">
+        <h3 class="group-title">Group 12</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Acrimonious</td><td>"A crime on us!" This accusation will lead to an angry and bitter dispute</td><td>angry and bitter</td></tr>
+            <tr><td>Belligerent</td><td>"Belly" and "rent." The tenant was hostile and aggressive about paying the rent</td><td>hostile and aggressive</td></tr>
+            <tr><td>Beneficent</td><td>"Benefit-cent." Generous and doing good for others</td><td>generous and doing good</td></tr>
+            <tr><td>Canny</td><td>You can read the situation well; showing good judgment, especially in business</td><td>showing shrewdness and good judgment especially in money or business</td></tr>
+            <tr><td>Cavalier</td><td>A cavalry soldier might show a lack of concern for the rules</td><td>showing lack of concern</td></tr>
+            <tr><td>Distressed</td><td>Under "di-stress," or double stress. Suffering from extreme anxiety</td><td>suffering from extreme anxiety, sorrow or pain</td></tr>
+            <tr><td>Dwindling</td><td>A candle wick dwindles as it burns. Gradually diminishing in size</td><td>gradually diminishing in size, amount or strength</td></tr>
+            <tr><td>Eclipse</td><td>The moon can eclipse the sun, depriving it of significance</td><td>deprive something of significance and power</td></tr>
+            <tr><td>Encyclopedia</td><td>An encyclopedia is comprehensive in its information</td><td>comprehensive in terms of information</td></tr>
+            <tr><td>Exacerbate</td><td>To make a bad situation "extra sour." To make problems worse</td><td>make problems worse</td></tr>
+            <tr><td>Exasperated</td><td>"Extra separated" from patience. Intensely irritated and frustrated</td><td>intensely irritated and frustrated</td></tr>
+            <tr><td>Fungible</td><td>"Fun-to-be-able" to exchange one for another because they are interchangeable</td><td>mutually interchangeable</td></tr>
+            <tr><td>Hackneyed</td><td>A phrase hacked to pieces from overuse; unoriginal</td><td>having been overused; unoriginal and trite</td></tr>
+            <tr><td>Incongruous</td><td>In Congress, it would be incongruous to see someone in a clown suit. Not in harmony with the surroundings</td><td>not in harmony or keeping with surroundings</td></tr>
+            <tr><td>Interchangeable</td><td>"Inter" (between) and "changeable." Able to be changed between each other</td><td>apparently identical</td></tr>
+            <tr><td>Laconic</td><td>Like an iconic hero who says very few words</td><td>using very few words</td></tr>
+            <tr><td>Lucrative</td><td>It's "look-at-this" amount of profit. Providing a great deal of profit</td><td>providing a great deal or profit</td></tr>
+            <tr><td>Magisterial</td><td>Like a magistrate or judge, domineering and dictatorial</td><td>domineering, dictatorial</td></tr>
+            <tr><td>Onerous</td><td>The onus is on us. It's a burdensome task</td><td>involving great deal of effort, trouble, and burdensome</td></tr>
+            <tr><td>Opprobrium</td><td>The opposite of praise. Harsh criticism</td><td>harsh criticism or censure</td></tr>
+            <tr><td>Parsimonious</td><td>A person who parses money, unwilling to spend it</td><td>very unwilling to spend money or use resources</td></tr>
+            <tr><td>Peripheral</td><td>Peripheral vision is on the edge or of minor importance</td><td>minor importance, marginal</td></tr>
+            <tr><td>Provocative</td><td>To provoke a reaction</td><td>causing anger or another strong reaction, especially deliberately/annoying</td></tr>
+            <tr><td>Renounce</td><td>To "re-announce" that you are abandoning something</td><td>formally declare one's abandonment</td></tr>
+            <tr><td>Tempestuous</td><td>Like a tempest or a violent storm, characterized by conflicting emotion</td><td>characterized by strong or conflicting emotion</td></tr>
+            <tr><td>Tenable</td><td>"Ten-able" to hold up. Able to be defended</td><td>defensible</td></tr>
+            <tr><td>Transgression</td><td>To go across a line or law</td><td>act that goes against law</td></tr>
+            <tr><td>Urbane</td><td>An urban person is often courteous and refined</td><td>courteous and refined in manner</td></tr>
+            <tr><td>Verisimilitude</td><td>"Very similar" to the truth. The appearance of being real</td><td>the appearance of being true or real</td></tr>
+            <tr><td>Vitiate</td><td>Sounds like "fishy-ate." If you ate fishy food, it would spoil your health</td><td>spoil or impair the quality or efficiency of something</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group13">
+        <h3 class="group-title">Group 13</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Affinity</td><td>Like infinity, a natural liking for something that seems to have no end</td><td>a natural liking for something/ resemblance</td></tr>
+            <tr><td>Altruistic</td><td>"All true" to others; selfless</td><td>selfless</td></tr>
+            <tr><td>Baroque</td><td>So highly ornate it might make you go "broke."</td><td>highly ornate and extravagant in style</td></tr>
+            <tr><td>Byzantine</td><td>The Byzantine Empire had an excessively complicated political structure</td><td>excessively complicated/characterized by deviousness</td></tr>
+            <tr><td>Compromise</td><td>To come to a promise or agreement</td><td>agreement/ harm by accepting standards that are lower than is desirable/ cause to become vulnerable</td></tr>
+            <tr><td>Conciliatory</td><td>Like a council that intends to placate or pacify</td><td>intended or likely to placate or pacify</td></tr>
+            <tr><td>Countenance</td><td>To count on someone's face for support. A facial expression or support</td><td>facial expression/support or approval</td></tr>
+            <tr><td>Covert</td><td>Covered and secret</td><td>not openly acknowledged or displayed/secretive, clandestine</td></tr>
+            <tr><td>Credible</td><td>If it's "credit-able," it's believable</td><td>able to be believed, trustworthy</td></tr>
+            <tr><td>Diffuse</td><td>Like a diffuser that spreads a scent out. Lacking clarity</td><td>spread out/ lacking clarity or conciseness, verbose</td></tr>
+            <tr><td>Documentary</td><td>A documentary is based on official documents and is comprehensive</td><td>based on official documents or aspects, comprehensive</td></tr>
+            <tr><td>Exhaustive</td><td>It exhausts all possibilities; comprehensive</td><td>including all elements or aspects, comprehensive</td></tr>
+            <tr><td>Exhilarating</td><td>Makes you feel hysterically happy and thrilled</td><td>thrilling, making one fell very happy, animated</td></tr>
+            <tr><td>Extraneous</td><td>Extra and unrelated to the subject</td><td>irrelevant or unrelated to the subject</td></tr>
+            <tr><td>Fervor</td><td>Like a fever, an intense and passionate feeling</td><td>intense and passionate feeling</td></tr>
+            <tr><td>Futile</td><td>Like trying to fix something with "few tools," it's pointless</td><td>fruitless, pointless</td></tr>
+            <tr><td>Illusory</td><td>Based on an illusion</td><td>based on illusion</td></tr>
+            <tr><td>Invidious</td><td>Sounds like invidious, which is unpleasant</td><td>unpleasant, illusion</td></tr>
+            <tr><td>Lethargic</td><td>Sounds like "lethally allergic," which would make you sluggish and lazy</td><td>sluggish, lazy</td></tr>
+            <tr><td>Metaphorical</td><td>Using a metaphor; figurative</td><td>figurative</td></tr>
+            <tr><td>Mimic</td><td>To imitate</td><td>imitate</td></tr>
+            <tr><td>Numinous</td><td>A nun has a strong religious or spiritual quality</td><td>having strong religious or spiritual quality</td></tr>
+            <tr><td>Obscure</td><td>Like an obstacle that cures your vision, making it hard to discover or know about</td><td>not discovered or known about/abstruse</td></tr>
+            <tr><td>Overt</td><td>The opposite of covert. Openly done</td><td>done or shown openly</td></tr>
+            <tr><td>Pellucid</td><td>Sounds like "perfectly lucid." Clear and easily understood</td><td>clear, easily understood</td></tr>
+            <tr><td>Perpetuate</td><td>To make something go on for a perpetual or indefinite time</td><td>make (something) continue indefinitely</td></tr>
+            <tr><td>Rational</td><td>Based on reason or logic</td><td>based on or in accordance with reason or logic</td></tr>
+            <tr><td>Scathing</td><td>So scornful it scathes or harms you</td><td>scornful/harm</td></tr>
+            <tr><td>Subtle</td><td>So delicately complex that it's not obvious, like "sub-title" meanings</td><td>delicately complex/ making use of clever and indirect methods to achieve something</td></tr>
+            <tr><td>Superficial</td><td>On the surface only; not thorough</td><td>appearing to be true but not/cursory/not through</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group14">
+        <h3 class="group-title">Group 14</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Acquiesce</td><td>"Agree quietly." To accept something reluctantly without protest</td><td></td></tr>
+            <tr><td>Adroit</td><td>An Android phone is clever and skillful</td><td></td></tr>
+            <tr><td>Amend</td><td>To "a-mend" something is to fix or improve it by making minor changes</td><td></td></tr>
+            <tr><td>Animus</td><td>An animal can show hostility</td><td></td></tr>
+            <tr><td>Apologist</td><td>Someone who apologizes for something controversial by defending it</td><td></td></tr>
+            <tr><td>Astringent</td><td>A string that is pulled tight. Sharp or severe in manner</td><td></td></tr>
+            <tr><td>Collaborate</td><td>"Co-labor." To work jointly on a project</td><td></td></tr>
+            <tr><td>Competent</td><td>Someone who can compete is efficient and capable</td><td></td></tr>
+            <tr><td>Correlate</td><td>To have a co-relation or connection</td><td></td></tr>
+            <tr><td>Deride</td><td>To ride someone with ridicule</td><td></td></tr>
+            <tr><td>Dictate</td><td>What a dictator does; gives orders that must be obeyed</td><td></td></tr>
+            <tr><td>Discreet</td><td>"This secret" must be kept confidential through careful speech</td><td></td></tr>
+            <tr><td>Divorced</td><td>Like a divorce, separated from something</td><td></td></tr>
+            <tr><td>Elitist</td><td>Someone who acts like part of the elite with a superior attitude</td><td></td></tr>
+            <tr><td>Exacting</td><td>Demands the exact thing; very demanding</td><td></td></tr>
+            <tr><td>Flummoxed</td><td>As bewildered as if you were hit by a flying ox</td><td></td></tr>
+            <tr><td>Fruitful</td><td>Bearing fruit; fertile and productive</td><td></td></tr>
+            <tr><td>Inborn</td><td>Born with it. Natural to a person</td><td></td></tr>
+            <tr><td>Polymath</td><td>"Poly" (many) + "math." Someone with wide knowledge in many areas</td><td></td></tr>
+            <tr><td>Reticent</td><td>"Ready to listen," not revealing one's own feelings readily</td><td></td></tr>
+            <tr><td>Stringent</td><td>Like a string pulled tight. Strict and precise</td><td></td></tr>
+            <tr><td>Subservient</td><td>Like a sub-servant, prepared to obey others without question</td><td></td></tr>
+            <tr><td>Surreptitious</td><td>A serpent is sneaky and keeps its actions secret</td><td></td></tr>
+            <tr><td>Tantalizing</td><td>From Tantalus in Greek myth, who was tormented with the sight of something he could never obtain</td><td></td></tr>
+            <tr><td>Tantamount</td><td>"Tant-amount." The same amount; equivalent in seriousness</td><td></td></tr>
+            <tr><td>Torpor</td><td>The opposite of a torpedo; a state of inactivity or lethargy</td><td></td></tr>
+            <tr><td>Trenchant</td><td>A trench is a sharp cut. Vigorous or incisive in expression</td><td></td></tr>
+            <tr><td>Umbrage</td><td>Someone took my umbrella and I took offense</td><td></td></tr>
+            <tr><td>Versatile</td><td>Able to switch to another verse or function easily</td><td></td></tr>
+            <tr><td>Wayward</td><td>Goes their own way, making them difficult to control</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 4: Groups 15–19</h2>
+        <p>Expanding horizons</p>
+      </div>
+
+      <div class="group" id="group15">
+        <h3 class="group-title">Group 15</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Alienate</td><td>To make someone feel like an alien; isolated or estranged</td><td></td></tr>
+            <tr><td>Apathy</td><td>"a" (without) + "pathy" (feeling). A lack of interest or concern</td><td></td></tr>
+            <tr><td>Apropos</td><td>Sounds like appropriate. Very appropriate to a particular situation</td><td></td></tr>
+            <tr><td>Apt</td><td>Someone with a high aptitude is quick to learn</td><td></td></tr>
+            <tr><td>Cloak</td><td>To hide or disguise something with a cloak</td><td></td></tr>
+            <tr><td>Consensus</td><td>"Con" (together) + "sensus" (feeling). A general agreement</td><td></td></tr>
+            <tr><td>Distort</td><td>To twist the truth out of its original shape</td><td></td></tr>
+            <tr><td>Divergent</td><td>To diverge and develop in different directions</td><td></td></tr>
+            <tr><td>Elated</td><td>Feeling so happy you feel elevated</td><td></td></tr>
+            <tr><td>Enchant</td><td>To fill someone with great delight, as if by chanting a magic spell</td><td></td></tr>
+            <tr><td>Entrenched</td><td>An idea so firmly established it's like it's in a trench and difficult to change</td><td></td></tr>
+            <tr><td>Exotic</td><td>From an "exit" or outside country; foreign and attractive</td><td></td></tr>
+            <tr><td>Exploitative</td><td>To exploit others unfairly to gain an advantage</td><td></td></tr>
+            <tr><td>Foreseeable</td><td>Able to be foreseen or predicted</td><td></td></tr>
+            <tr><td>Forsake</td><td>To abandon something for the sake of something else</td><td></td></tr>
+            <tr><td>Gratify</td><td>To give someone gratitude or pleasure</td><td></td></tr>
+            <tr><td>Heed</td><td>"You need to pay attention to my warning."</td><td></td></tr>
+            <tr><td>Judicious</td><td>Like a judge, showing good judgment</td><td></td></tr>
+            <tr><td>Lucid</td><td>Lucid dreams are expressed clearly and are easy to understand</td><td></td></tr>
+            <tr><td>Pertinent</td><td>It pertains to the matter; relevant</td><td></td></tr>
+            <tr><td>Propriety</td><td>Behavior that is proper and conforms to accepted standards</td><td></td></tr>
+            <tr><td>Scintillation</td><td>To shine brightly like a star</td><td></td></tr>
+            <tr><td>Sensational</td><td>It causes a public sensation of great interest and excitement</td><td></td></tr>
+            <tr><td>Sophisticated</td><td>Someone with worldly experience and knowledge, not a sophomore</td><td></td></tr>
+            <tr><td>Strife</td><td>Sounds like strike or fight. Angry or bitter disagreement</td><td></td></tr>
+            <tr><td>Understated</td><td>Stated in a subtle way, under the radar</td><td></td></tr>
+            <tr><td>Unscrupulous</td><td>Someone who has no scruples or moral principles</td><td></td></tr>
+            <tr><td>Veracity</td><td>Sounds like truthfulness; conformity to facts</td><td></td></tr>
+            <tr><td>Virulent</td><td>Like a virus that is extremely severe or harmful</td><td></td></tr>
+            <tr><td>Volatile</td><td>Liable to change rapidly, like a volcano that could erupt unpredictably</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group16">
+        <h3 class="group-title">Group 16</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Antedate</td><td>"Ante" means before. To precede in time</td><td>precede in time/ come before in date</td></tr>
+            <tr><td>Banish</td><td>To ban someone from a country</td><td>send someone away from a country as an official punishment/ get rid of</td></tr>
+            <tr><td>Bridle</td><td>A horse's bridle is used to control it; it can also mean to show anger</td><td>used to control movement/ show one's anger</td></tr>
+            <tr><td>Comply</td><td>To come and fall in line; to act in accordance with a command</td><td>act in accordance with a wish or command</td></tr>
+            <tr><td>Crestfallen</td><td>Your crest or spirit has fallen. Sad and disappointed</td><td>sad and disappointed</td></tr>
+            <tr><td>Curtain</td><td>A final curtain call can mean a disastrous outcome</td><td>piece of material/ a disastrous outcome</td></tr>
+            <tr><td>Elucidate</td><td>To make something lucid or clear</td><td>make something clear/ explain</td></tr>
+            <tr><td>Evade</td><td>To escape or avoid</td><td>escape or avoid something especially by guile or trickery</td></tr>
+            <tr><td>Feckless</td><td>The opposite of "effective." Lacking initiative and irresponsible</td><td>lacking initiative or strength of character, irresponsible</td></tr>
+            <tr><td>Fester</td><td>A wound that gets faster and worse</td><td>(of wound) become septic, (of feeling) become worse,</td></tr>
+            <tr><td>Iconoclastic</td><td>To clash with icons; criticizing cherished beliefs</td><td>criticizing cherished beliefs or institutions</td></tr>
+            <tr><td>Immure</td><td>To put someone "in" a "wall," confining them</td><td>enclose or confine against their will</td></tr>
+            <tr><td>Improvise</td><td>To create something "in" the moment, "pro-visionally."</td><td>create and perform spontaneously or without prep/ make from whatever is available</td></tr>
+            <tr><td>Inhibit</td><td>To get in the way and prohibit something</td><td>prevent/ make someone self-conscious/ forbid to function</td></tr>
+            <tr><td>Inscrutable</td><td>You can't scrutinize it; impossible to understand</td><td>impossible to understand or interpret</td></tr>
+            <tr><td>Lionize</td><td>To treat someone like a lion, the king of the jungle, giving them lots of attention</td><td>give a lot of public attention and approval to someone</td></tr>
+            <tr><td>Monotonous</td><td>"Mono" (one) "tone." Lacking in variety</td><td>dull, tedious, lacking in variety</td></tr>
+            <tr><td>Peculiar</td><td>A peculiar person is strange or special</td><td>strange/ particular; special/ belonging exclusively to</td></tr>
+            <tr><td>Premeditate</td><td>To "pre" (before) meditate or plan beforehand</td><td>think out or plan beforehand</td></tr>
+            <tr><td>Profligate</td><td>To be a pro at flinging away money wastefully</td><td>wasteful in the use of resources/licentious, dissolute</td></tr>
+            <tr><td>Recondite</td><td>The definition in the text seems incorrect. Recondite actually means little-known or abstruse. A mnemonic could be: You must re-conduct the study because the subject is so recondite</td><td>restore/ settle/ show to be compatible/accept</td></tr>
+            <tr><td>Refine</td><td>To make something fine again by removing impurities</td><td>remove impurities/make minor changes to improve</td></tr>
+            <tr><td>Relinquish</td><td>To re-link your claim, then "wish" it goodbye. To give up</td><td>voluntarily cease to keep or claim/ give up</td></tr>
+            <tr><td>Ruminate</td><td>Like a cow chewing its cud, you think deeply about something</td><td>think deeply about something</td></tr>
+            <tr><td>Skittish</td><td>Easily scared, like a cat that will skitter away</td><td>(of animal) easily scared, (of person) unpredictable, playfully frivolous</td></tr>
+            <tr><td>Superfluous</td><td>"Super" flow; more than enough</td><td>unnecessary, especially through being more than enough/ surplus, redundant</td></tr>
+            <tr><td>Synoptic</td><td>A synopsis provides a general summary</td><td>of or forming general summary/ taking or involving a comprehensive mental views</td></tr>
+            <tr><td>Thorough</td><td>Complete with regard to every detail</td><td>complete with regard to every detail</td></tr>
+            <tr><td>Visionary</td><td>Someone with a vision for the future</td><td>thinking about or planning the future with imagination</td></tr>
+            <tr><td>Vociferous</td><td>Carrying your voice forcefully</td><td>expressing by vehement opinions, loud and forceful/ outspoken</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group17">
+        <h3 class="group-title">Group 17</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Acclaim</td><td>"A claim" to fame, praised publicly</td><td>praise enthusiastically and publicly</td></tr>
+            <tr><td>Ascertain</td><td>To make "as certain" as possible</td><td>find (something) out for certain, make sure of</td></tr>
+            <tr><td>Assertive</td><td>To assert your opinion confidently</td><td>having or showing a confident and forceful personality</td></tr>
+            <tr><td>Bogus</td><td>Something bogus is a "bogey" or a fake</td><td>not genuine or true</td></tr>
+            <tr><td>Cataclysmic</td><td>A catalyst for a cosmic disaster</td><td>large-scale and violent</td></tr>
+            <tr><td>Circumscribe</td><td>"Circum" (around) + "scribe" (write). To draw a line around something to restrict it</td><td>restrict (something) within limits</td></tr>
+            <tr><td>Complementary</td><td>They complete each other</td><td>combining in such a way as to enhance or emphasize the qualities of each other or another</td></tr>
+            <tr><td>Contentious</td><td>Someone who is content to argue</td><td>controversial, quarrelsome</td></tr>
+            <tr><td>Disingenuous</td><td>The opposite of ingenuous (innocent and candid). Not sincere</td><td>not candid or sincere/typically pretending that one</td></tr>
+            <tr><td>Divulge</td><td>To let information dive out into the public</td><td>make known (private or sensitive info)/ disclose/reveal</td></tr>
+            <tr><td>Dogmatic</td><td>A person who treats their opinions like religious dogma</td><td>inclined to law down principles as underlying true/highly opinionated</td></tr>
+            <tr><td>Fallacious</td><td>Full of fallacies or mistaken beliefs</td><td>based on a mistaken belief</td></tr>
+            <tr><td>Foolhardy</td><td>As reckless as a fool who is too hardy or bold</td><td>recklessly bold or harsh</td></tr>
+            <tr><td>Hinder</td><td>To get behind and obstruct</td><td>obstruct/ (body part) rear, hind</td></tr>
+            <tr><td>Impair</td><td>To make something the opposite of a perfect pair by weakening it</td><td>weaken or damage</td></tr>
+            <tr><td>Impugn</td><td>To get in someone's face and punch their argument by calling it into question</td><td>dispute the truth, call into question/challenge</td></tr>
+            <tr><td>Incessant</td><td>"In" (not) + "cease." Never stopping</td><td>continuing without pause or interruption</td></tr>
+            <tr><td>Inclined</td><td>To lean towards something</td><td>sloping/willing to do something/ make someone disposed to do something</td></tr>
+            <tr><td>Inveterate</td><td>Like an old veteran, a long-established habit</td><td>long-established and unlikely to change</td></tr>
+            <tr><td>Miserly</td><td>Like a miser, pitiably small</td><td>of or characteristic by of a miser/(quantity) pitiably small/inadequate</td></tr>
+            <tr><td>Patent</td><td>A patent gives you the easily recognizable right to an invention</td><td>government authority or license/ easily recognizable</td></tr>
+            <tr><td>Petulant</td><td>A pet that is acting like a spoiled toddler, being bad-tempered</td><td>bad-tempered/peevish/childishly sulky</td></tr>
+            <tr><td>Pithy</td><td>Full of pith (the essential part); terse and expressive</td><td>(of language or style) terse and vigorously expressive</td></tr>
+            <tr><td>Sanctimonious</td><td>A saint who acts monstrously by pretending to be morally superior</td><td>making a show of being morally superior to other people/self-righteous</td></tr>
+            <tr><td>Sound</td><td>Sound judgment is good and competent</td><td>not damaged/good judgment/competent/ an idea or impression conveyed by words</td></tr>
+            <tr><td>Tarnish</td><td>To turn something from shiny to less valuable</td><td>make or become less valuable or respected</td></tr>
+            <tr><td>Tepid</td><td>A cup of tea that has gone lukewarm and is unenthusiastic</td><td>lukewarm/showing little enthusiasm</td></tr>
+            <tr><td>Upbraid</td><td>To pull someone's braid up, scolding them</td><td>find fault with/scold</td></tr>
+            <tr><td>Vexation</td><td>The state of being vexed or annoyed</td><td>the state of being annoyed, frustrated or worried</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group18">
+        <h3 class="group-title">Group 18</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abet</td><td>To help someone, a bit, with something wrong</td><td>encourage or assist someone to do something wrong</td></tr>
+            <tr><td>Accessible</td><td>Able to be accessed or reached</td><td>able to be reached or entered</td></tr>
+            <tr><td>Acquisitive</td><td>Excessively interested in acquiring things</td><td>excessively interested in acquiring money or materials</td></tr>
+            <tr><td>Amalgamate</td><td>"A mal game" where you combine teams to form one</td><td>combine or unite to form one organization or structure</td></tr>
+            <tr><td>Attenuate</td><td>To make something tenuous or thin; to reduce its force</td><td>reduce the force, effect or value of</td></tr>
+            <tr><td>Augment</td><td>To add to something to make it greater</td><td>make something greater by adding to it, increase</td></tr>
+            <tr><td>Aversion</td><td>A strong dislike that makes you turn away from something</td><td>a strong dislike or disinclination</td></tr>
+            <tr><td>Blithe</td><td>"Be light"hearted, showing casual indifference</td><td>showing a casual and cheerful indifference considered to be callous or improper</td></tr>
+            <tr><td>Contempt</td><td>To feel someone is beneath consideration</td><td>the feeling that a person or a thing is worthless or beneath consideration</td></tr>
+            <tr><td>Dawdle</td><td>To move slowly, like a waddling duck</td><td>waste time, be slow</td></tr>
+            <tr><td>Deflect</td><td>To cause something to turn away from its intended path</td><td>cause to change direction/cause to deviate from intended</td></tr>
+            <tr><td>Discount</td><td>To give something a discounted value, regarding it as unworthy</td><td>regard as being unworthy of consideration</td></tr>
+            <tr><td>Dissident</td><td>Someone who dissents or disagrees with official policy</td><td>in opposition of official policy/ dissenting</td></tr>
+            <tr><td>Efficacious</td><td>Has a good effect; effective</td><td>successful in producing a desired result, effective</td></tr>
+            <tr><td>Equitable</td><td>Equal and fair</td><td>fair and impartial</td></tr>
+            <tr><td>Erratic</td><td>Prone to error; unpredictable</td><td>not even or regular in pattern or movement, unpredictable</td></tr>
+            <tr><td>Industrious</td><td>A hard worker in industry</td><td>diligent and hardworking</td></tr>
+            <tr><td>Inform</td><td>To give information</td><td>give facts or information</td></tr>
+            <tr><td>Irksome</td><td>Something that irks you is annoying</td><td>irritation, annoying</td></tr>
+            <tr><td>Manacle</td><td>Handcuffs that restrain a man</td><td>shackles/handcuffs</td></tr>
+            <tr><td>Modest</td><td>Not large or expensive; moderate</td><td>not large, elaborate or expensive/ self-deprecating</td></tr>
+            <tr><td>Noxious</td><td>Harmful, like a toxic substance</td><td>harmful, poisonous or very unpleasant</td></tr>
+            <tr><td>Pernicious</td><td>Having a harmful effect, like something that will perish you</td><td>having a harmful effect especially in a gradual way</td></tr>
+            <tr><td>Predicament</td><td>A difficult situation that is hard to predict a way out of</td><td>a difficult, unpleasant or embarrassing situation</td></tr>
+            <tr><td>Proficient</td><td>Pro-efficient; skilled</td><td>competent or skilled in doing or using something</td></tr>
+            <tr><td>Prolix</td><td>Using pro-level words in a long way; tediously lengthy</td><td>(of speech or writing) using or containing too many words; tediously lengthy</td></tr>
+            <tr><td>Scorn</td><td>Contempt, to treat with scorn</td><td>contempt/ refuse to do something because one is to proud</td></tr>
+            <tr><td>Subordinate</td><td>Sub-order; of less importance</td><td>of less or secondary importance</td></tr>
+            <tr><td>Unseemly</td><td>It does not seem proper</td><td>not proper or appropriate</td></tr>
+            <tr><td>Veritable</td><td>"Very-table"; used for emphasis, truly</td><td>used for emphasis, often to quality a metaphor</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group19">
+        <h3 class="group-title">Group 19</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Acolyte</td><td>An assistant who brings an "aqua-light" to a follower</td><td>an assistant or follower</td></tr>
+            <tr><td>Anoint</td><td>To rub with "an ointment" or oil</td><td>rubbing with oil/ choose as successor to or leading candidate for a position</td></tr>
+            <tr><td>Base</td><td>Someone with low morals is at the base of society</td><td>use as the foundation or starting point of something/ sordid, improper, low</td></tr>
+            <tr><td>Coercion</td><td>To force someone into cooperation</td><td>the action or practice of persuading someone to do something by using force or threat</td></tr>
+            <tr><td>Coin</td><td>To invent a new phrase is like minting a new coin</td><td>invent, create/money</td></tr>
+            <tr><td>Cunning</td><td>A cunning person is skillful in deceit</td><td>skill in achieving one's ends by deceit</td></tr>
+            <tr><td>Discomfort</td><td>To make someone feel "dis-comfort" or uneasy</td><td>make someone feel uneasy or embarrassed</td></tr>
+            <tr><td>Dissent</td><td>To "send" your opinion in a "different" direction; disagreement</td><td>disagreement</td></tr>
+            <tr><td>Distill</td><td>To purify a liquid; to extract the essential meaning</td><td>purify / extract the essential meaning or most important aspects of</td></tr>
+            <tr><td>Dubious</td><td>Sounds like "doubt-ious," hesitating or suspect</td><td>hesitating/ not to be relied upon, morally suspect</td></tr>
+            <tr><td>Ebullient</td><td>Like boiling water, cheerful and full of energy</td><td>cheerful and full of energy</td></tr>
+            <tr><td>Facetious</td><td>Making funny faces when you should be serious</td><td>treating serious issues with deliberately inappropriate humor; flippant</td></tr>
+            <tr><td>Fallible</td><td>Able to fall or make mistakes</td><td>capable of making mistakes or being wrongs</td></tr>
+            <tr><td>Florid</td><td>Like a flower, having a red or flushed complexion</td><td>having red or flushed complexion/ excessively intricate or elaborate</td></tr>
+            <tr><td>Gawky</td><td>Awkward, like a baby hawk learning to fly</td><td>nervously awkward and ungainly</td></tr>
+            <tr><td>Inveigle</td><td>To persuade someone with a "veiled" deception</td><td>persuade someone to do something by means of deception or flattered</td></tr>
+            <tr><td>Jettison</td><td>To throw something off a jet to abandon it</td><td>abandon or discard/ throw or drop</td></tr>
+            <tr><td>Mendacity</td><td>"Mend-a-city" with lies. Untruthfulness</td><td>untruthfulness</td></tr>
+            <tr><td>Munificent</td><td>"Money-efficient" in giving; very generous</td><td>characterized by great generosity</td></tr>
+            <tr><td>Naive</td><td>Lacking experience, like someone new</td><td>showing lack of experience, innocent</td></tr>
+            <tr><td>Noble</td><td>Someone of high rank with high moral principles</td><td>belonging by rank/high moral principles/superior quality</td></tr>
+            <tr><td>Parochial</td><td>A parish can sometimes have a narrow, limited outlook</td><td>narrow-minded, limited outbreak or scope/ church</td></tr>
+            <tr><td>Pedestrian</td><td>As dull as watching pedestrians walk by</td><td>lacking excitement, dull/ walking rather than vehicle</td></tr>
+            <tr><td>Prevaricate</td><td>To speak in a way that is "pre-varied" to be evasive</td><td>speak or act in an evasive way</td></tr>
+            <tr><td>Prime</td><td>The prime or most important time</td><td>of first importance/ most suitable/hey-day</td></tr>
+            <tr><td>Radical</td><td>Reaching the root of the matter; revolutionary</td><td>far-reaching, thorough, revolutionary</td></tr>
+            <tr><td>Recrudescence</td><td>A "crude" condition coming back again</td><td>the recurrence of an undesirable condition</td></tr>
+            <tr><td>Temporal</td><td>Relating to "time" and the worldly, not spiritual</td><td>secular, worldly, non-spiritual</td></tr>
+            <tr><td>Transitory</td><td>In transit; not permanent</td><td>not permanent</td></tr>
+            <tr><td>Viable</td><td>"Able" to live or work successfully</td><td>capable of working successfully feasible</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group20">
+        <h3 class="group-title">Group 20</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abreast</td><td>Side by side, like two people with their breasts aligned</td><td>side by side and facing the same way</td></tr>
+            <tr><td>Confound</td><td>Can't be found. Causes confusion</td><td>cause surprise or confusion/prove theory wrong/ defeat/ mixed up with something else</td></tr>
+            <tr><td>Digression</td><td>To move away from the direction of the main subject</td><td>a temporary departure from the main subject in speech or writing</td></tr>
+            <tr><td>Discrepancy</td><td>A creepy difference or inconsistency</td><td>an illogical or surprising lack of compatibility or inconsistency</td></tr>
+            <tr><td>Duplicitous</td><td>Has duplicate faces; deceitful</td><td>deceitful, (law) containing more than one allegation</td></tr>
+            <tr><td>Expedient</td><td>Speeds things up, even if improper</td><td>convenient and practical although possibly improper or immoral</td></tr>
+            <tr><td>Fabricate</td><td>To create a story from whole fabric</td><td>invent in order to deceive/ construct or manufacture especially from prepared component</td></tr>
+            <tr><td>Glum</td><td>Feeling gloomy</td><td>looking or feeling dejected, morose, gloomy</td></tr>
+            <tr><td>Harbinger</td><td>A thing that brings a sign of what is to come</td><td>a person or thing that announces or signals the approaches of another</td></tr>
+            <tr><td>Intrinsic</td><td>Within; belonging naturally</td><td>belonging naturally, essential</td></tr>
+            <tr><td>Largess</td><td>Generosity as large as the sea</td><td>generosity in bestowing money or gifts</td></tr>
+            <tr><td>Libertine</td><td>Indulges in pleasures with liberty, without moral principles</td><td>a person who freely indulges in sensual pleasures without moral principles</td></tr>
+            <tr><td>Malfeasance</td><td>"Mal" (bad) + "feasance" (act). A wrongdoing</td><td>wrongdoing, especially by a public official</td></tr>
+            <tr><td>Manifest</td><td>So obvious, it's like a ship's manifest listing everything clearly</td><td>obvious/ demonstrate/ become apparent through the appearance of a symptoms, (of ghost) appear</td></tr>
+            <tr><td>Minute</td><td>As small as a minute on a clock; insignificant</td><td>insignificant/ (of investigation) taking the smaller points into consideration/summarized record</td></tr>
+            <tr><td>Modish</td><td>In the mode or current fashion</td><td>following what is currently popular and fashionable</td></tr>
+            <tr><td>Nascent</td><td>A new scent that is just coming into existence</td><td>just coming into existence and beginning to display signs of future potential</td></tr>
+            <tr><td>Perennial</td><td>Lasting through all the years; everlasting</td><td>everlasting/ permanently engaged in a specified role or way of life</td></tr>
+            <tr><td>Pious</td><td>Devoutly religious, sometimes to the point of being a pain</td><td>devoutly religious/hypocrite/ (of a hope) sincere but not likely to be fulfilled</td></tr>
+            <tr><td>Providential</td><td>Occurring at a favorable time, as if by divine providence</td><td>occurring at a favorable time/ involving divine foresight or providence</td></tr>
+            <tr><td>Prowess</td><td>Having the skills of a pro</td><td>expertise in a particular activity or field/bravery in battle</td></tr>
+            <tr><td>Schism</td><td>A split, like using scissors</td><td>split between strongly opposed sections or parties</td></tr>
+            <tr><td>Slander</td><td>Spreading false statements is a scandal</td><td>defame, making false statements</td></tr>
+            <tr><td>Stalwart</td><td>Someone who will stand with you through war; loyal and reliable</td><td>loyal, reliable and hardworking</td></tr>
+            <tr><td>Supplicate</td><td>To supply a plea; to beg humbly</td><td>ask or beg something earnestly or humbly</td></tr>
+            <tr><td>Terse</td><td>Brief, like a text message that's just a "terse" reply</td><td>sparing in the use of words, abrupt</td></tr>
+            <tr><td>Tirade</td><td>A long, angry speech that leaves you tired</td><td>a long angry speech of criticism or accusation</td></tr>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abject</td><td>To be rejected and feel the maximum degree of bad</td><td>experienced or present to the maximum degree (of bad) extremely unpleasant and degrading</td></tr>
+            <tr><td>Amicable</td><td>Like an amigo, friendly</td><td>characterized by friendliness</td></tr>
+            <tr><td>Animosity</td><td>Like an animal city, full of strong hostility</td><td>strong hostility</td></tr>
+            <tr><td>Aver</td><td>To verify a statement</td><td>state or assert to the case, declare/ allege as fact in a support of a plea (LAW context)</td></tr>
+            <tr><td>Barrage</td><td>Like the bars of a cage, an overwhelming number of questions</td><td>overwhelming number of questions, criticisms etc</td></tr>
+            <tr><td>Cathartic</td><td>A cat that provides psychological relief</td><td>providing psychological belief through the open expression of strong emotions</td></tr>
+            <tr><td>Decipher</td><td>To de-code a cipher</td><td>succeed in understanding interpreting or identifying</td></tr>
+            <tr><td>Delusion</td><td>A misleading illusion</td><td>deception misleading/ mental disorder</td></tr>
+            <tr><td>Dispense</td><td>To get rid of something or supply it from a dispenser</td><td>supply or release/ get rid of</td></tr>
+            <tr><td>Eloquent</td><td>To speak elegantly and clearly</td><td>clearly expressing or indicating something</td></tr>
+            <tr><td>Enthrall</td><td>To hold someone in thrall, capturing their attention</td><td>capture the fascinated attention of, charm, enchant</td></tr>
+            <tr><td>Eradicate</td><td>To erase and get rid of completely</td><td>destroy completely</td></tr>
+            <tr><td>Fledgling</td><td>A young bird that has just grown its flight feathers; inexperienced</td><td>immature, inexperienced, underdeveloped, emerging</td></tr>
+            <tr><td>Fortitude</td><td>To have a strong fort of courage</td><td>courage in pain or adversity</td></tr>
+            <tr><td>Fortuitous</td><td>Happening by fortune or chance</td><td>happening by chance rather than intention</td></tr>
+            <tr><td>Goad</td><td>To poke with a goat horn to provoke</td><td>provoke or annoy someone as the stimulate on action</td></tr>
+            <tr><td>Imminent</td><td>"In a minute," it's about to happen</td><td>about to happen</td></tr>
+            <tr><td>Incontrovertible</td><td>In (not) + controvertible (debatable). Not able to be disputed</td><td>not able to be denied or disputed</td></tr>
+            <tr><td>Itinerant</td><td>An itinerary is for traveling from place to place</td><td>traveling from place to place</td></tr>
+            <tr><td>Magnanimous</td><td>Having a magnificent and generous spirit</td><td>generous or forgiving</td></tr>
+            <tr><td>Meritorious</td><td>Deserving merit or reward</td><td>deserving reward or praise</td></tr>
+            <tr><td>Mutiny</td><td>A "my-tiny" rebellion that grows into an open one</td><td>open rebellion against the proper authorities</td></tr>
+            <tr><td>Paradoxical</td><td>A pair of docs with self-contradicting opinions</td><td>seemingly absurd or self-contradicting</td></tr>
+            <tr><td>Perseverance</td><td>To persist severely</td><td>persistence in doing something despite difficulty</td></tr>
+            <tr><td>Render</td><td>To provide or make something</td><td>provide/make/cause to become/represent/translate/perform/melt down/cover</td></tr>
+            <tr><td>Repertoire</td><td>A collection of skills you are ready to perform</td><td>collection/ stock of skills or types of behavior that a person habitually does</td></tr>
+            <tr><td>Resilient</td><td>Able to re-silence difficulties by recovering quickly</td><td>able to withstand or recover quickly from difficulty conditions</td></tr>
+            <tr><td>Resolute</td><td>Absolutely determined</td><td>admirably purposeful, determined</td></tr>
+            <tr><td>Supple</td><td>Flexible, like a good supplement to a workout</td><td>flexible/ easily manipulated</td></tr>
+            <tr><td>Valor</td><td>Showing great courage and being valiant</td><td>great courage in the face of danger</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group22">
+        <h3 class="group-title">Group 22</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Cumbersome</td><td>"Come-bear-some." It's large and heavy, so come bear some of the weight</td><td>unwieldy, unmanageable, complicated</td></tr>
+            <tr><td>Unprecedented</td><td>Never preceded by anything like it before</td><td>never done or known before</td></tr>
+            <tr><td>Stinting</td><td>To be stingy with a supply</td><td>supply ungenerous or inadequate amount of something</td></tr>
+            <tr><td>Extrapolate</td><td>To take extra information and draw a conclusion</td><td>estimate or conclude something by extrapolating</td></tr>
+            <tr><td>Liability</td><td>You're liable or responsible</td><td>state of being responsible/ a person whose presence or behavior likely to put one at a disadvantage</td></tr>
+            <tr><td>Euphoric</td><td>A feeling of intense excitement, like you're in Utopia</td><td>characterized by feeling intense excitement</td></tr>
+            <tr><td>Elementary</td><td>As basic as elementary school</td><td>most basic kind/ straightforward and uncomplicated</td></tr>
+            <tr><td>Heterodox</td><td>"Hetero" (different) + "dox" (opinion). Not conforming to accepted beliefs</td><td>not conforming with accepted or orthodox standards or beliefs</td></tr>
+            <tr><td>Fervent</td><td>Like a fever, having passionate intensity</td><td>having or displaying a passionate intensity</td></tr>
+            <tr><td>Gaffe</td><td>An embarrassing mistake that makes you laugh</td><td>an unintentional act or remark causing embarrassment</td></tr>
+            <tr><td>Temper</td><td>To temper steel is to strengthen it by counterbalancing forces</td><td>act as a neutralizing or counterbalancing force to something</td></tr>
+            <tr><td>Painstaking</td><td>Taking pains to be careful and thorough</td><td>done with or employing great care and thoroughness</td></tr>
+            <tr><td>Economy</td><td>Careful management, being economical</td><td>careful management and available resources</td></tr>
+            <tr><td>Qualm</td><td>An uneasy feeling that isn't calm</td><td>uneasy feeling of doubt/ misgiving, doubt</td></tr>
+            <tr><td>Exonerate</td><td>To make an ex-offender, absolving them from blame</td><td>absolve from blame for wrongdoing/release from duty</td></tr>
+            <tr><td>Implicit</td><td>Implied but not directly stated</td><td>suggested though not directed expressed expressed/ always to be found in/ absolute</td></tr>
+            <tr><td>Phlegmatic</td><td>Someone so calm they seem full of phlegm</td><td>unemotional and stolidly calm disposition/self-controlled</td></tr>
+            <tr><td>Propensity</td><td>A pro-level tendency to behave a certain way</td><td>natural tendency to behave in a particular way</td></tr>
+            <tr><td>Foment</td><td>To stir up trouble like fermenting yeast</td><td>instigate or stir up</td></tr>
+            <tr><td>Embellish</td><td>To add bells to something to decorate it</td><td>decorate/make more interesting by adding extra details</td></tr>
+            <tr><td>Inviolate</td><td>Not violated; free from injury</td><td>free or safe from injury or violation</td></tr>
+            <tr><td>Renege</td><td>To go against a promise again</td><td>go back on a promise, undertaking, or contact</td></tr>
+            <tr><td>Arresting</td><td>So eye-catching it arrests your attention</td><td>eye-catching/seize/ attract the attention/stop or check</td></tr>
+            <tr><td>Obstinate</td><td>An obstacle that is difficult to change</td><td>very difficult to change or overcome</td></tr>
+            <tr><td>Vivacious</td><td>Full of life ("viva")</td><td>attractively lively and animated</td></tr>
+            <tr><td>Histrionic</td><td>Overly dramatic behavior, like history class theatrics</td><td>dramatic behavior designed to attract attention</td></tr>
+            <tr><td>Prodigious</td><td>Like a child prodigy, remarkably great</td><td>remarkably great in extent size or degree</td></tr>
+            <tr><td>Tentative</td><td>Like a temporary tent, not certain or fixed</td><td>provisional/ not certain or fixed, hesitant</td></tr>
+            <tr><td>Falter</td><td>To fall or lose strength</td><td>lose strength or momentum/move hesitantly</td></tr>
+            <tr><td>Chastise</td><td>To scold severely, as if chasing someone with a stick</td><td>rebuke or reprimand severely, punish</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group23">
+        <h3 class="group-title">Group 23</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Intermittent</td><td>"In-and-out-mittent"; sporadic</td><td>sporadic, not continuous or steady</td></tr>
+            <tr><td>Profound</td><td>Pro-level knowledge that is found deep within</td><td>very great or intense/showing great knowledge</td></tr>
+            <tr><td>Propagate</td><td>To spread ideas through the proper gates</td><td>reproduce / spread or promote</td></tr>
+            <tr><td>Allusive</td><td>To allude to something without mentioning it directly</td><td>using or containing suggestion rather than explicit mention</td></tr>
+            <tr><td>Glib</td><td>Fluent but insincere, like a salesperson telling a "good lie."</td><td>fluent but insincere and shallow</td></tr>
+            <tr><td>Curb</td><td>Like a street curb, it restrains or checks something</td><td>restrain or check on something</td></tr>
+            <tr><td>Lull</td><td>A lullaby calms you</td><td>make someone feel deceptively secure or confident/ calm</td></tr>
+            <tr><td>Mettlesome</td><td>Full of metal or spirit and courage</td><td>full of spirit and courage, lively</td></tr>
+            <tr><td>Astute</td><td>An "A-student" is shrewd</td><td>shrewd</td></tr>
+            <tr><td>Fawn</td><td>A baby deer (fawn) gives an exaggerated display of affection</td><td>give a servile display of exaggerated flattery or affection</td></tr>
+            <tr><td>Precipitous</td><td>Like a precipice or cliff; dangerously steep</td><td>dangerously high or steep/ done suddenly or without careful consideration</td></tr>
+            <tr><td>Repercussion</td><td>The percussion sound that echoes back as an unintended consequence</td><td>unintended consequence of an event or action</td></tr>
+            <tr><td>Regress</td><td>To go back in progress</td><td>return to a former or less developed state</td></tr>
+            <tr><td>Refute</td><td>To refuse an argument by disproving it</td><td>disprove, deny or contradict</td></tr>
+            <tr><td>Replenish</td><td>To "re-plenty" something; to fill it up again</td><td>fill something up again, restore</td></tr>
+            <tr><td>Evoke</td><td>To call forth a feeling with your voice</td><td>bring or recall/elicit(response)/invoke</td></tr>
+            <tr><td>Ire</td><td>When you're full of anger, you feel the fire</td><td>anger</td></tr>
+            <tr><td>Languid</td><td>Lacking energy, as if you're speaking another language</td><td>having or showing disinclination for physical effort/ weak from illness or fatigue</td></tr>
+            <tr><td>Mollify</td><td>To "nullify" anger by appeasing it</td><td>appease the anger or anxiety/ reduce the severity</td></tr>
+            <tr><td>Pretentious</td><td>Pretending to be more important than you are</td><td>ostentatious, attempting to impress by affecting greater important or merit than is actually possessed</td></tr>
+            <tr><td>Duress</td><td>To be under "dur-ess" or hard stress/threats</td><td>threats, violence, constraint or other action used to coerce someone into doing something</td></tr>
+            <tr><td>Vigilant</td><td>Keeping a careful watch, like a vigilante</td><td>keeping careful watch for possible danger and difficulties</td></tr>
+            <tr><td>Headstrong</td><td>So determined your head is as strong as a rock</td><td>energetically willful and determined</td></tr>
+            <tr><td>Convalescent</td><td>To "come-well" after an illness</td><td>recovering from illness or medical treatment</td></tr>
+            <tr><td>Nonplussed</td><td>So surprised you feel there's "no plus" or way forward</td><td>so surprised and confused that one is unsure how to act</td></tr>
+            <tr><td>Fret</td><td>To be visibly anxious, like a guitar string that's been fretted too much</td><td>visibly anxious / gradually wear away by rubbing / flow in waves</td></tr>
+            <tr><td>Decry</td><td>To cry down or publicly denounce</td><td>publicly denounce</td></tr>
+            <tr><td>Recourse</td><td>A "re-course" of action for help</td><td>source of help in difficult situation/legal right to demand compensation</td></tr>
+            <tr><td>Commence</td><td>To come into being; to begin</td><td>begin</td></tr>
+            <tr><td>Neutralize</td><td>To make something neutral</td><td>counteract, offset, counterbalance</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group24">
+        <h3 class="group-title">Group 24</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Exorcise</td><td>To remove an unpleasant memory, like an exorcism</td><td>completely remove from one's mind or memory(unpleasant)</td></tr>
+            <tr><td>Finicky</td><td>Very fussy, needing things to be fine</td><td>fussy about their needs, greater attention to detail</td></tr>
+            <tr><td>Assail</td><td>To attack with a sail</td><td>attack/trouble/criticize strongly</td></tr>
+            <tr><td>Contravene</td><td>To come against a rule</td><td>offend against the prohibition/ conflict with</td></tr>
+            <tr><td>Reiterate</td><td>To re-iterate or repeat</td><td>repeat, typically for emphasis or clarity</td></tr>
+            <tr><td>Poignant</td><td>A "poisonous" feeling of sadness or regret</td><td>keen sense of sadness or regret</td></tr>
+            <tr><td>Inundate</td><td>To be "in-under" a date of things to do; overwhelmed</td><td>overwhelm with things or people to be dealt with flood</td></tr>
+            <tr><td>Oblivion</td><td>To be oblivious or unaware</td><td>unaware</td></tr>
+            <tr><td>Ironclad</td><td>Covered in iron, protected</td><td>covered or protected with iron</td></tr>
+            <tr><td>Plaintive</td><td>Making a complaint in a sad, mournful sound</td><td>sounding sad and mournful</td></tr>
+            <tr><td>Surmount</td><td>To get over a mountain; to overcome</td><td>overcome difficulty/ stand on top of</td></tr>
+            <tr><td>Escalate</td><td>To increase rapidly, like going up an escalator</td><td>increase rapidly, make more intense or serious</td></tr>
+            <tr><td>Denounce</td><td>To announce that something is wrong</td><td>publicly declare to be wrong/ inform against</td></tr>
+            <tr><td>Foil</td><td>To wrap an enemy's plan in foil to prevent it from succeeding</td><td>prevent from succeeding/frustrate the efforts</td></tr>
+            <tr><td>Deviate</td><td>To move away from the established way</td><td>depart from an established course</td></tr>
+            <tr><td>Buoyant</td><td>Cheerful, like a boy on a float</td><td>cheerful and optimistic/ (economy) engaged in successful trade on activity / floating</td></tr>
+            <tr><td>Benevolent</td><td>"Bene" (good) + "volent" (wishing). Well-meaning</td><td>well meaning and kindly</td></tr>
+            <tr><td>Intertwine</td><td>To twist together</td><td>connect or link closely/twist or twine together</td></tr>
+            <tr><td>Berate</td><td>To rate someone badly and angrily</td><td>scold or criticize angrily</td></tr>
+            <tr><td>Quiescent</td><td>In a quiet state of inactivity</td><td>in a state or period of inactivity or dormancy</td></tr>
+            <tr><td>Mercurial</td><td>Unpredictable, like the element mercury</td><td>subject to sudden or unpredictable changes of mood or mind</td></tr>
+            <tr><td>Despotic</td><td>Like a despot or tyrant</td><td>of or typical of a despot, tyrannical/autocratic</td></tr>
+            <tr><td>Perpetrate</td><td>To be the perpetrator of a harmful act</td><td>carry out or commit(harmful, illegal or immoral action)</td></tr>
+            <tr><td>Subsume</td><td>To assume something into a larger group</td><td>include or absorb in something else</td></tr>
+            <tr><td>Subside</td><td>To go down, like a submarine</td><td>become less intense, violent or severe/go down to a lower or the normal level</td></tr>
+            <tr><td>Condone</td><td>To forgive or "pardon" bad behavior</td><td>accept (behavior that is considered morally wrong)</td></tr>
+            <tr><td>Tangential</td><td>Going off on a tangent</td><td>relating to or along a tangent/ diverging from a previous course or line</td></tr>
+            <tr><td>Jeopardize</td><td>To put something in jeopardy</td><td>threaten, endanger</td></tr>
+            <tr><td>Disinterested</td><td>Not interested in a biased way; impartial</td><td>unbiased</td></tr>
+            <tr><td>Buttress</td><td>To support something like the buttress of a castle</td><td>support/increase the strength of or justification for</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 6: Groups 25–29</h2>
+        <p>Mastery level</p>
+      </div>
+
+      <div class="group" id="group25">
+        <h3 class="group-title">Group 25</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Bereft</td><td>"Been left"; deprived and sad</td><td>deprived of or lacking (something)/ sad and lonely</td></tr>
+            <tr><td>Frailty</td><td>Frail and weak</td><td>weak and delicate/ weakness in character or morals</td></tr>
+            <tr><td>Disentangle</td><td>To free from a tangle</td><td>free from something that they are entangled with</td></tr>
+            <tr><td>Pomposity</td><td>The quality of being pompous or self-important</td><td>the quality of being pompous; self-importance</td></tr>
+            <tr><td>Delineate</td><td>To draw the lines precisely</td><td>describe or portray precisely/indicate the exact</td></tr>
+            <tr><td>Conclusive</td><td>A conclusion that proves a case</td><td>(of evidence or argument) having or likely to have the effort of proving a case</td></tr>
+            <tr><td>Vitality</td><td>Full of vital energy</td><td>the state of being strong and active; energy</td></tr>
+            <tr><td>Steadfast</td><td>"Steady" and "fast" in loyalty</td><td>resolutely or dutifully firm and unwavering, loyal</td></tr>
+            <tr><td>Archetype</td><td>The original type or typical example</td><td>a very typical example of a certain person or thing</td></tr>
+            <tr><td>Relent</td><td>To "re-lend" your mercy; to become less severe</td><td>become less severe and intense</td></tr>
+            <tr><td>Grievance</td><td>A reason to be grieved</td><td>unfair treatment</td></tr>
+            <tr><td>Harangue</td><td>A lengthy, aggressive speech that makes you want to hang yourself</td><td>a lengthy and aggressive speech</td></tr>
+            <tr><td>Auspicious</td><td>Sounds like "our-spices" are favorable for success</td><td>conductive to success, favorable</td></tr>
+            <tr><td>Yield</td><td>To produce or surrender</td><td>produce or provide/surrender/ give way under force or pressure</td></tr>
+            <tr><td>Appropriate</td><td>To take something for your own proper use</td><td>proper/seize/ devote to a special purpose</td></tr>
+            <tr><td>Rhetoric</td><td>The art of persuasive speaking, sometimes seen as just "hot air."</td><td>the art of effective or persuasive speaking or writing</td></tr>
+            <tr><td>Conspire</td><td>To "breathe together" in a secret plan</td><td>make secret plans jointly</td></tr>
+            <tr><td>Whimsical</td><td>Full of playful whims</td><td>playfully fanciful/ acting in a capricious manner</td></tr>
+            <tr><td>Proxy</td><td>To represent someone else in close proximity</td><td>the authority to represent someone else</td></tr>
+            <tr><td>Sparse</td><td>"Spare" and thinly scattered</td><td>thinly dispersed or scattered, in short supply</td></tr>
+            <tr><td>Adverse</td><td>"Adds verse" conditions; harmful</td><td>preventing success, harmful</td></tr>
+            <tr><td>Exhort</td><td>To "urge out" strongly</td><td>strongly encourage or urge</td></tr>
+            <tr><td>Poise</td><td>Graceful manner, like a ballerina poised on her toes</td><td>graceful, composure and dignity of manner</td></tr>
+            <tr><td>Adept</td><td>To be "adapted" and skilled</td><td>very skilled at something</td></tr>
+            <tr><td>Tedious</td><td>So dull it makes you "tear-y."</td><td>too long, slow or dull</td></tr>
+            <tr><td>Rigor</td><td>A rigid feeling of cold</td><td>a sudden feeling of cold with shivering accompanied by a rise in temperature</td></tr>
+            <tr><td>Articulate</td><td>To speak fluently, like an article</td><td>ability to speak fluently/ jointed segments</td></tr>
+            <tr><td>Suspect</td><td>To doubt someone is not what they seem</td><td>doubt the genuineness</td></tr>
+            <tr><td>Ploy</td><td>A cunning plan</td><td>cunning plan/ an activity done for amusement</td></tr>
+            <tr><td>Captious</td><td>Tending to capture or find fault</td><td>tending to find fault or raise petty objections</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group26">
+        <h3 class="group-title">Group 26</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Lugubrious</td><td>Sounds like "Lego-buried," which would make you sad and dismal</td><td>looking or sending sad and dismal</td></tr>
+            <tr><td>Transcend</td><td>To "ascend" and go beyond</td><td>go beyond the range/surpass</td></tr>
+            <tr><td>Flustered</td><td>To be agitated like a bird "fluttering" its wings</td><td>make (someone) agitated or confused</td></tr>
+            <tr><td>Incidental</td><td>Occurring by chance, like an accident</td><td>occurring by chance/happening as a result/ less important</td></tr>
+            <tr><td>Axiomatic</td><td>A self-evident truth, like an "axiom" in math</td><td>self-evident or unquestionable</td></tr>
+            <tr><td>Macabre</td><td>Disturbing, like a "massacre."</td><td>disturbing because concerned with or causing a fear of death</td></tr>
+            <tr><td>Gullible</td><td>Easily persuaded, like a baby "gull."</td><td>easily persuaded to believe something, credulous</td></tr>
+            <tr><td>Ingrained</td><td>Firmly fixed, like a stain "in the grain" of wood</td><td>firmly fixed or established/ difficult to change</td></tr>
+            <tr><td>Tacit</td><td>Understood without being spoken, like a "silent pact."</td><td>understood or implied without being stated, implicit</td></tr>
+            <tr><td>Exorbitant</td><td>"Exiting the orbit" of a reasonable price</td><td>unreasonably high (of price or amount)</td></tr>
+            <tr><td>Serene</td><td>Calm and peaceful, like a "serene scene."</td><td>calm, peaceful and untroubled, tranquil</td></tr>
+            <tr><td>Treatise</td><td>A written work that "treats" a subject formally</td><td>a written work dealing formally and systematically with a subject</td></tr>
+            <tr><td>Corporeal</td><td>Relating to the body, like a "corpse."</td><td>relating to a person's body especially as opposed to their spirit, (law) consisting of material objects</td></tr>
+            <tr><td>Figurative</td><td>Using "figures" of speech; metaphorical</td><td>departing from a literal use of words, metaphorical</td></tr>
+            <tr><td>Morose</td><td>Sullen and ill-tempered, like you have "no rose."</td><td>sullen and ill-tempered</td></tr>
+            <tr><td>Fickle</td><td>Changing frequently, like a candle flame that "flickers."</td><td>changing frequently especially as regard one's loyalties or affections/capricious</td></tr>
+            <tr><td>Ramification</td><td>A complex consequence, like the branching of a "ram's horn."</td><td>a complex or unwelcome consequence of an action</td></tr>
+            <tr><td>Eclectic</td><td>"Electing" ideas from a broad range of sources</td><td>deriving ideas, style or taste from a broad and diverse range of sources</td></tr>
+            <tr><td>Apprehensive</td><td>Anxious that something bad will "happen."</td><td>anxiety or fear that something bad will happen</td></tr>
+            <tr><td>Idiosyncratic</td><td>A peculiar trait, like an "idiot's syncrasy."</td><td>peculiar or individual</td></tr>
+            <tr><td>Insolent</td><td>Showing rude lack of respect, like "insulting" someone</td><td>showing a rude and arrogant lack of respect</td></tr>
+            <tr><td>Ardent</td><td>Passionate, like a piece of art that makes you feel "art-dent."</td><td>very enthusiastic or passionate</td></tr>
+            <tr><td>Doctrinaire</td><td>Seeking to impose a "doctrine" rigidly</td><td>dogmatic, rigid seeking to impose a doctrine in all circumstances without regard to practical considerations</td></tr>
+            <tr><td>Officious</td><td>Intrusively enthusiastic, like an "officer" interfering where they're not needed</td><td>intrusively enthusiastic in offering help or advice/interfering</td></tr>
+            <tr><td>Cease</td><td>To stop</td><td>come or bring to an end</td></tr>
+            <tr><td>Lavish</td><td>Generous, as if you "love-ish" to give</td><td>very generous or extravagant/rich</td></tr>
+            <tr><td>Conductive</td><td>Having the property of "conducting" something</td><td>having the property of conducting something</td></tr>
+            <tr><td>Equanimity</td><td>"Equal" calmness in a difficult situation</td><td>calmness and composure, especially in a difficult situation</td></tr>
+            <tr><td>Supplant</td><td>To replace something by "supplying a new plant."</td><td>supersede and replace</td></tr>
+            <tr><td>Lampoon</td><td>To publicly criticize, like shining a "lamp on" someone's flaws</td><td>publicly criticize someone by using ridicule, irony or sarcasm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group27">
+        <h3 class="group-title">Group 27</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Bombastic</td><td>High-sounding but with little meaning, like a "bomb" of words</td><td>high-sounding but with little meaning, inflated</td></tr>
+            <tr><td>Lambaste</td><td>To criticize harshly, like hitting someone with a "lamb" and then "basting" them</td><td>criticize harshly</td></tr>
+            <tr><td>Undercut</td><td>To offer a lower price by "cutting under" the competitor</td><td>offer goods or services at a lower price than competitor</td></tr>
+            <tr><td>Euphemism</td><td>A polite term, like saying "you-famous" instead of something harsh</td><td>polite term/coy term</td></tr>
+            <tr><td>Turpitude</td><td>Wicked behavior that makes you want to "turn" away</td><td>depraved of wicked behavior or character</td></tr>
+            <tr><td>Peccadillo</td><td>A minor sin, like a little "peck."</td><td>a relatively minor fault or sin</td></tr>
+            <tr><td>Antagonistic</td><td>To be "anti" and cause hostility</td><td>cause to become hostile</td></tr>
+            <tr><td>Barren</td><td>Unproductive, like a "bare land."</td><td>unproductive/ infertile/lifeless</td></tr>
+            <tr><td>Philistine</td><td>Indifferent to culture, like someone who would "fill a stein" with beer rather than appreciate art</td><td>hostile or indifferent to culture and arts</td></tr>
+            <tr><td>Relegate</td><td>To assign to an inferior rank, like sending someone to the "rear gate."</td><td>assign an inferior rank or position to</td></tr>
+            <tr><td>Dirge</td><td>A sad song that makes you want to "die."</td><td>a lament for the dead, especially one forming part of a funeral rite</td></tr>
+            <tr><td>Imperturbable</td><td>"Not perturbable"; unable to be upset</td><td>unable to be upset or excited, calm</td></tr>
+            <tr><td>Excoriate</td><td>To "score out" someone by criticizing them severely</td><td>criticize severely / remove part of the surface of skin</td></tr>
+            <tr><td>Curmudgeon</td><td>A bad-tempered person who says "curse mud on" everything</td><td>a bad-tempered person, especially an old one</td></tr>
+            <tr><td>Swindle</td><td>To deceive someone, like a "swinging candle" that distracts</td><td>use deception to deprive (someone) of money or possessions</td></tr>
+            <tr><td>Wheedle</td><td>To persuade with flattery, like a "wheel" that turns smoothly</td><td>use flattery or coaxing in order to persuade someone to do something or give one something</td></tr>
+            <tr><td>Sentimental</td><td>Prompted by "sent" feelings of tenderness</td><td>prompted by feeling of tenderness, sadness or nostalgia</td></tr>
+            <tr><td>Miscreant</td><td>A person who has done something wrong, a "mis-creator."</td><td>a person who has done something wrong or unlawful</td></tr>
+            <tr><td>Implacable</td><td>"Not placatable"; unable to be appeased</td><td>unable to be appeased or placated</td></tr>
+            <tr><td>Haughty</td><td>Arrogantly superior, like someone who thinks they are "hotty."</td><td>arrogantly superior and disdainful</td></tr>
+            <tr><td>Estimable</td><td>"Esteemed" and worthy of great respect</td><td>worthy of great respect</td></tr>
+            <tr><td>Tangible</td><td>Perceptible by touch, like a "tangerine."</td><td>perceptible by touch/ clear and definite</td></tr>
+            <tr><td>Chary</td><td>Cautiously reluctant, like being "charry" or careful with fire</td><td>wary, cautiously or suspiciously reluctant to do something</td></tr>
+            <tr><td>Repugnant</td><td>Unacceptable, as if it makes you want to "puke."</td><td>unacceptable / in conflict or incompatible with</td></tr>
+            <tr><td>Xenophobic</td><td>A "phobia" of "xeno" (foreigners)</td><td>having or showing a dislike against people from other counties/racist</td></tr>
+            <tr><td>Squander</td><td>To waste money, like a "squadron" that's been scattered</td><td>waste in a reckless manner</td></tr>
+            <tr><td>Cajole</td><td>To persuade with flattery, like a friendly "caw" from a crow</td><td>persuade to do something by flattery</td></tr>
+            <tr><td>Unalloyed</td><td>"Not alloyed"; pure</td><td>pure/ complete and unreserved</td></tr>
+            <tr><td>Heady</td><td>Having a strong effect, like something that goes to your "head."</td><td>intoxicating / having a strong or exhilarating effect</td></tr>
+            <tr><td>Exigent</td><td>Demanding, like an "urgent exit."</td><td>pressing, demanding</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group28">
+        <h3 class="group-title">Group 28</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Quibble</td><td>A slight criticism, like a "quill" pen making a tiny, annoying mark</td><td>a slight criticism about a trivial matter; adverse comment; nitpicking</td></tr>
+            <tr><td>Gauche</td><td>Socially awkward, like saying "Go wash" to a guest</td><td>lacking ease or grace; unsophisticated and socially awkward; inelegant; ungainly</td></tr>
+            <tr><td>Wily</td><td>Skilled at gaining an advantage, like a wily coyote</td><td>skilled at gaining an advantage, especially deceitfully; clever; shrewd, crafty</td></tr>
+            <tr><td>Sophistry</td><td>Using clever but false arguments, like a sophisticated trick</td><td>the use of fallacious arguments, especially with the intention of deceiving; specious arguments</td></tr>
+            <tr><td>Agitated</td><td>Troubled or nervous, like you've been shaken</td><td>feeling or appearing troubled or nervous; perturbed; flustered; unnerved; ruffled; rattled</td></tr>
+            <tr><td>Quarantined</td><td>Isolated</td><td>isolated</td></tr>
+            <tr><td>Coy</td><td>Pretending to be shy, like a "toy" that's hard to get</td><td>making a pretense of shyness or modesty that is intended to be alluring; reluctant to give details</td></tr>
+            <tr><td>Hysterical</td><td>Uncontrolled extreme emotion, or extremely funny</td><td>deriving from or affected by uncontrolled extreme emotion; overwrought; unrestrained; frenzied; (informal) extremely funny</td></tr>
+            <tr><td>Recant</td><td>To "re-can't" believe in something; to take back a statement</td><td>say that one no longer holds an opinion or belief; disavow; forswear; change one's mind; retract</td></tr>
+            <tr><td>Quandary</td><td>In a state of uncertainty, like being stuck in quicksand</td><td>a state of perplexity or uncertainty over what to do in a difficult situation; a practical dilemma</td></tr>
+            <tr><td>Affront</td><td>An offense that feels like it's "in front" of everyone</td><td>an action or remark that causes outrage or offense; insult; offense; slight; snub; slur</td></tr>
+            <tr><td>Endemic</td><td>A condition found "in them"—a specific area or group</td><td>(of a disease or social condition) found particularly in a specific area or group; (of a plant or animal) native and restricted to a certain place</td></tr>
+            <tr><td>Abstract</td><td>To "abs" (away) "tract" (pull); to extract or remove something</td><td>consider (something) theoretically or separately from something else; extract or remove (something)</td></tr>
+            <tr><td>Burnish</td><td>To polish something until it has a nice "burn" or shine</td><td>polish up; buff up; enhance or perfect (something such as a reputation or a skill)</td></tr>
+            <tr><td>Disperse</td><td>To "dis-apart" and scatter</td><td>break up; split up; dissipate; scatter; go into different direction</td></tr>
+            <tr><td>Enmity</td><td>The feeling an enemy has for you</td><td>the state or feeling of being actively opposed or hostile to someone or something; animosity; antipathy</td></tr>
+            <tr><td>Retiring</td><td>Shy and fond of retiring from social situations</td><td>shy and fond of being on one's own; diffident, shrinking; self-effacing; unassuming</td></tr>
+            <tr><td>Ravage</td><td>To destroy with the rage of a wild animal</td><td>lay waste; devastate; leave in ruins; wreak havoc on; leave desolate; pillage</td></tr>
+            <tr><td>Inchoate</td><td>Just beginning and still incoherent, like an "inch of chaos."</td><td>beginning; rudimentary; confused or incoherent</td></tr>
+            <tr><td>Impudent</td><td>Not showing respect, like a rude "imp."</td><td>not showing due respect for another person; impertinent; brazen; cheeky; presumptuous</td></tr>
+            <tr><td>Redoubtable</td><td>A formidable opponent who makes you have "double doubts."</td><td>(of a person) formidable, especially as an opponent; fearsome; awe-inspiring</td></tr>
+            <tr><td>Shrill</td><td>A high-pitched, piercing sound that makes you "shiver."</td><td>high-pitched; piercing; screeching</td></tr>
+            <tr><td>Deprecate</td><td>To express disapproval, like hoping something will "depreciate" in value</td><td>express disapproval of; frown on; object to</td></tr>
+            <tr><td>Disdain</td><td>To look down on someone "with disdain."</td><td>scorn; deride; regard with contempt; sneer at; spurn; rebuff</td></tr>
+            <tr><td>Quash</td><td>To squash or reject a legal procedure</td><td>reject or void, especially by legal procedure; cancel; rescind; suppress; put to an end; stamp out</td></tr>
+            <tr><td>Distend</td><td>To swell from inside, like a "dis-tended" balloon</td><td>swell or cause to swell by pressure from inside; bulge; enlarge</td></tr>
+            <tr><td>Penchant</td><td>A strong liking, as if you'd use a "pen" to "chant" its praises</td><td>liking; fondness; preference; inclination; predilection; proclivity</td></tr>
+            <tr><td>Abeyance</td><td>In a state of suspension, like being held "at bay."</td><td>a state of suspension; a state of dormancy; a state of latency; pending</td></tr>
+            <tr><td>August</td><td>Respected and impressive, like the month of August</td><td>respected and impressive; distinguished; eminent; venerable; illustrious; esteemed</td></tr>
+            <tr><td>Substantiate</td><td>To give substance to a claim; to prove it</td><td>prove; show to be true; give substance to; support; justify; vindicate; corroborate</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group29">
+        <h3 class="group-title">Group 29</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Propitious</td><td>"Pro-petitions" are favorable for success</td><td>giving or indicating a good chance of success; favorable</td></tr>
+            <tr><td>Ominous</td><td>Like an "omen," giving the impression that something bad will happen</td><td>giving the impression that something bad or unpleasant is going to happen; threatening; inauspicious</td></tr>
+            <tr><td>Detente</td><td>The "tents" of two opposing armies are taken down, easing hostility</td><td>the easing of hostility or strained relations, especially between countries</td></tr>
+            <tr><td>Outlandish</td><td>Bizarre, as if from an "out-land."</td><td>looking or sounding bizarre or unfamiliar</td></tr>
+            <tr><td>Abscond</td><td>To leave secretly, like a con "absent" in a "second."</td><td>leave hurriedly and secretly, typically to avoid detection of or arrest for an unlawful action such as theft; run away; flee</td></tr>
+            <tr><td>Imbroglio</td><td>A confused situation, like being "in" a "foglio" (Italian for sheet/mess)</td><td>an extremely confused, complicated, or embarrassing situation</td></tr>
+            <tr><td>Languish</td><td>To weaken, like a plant in a dry "land."</td><td>weaken, deteriorate, waste away, be disregarded, experience hardship</td></tr>
+            <tr><td>Nimble</td><td>Quick and light, like jumping over a sewing "thimble."</td><td>quick and light in movement or action; agile; (of the mind) quick to comprehend</td></tr>
+            <tr><td>Prurient</td><td>Having an excessive interest in sexual matters, like a "pure-isn't" mind</td><td>having or encouraging an excessive interest in sexual matters</td></tr>
+            <tr><td>Bawdy</td><td>Dealing with sexual matters in a comically indecent way, like a "body" joke</td><td>dealing with sexual matters in a comical way; humorously indecent</td></tr>
+            <tr><td>Croon</td><td>To sing softly, like a "crow" in the "noon."</td><td>hum or sing in a soft, low voice, especially in a sentimental manner</td></tr>
+            <tr><td>Aspersion</td><td>An attack on someone's reputation, like casting "a curse on" them</td><td>an attack on the reputation or integrity of someone or something</td></tr>
+            <tr><td>Nadir</td><td>The lowest point, the opposite of zenith</td><td>the lowest point in the fortunes of a person or organization</td></tr>
+            <tr><td>Dowdy</td><td>Unfashionable, like something your "daddy" would wear</td><td>(of a person or their clothes) unfashionable and without style in appearance (typically used of a woman)</td></tr>
+            <tr><td>Sadistic</td><td>Deriving pleasure from others' "sadness."</td><td>deriving pleasure from inflicting pain, suffering, or humiliation on others</td></tr>
+            <tr><td>Echelon</td><td>A level or rank, like a step on a "ladder."</td><td>level, rank, position (MILITARY)</td></tr>
+            <tr><td>Depose</td><td>To "de-position" someone from office</td><td>remove from office suddenly and forcefully; (LAW) testify to or give (evidence) on oath, typically in a written statement</td></tr>
+            <tr><td>Apogee</td><td>The highest point, like the "peak" of a mountain</td><td>the highest point in the development of something; a climax or culmination</td></tr>
+            <tr><td>Ennui</td><td>A feeling of boredom, as if there is "nothing new."</td><td>a feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement</td></tr>
+            <tr><td>Collude</td><td>To cooperate secretly, like being "glued" together</td><td>cooperate in a secret or unlawful way in order to deceive or gain an advantage over others</td></tr>
+            <tr><td>Conviction</td><td>A "convinced" and firmly held belief</td><td>declaration (or pronouncement) of guilt, sentence, judgement; a firmly held belief</td></tr>
+            <tr><td>Conflagration</td><td>A large fire, like a whole "congregation" on fire</td><td>an extensive fire which destroys a great deal of land or property</td></tr>
+            <tr><td>Chagrin</td><td>Distress at having failed, like being "charged in" for a mistake</td><td>distress or embarrassment at having failed or been humiliated</td></tr>
+            <tr><td>Contretemps</td><td>A minor dispute, a "counter-time" or unfortunate occurrence</td><td>a minor dispute or disagreement; an unexpected and unfortunate occurrence</td></tr>
+            <tr><td>Commiserate</td><td>To share in someone's "misery."</td><td>offer sympathy to, be moved by, condole with</td></tr>
+            <tr><td>Zenith</td><td>The highest point, the "peak."</td><td>the time at which something is most powerful or successful</td></tr>
+            <tr><td>Fulcrum</td><td>The central point, like the "full crumb" of a cookie</td><td>the point on which a lever rests or is supported and on which it pivots; a thing that plays a central or essential role</td></tr>
+            <tr><td>Expatiate</td><td>To write at length, as if to "expand" on a topic</td><td>speak or write at length or in detail</td></tr>
+            <tr><td>Jocund</td><td>Cheerful and lighthearted, like a "joking" person</td><td>cheerful and lighthearted</td></tr>
+            <tr><td>Fraught</td><td>Filled with something undesirable, as if "caught" in a bad situation</td><td>(fraught with) (of a situation or course of action) filled with or likely to result in (something undesirable); causing or affected by anxiety or stress</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="episode">
+      <div class="episode-header">
+        <h2>Episode 7: Groups 30–34</h2>
+        <p>Expert vocabulary</p>
+      </div>
+
+      <div class="group" id="group30">
+        <h3 class="group-title">Group 30</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Slovenly</td><td>Messy and dirty, like something that's been "slowly" put together</td><td>(appearance) messy and dirty; careless, excessively casual</td></tr>
+            <tr><td>Factious</td><td>Divided and argumentative, full of "factions."</td><td>divided, schismatic, argumentative</td></tr>
+            <tr><td>Spurn</td><td>To reject with contempt, as if to "spur" something away</td><td>reject with disdain or contempt</td></tr>
+            <tr><td>Callow</td><td>Inexperienced and immature, like a "shallow" person</td><td>(of a young person) inexperienced and immature</td></tr>
+            <tr><td>Flagrant</td><td>Obviously offensive, as if it's a "burning" issue</td><td>(of something considered wrong or immoral) conspicuously or obviously offensive</td></tr>
+            <tr><td>Remuneration</td><td>Payment for work, "re-money-ration."</td><td>payment; earnings</td></tr>
+            <tr><td>Bravado</td><td>A "brave" show of boldness</td><td>a bold manner or a show of boldness intended to impress or intimidate</td></tr>
+            <tr><td>Obstreperous</td><td>Noisy and difficult to control, like an "obstructing" person</td><td>noisy and difficult to control</td></tr>
+            <tr><td>Temerity</td><td>Excessive confidence, like having the "nerve" to do something</td><td>excessive confidence or boldness; audacity</td></tr>
+            <tr><td>Odious</td><td>Extremely unpleasant, as if it has an "odor."</td><td>extremely unpleasant; repulsive</td></tr>
+            <tr><td>Deportment</td><td>A person's behavior or manners, how they "deport" themselves</td><td>a person's behavior or manners</td></tr>
+            <tr><td>Precocious</td><td>Advanced for one's years, as if "pre-cooked."</td><td>advanced, ahead, old beyond one's years</td></tr>
+            <tr><td>Abide</td><td>To "bide" your time and continue</td><td>continue; (abide by) - comply with</td></tr>
+            <tr><td>Verve</td><td>Vigor and energy, like a "verb" of action</td><td>vigor, buoyancy</td></tr>
+            <tr><td>Intrigue</td><td>To "trick" with a secret plan</td><td>the secret planning of something illicit or detrimental</td></tr>
+            <tr><td>Aberrant</td><td>Deviating from the norm, like an "erring ant."</td><td>deviant, transgressing</td></tr>
+            <tr><td>Fallow</td><td>Uncultivated, as if it has "fallen" into disuse</td><td>uncultivated, unplowed, inactive, dormant</td></tr>
+            <tr><td>Tenuous</td><td>Very thin or slight, like a "tent" held by a single thread</td><td>slight, very slender or fine, thin, shaky, insubstantial</td></tr>
+            <tr><td>Obdurate</td><td>Stubbornly refusing to change, as if made of "durable" rock</td><td>stubbornly refusing to change one's opinion or course of action</td></tr>
+            <tr><td>Gratuitous</td><td>Uncalled for, like giving a "gratuity" for no reason</td><td>uncalled for, unwarranted, given or done free of charge</td></tr>
+            <tr><td>Indecorous</td><td>"Not decorated" with proper manners</td><td>improper, unseemly</td></tr>
+            <tr><td>Soliloquy</td><td>An interior monologue, a "solo" speech</td><td>interior monologue</td></tr>
+            <tr><td>Stolid</td><td>Calm and dull, as if they've "stalled."</td><td>impassive, calm, dull</td></tr>
+            <tr><td>Capitulate</td><td>To surrender, as if to "recapitulate" your defeat</td><td>surrender, give in, yield, concede defeat</td></tr>
+            <tr><td>Extemporize</td><td>To improvise, as if speaking "out of time."</td><td>improvise, ad lib</td></tr>
+            <tr><td>Cogitate</td><td>To think about something, as if your "cogs" are turning</td><td>think about, muse on</td></tr>
+            <tr><td>Nominal</td><td>A tiny amount, as if it's only a "name."</td><td>token, tiny</td></tr>
+            <tr><td>Plucky</td><td>Brave, like someone who "plucks" up their courage</td><td>brave, intrepid</td></tr>
+            <tr><td>Grovel</td><td>To crawl or behave obsequiously, as if in a "grave."</td><td>crawl, behave obsequiously</td></tr>
+            <tr><td>Feint</td><td>A bluff or ruse, like a "faint" attack</td><td>bluff, ruse, expedient</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group31">
+        <h3 class="group-title">Group 31</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abrogate</td><td>Think "a bro's gate." A bro opens the gate, canceling the rule that it must stay closed</td><td>To repeal or do away with (a law, right, or formal agreement)</td></tr>
+            <tr><td>Aghast</td><td>Sounds like "a ghost." You would be aghast if you saw a ghost</td><td>Filled with horror or shock</td></tr>
+            <tr><td>Apprise</td><td>You must apprise the winner that they've won "a prize."</td><td>To inform or tell (someone)</td></tr>
+            <tr><td>Beguile</td><td>"Be a guy" who is charming but cunning to beguile others</td><td>To charm or enchant, sometimes in a deceptive way</td></tr>
+            <tr><td>Boon</td><td>A boon is a blessing that makes you say "booyah!"</td><td>A thing that is helpful or beneficial</td></tr>
+            <tr><td>Callous</td><td>A callus on your skin is hard and insensitive; a callous person is emotionally hard and insensitive</td><td>Showing an insensitive and cruel disregard for others</td></tr>
+            <tr><td>Coddle</td><td>Sounds like "cuddle." You coddle a baby by cuddling it too much</td><td>To treat in an indulgent or overprotective way</td></tr>
+            <tr><td>Crescendo</td><td>In music, a crescendo is a gradual build-up to the loudest point</td><td>A gradual increase in loudness or intensity</td></tr>
+            <tr><td>Extenuating</td><td>Extenuating circumstances make an excuse ("extended situation") for bad behavior, lessening the blame</td><td>Serving to lessen the seriousness of an offense</td></tr>
+            <tr><td>Frenetic</td><td>Frenetic sounds like "frantic energy."</td><td>Fast and energetic in a wild and uncontrolled way</td></tr>
+            <tr><td>Fringe</td><td>The fringe on a jacket is on the outer edge, just like fringe groups are on the edge of society</td><td>The unconventional, extreme, or marginal part of a group</td></tr>
+            <tr><td>Hapless</td><td>A hapless person often feels "hopeless" due to bad luck</td><td>Unfortunate</td></tr>
+            <tr><td>Immaculate</td><td>Associated with purity and perfection, like in the "Immaculate Conception."</td><td>Perfectly clean, neat, or tidy</td></tr>
+            <tr><td>Obfuscate</td><td>Sounds like a mix of "obscure" and "confuse."</td><td>To make obscure, unclear, or unintelligible</td></tr>
+            <tr><td>Ossify</td><td>Think of "fossils," which are the ossified remains of ancient life</td><td>To turn into bone; to become rigid or fixed in attitude</td></tr>
+            <tr><td>Pastiche</td><td>A pastiche is created by "pasting" and "stitching" together various styles</td><td>An artistic work that imitates the style of another work, artist, or period</td></tr>
+            <tr><td>Perspicacious</td><td>A perspicacious person has a clear "perspective" and can see through issues easily</td><td>Having a ready insight into and understanding of things</td></tr>
+            <tr><td>Ponderous</td><td>You have to ponder over a ponderous book because it's so heavy and dull</td><td>Slow and clumsy because of great weight; dull or laborious</td></tr>
+            <tr><td>Recluse</td><td>A recluse wants to "re-close" the door on the world</td><td>A person who lives a solitary life and avoids other people</td></tr>
+            <tr><td>Retaliate</td><td>"Re-talon-iate." An eagle strikes back with its talons to retaliate</td><td>To make an attack in return for a similar attack</td></tr>
+            <tr><td>Rhapsody</td><td>A "rap-sody" can be a rhapsody where the artist enthusiastically expresses their feelings</td><td>An effusively enthusiastic or ecstatic expression of feeling</td></tr>
+            <tr><td>Serendipitous</td><td>From the story of the three princes of Serendip, who made happy accidental discoveries</td><td>Discovered by chance in a happy or beneficial way</td></tr>
+            <tr><td>Shirk</td><td>You might shirk your work to go see the new movie about a "shark."</td><td>To avoid or neglect a duty or responsibility</td></tr>
+            <tr><td>Sinecure</td><td>"Sine" (without) + "cure" (care/work) = a job without work</td><td>A position requiring little or no work but giving financial benefit</td></tr>
+            <tr><td>Sinuous</td><td>A "sine" wave in math is a classic sinuous curve</td><td>Having many curves and turns</td></tr>
+            <tr><td>Sordid</td><td>You say, "Sorry I did it" after a sordid act</td><td>Involving immoral or dishonorable actions; arousing moral distaste</td></tr>
+            <tr><td>Stanch</td><td>You need a stanch (strong) bandage to stanch the bleeding</td><td>To stop or restrict the flow of blood from a wound</td></tr>
+            <tr><td>Surfeit</td><td>You tell the waiter, "Sir, that's it!" when he keeps piling on a surfeit of food</td><td>An excessive amount of something</td></tr>
+            <tr><td>Ulterior</td><td>An "ultra-interior" motive is hidden deep inside</td><td>Intentionally hidden</td></tr>
+            <tr><td>Voluble</td><td>A voluble person speaks with a lot of "volume" and words</td><td>Speaking or spoken incessantly and fluently</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group32">
+        <h3 class="group-title">Group 32</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abstruse</td><td>Abstruse ideas are "abstract" and "confusing."</td><td>Difficult to understand; obscure</td></tr>
+            <tr><td>Auxiliary</td><td>An "aux cord" provides an auxiliary connection for your music</td><td>Providing supplementary or additional help and support</td></tr>
+            <tr><td>Caricature</td><td>A caricature is a "character exaggeration."</td><td>An exaggerated picture or description for comic effect</td></tr>
+            <tr><td>Depravity</td><td>Someone full of depravity is "deprived" of morals</td><td>Moral corruption; wickedness</td></tr>
+            <tr><td>Dilettante</td><td>A dilettante "dilly-dallies" instead of getting serious</td><td>A person who dabbles in an interest without real commitment or knowledge</td></tr>
+            <tr><td>Effrontery</td><td>They have the nerve to be rude in "front" of "every"one</td><td>Insolent or impertinent behavior</td></tr>
+            <tr><td>Encroach</td><td>A cockroach will encroach on your personal space</td><td>To intrude on a person's territory or rights</td></tr>
+            <tr><td>Endow</td><td>You endow a university with money, giving it a new asset</td><td>To provide with a quality, ability, or asset</td></tr>
+            <tr><td>Entreat</td><td>I entreat you to "enter" for a "treat."</td><td>To ask someone earnestly or anxiously to do something</td></tr>
+            <tr><td>Gregarious</td><td>"Greg" is a gregarious guy who goes to every party</td><td>Fond of company; sociable</td></tr>
+            <tr><td>Indictment</td><td>"In court," it is the statement of the crime</td><td>A formal charge or accusation of a serious crime</td></tr>
+            <tr><td>Indignant</td><td>You feel indignant when treated in a way that "ain't dignified."</td><td>Feeling anger at what is perceived as unfair treatment</td></tr>
+            <tr><td>Ineluctable</td><td>"In-electric-table." Getting a shock from an electric table is ineluctable if you touch it</td><td>Unable to be resisted or avoided; inescapable</td></tr>
+            <tr><td>Inquisitive</td><td>An "inquisitor" is very inquisitive, always asking questions</td><td>Curious or inquiring</td></tr>
+            <tr><td>Latitude</td><td>The lines of latitude go wide around the earth, giving you lots of room or freedom</td><td>Scope for freedom of action or thought</td></tr>
+            <tr><td>Levity</td><td>Levity "levitates" the mood, making it lighter</td><td>The treatment of a serious matter with humor or lack of due respect</td></tr>
+            <tr><td>Malevolent</td><td>"Mal" means bad (e.g., malfunction). Malevolent people have bad intentions</td><td>Having or showing a wish to do evil to others</td></tr>
+            <tr><td>Mediate</td><td>A "mediator" stands in the "middle" to mediate</td><td>To intervene in a dispute to bring about an agreement</td></tr>
+            <tr><td>Occlude</td><td>Occlude sounds like "conclude." When you conclude something, you close it</td><td>To stop, close up, or obstruct</td></tr>
+            <tr><td>Pacify</td><td>A "pacifier" is used to pacify a crying baby</td><td>To quell the anger, agitation, or excitement of</td></tr>
+            <tr><td>Paragon</td><td>"Paragon" slippers are held up as a perfect example of footwear</td><td>A person or thing regarded as a perfect example of a particular quality</td></tr>
+            <tr><td>Patronize</td><td>1. A patron might act like your "father" (pater) and talk down to you. 2. A "patron" is a supporter or customer</td><td>1. To treat with an apparent kindness that betrays a feeling of superiority. 2. To be a regular customer of</td></tr>
+            <tr><td>Penurious</td><td>You'd be "furious" if you only had a "penny" because you are penurious</td><td>Extremely poor; poverty-stricken</td></tr>
+            <tr><td>Piquant</td><td>It would be a stimulating and sharp (piquant) experience to "pick" an "ant" and have it bite you</td><td>Having a pleasantly sharp taste; pleasantly stimulating to the mind</td></tr>
+            <tr><td>Rampant</td><td>A "ram" on a "rampage" is running rampant</td><td>Flourishing or spreading unchecked</td></tr>
+            <tr><td>Remote</td><td>A "remote control" works from a remote distance</td><td>Situated far from the main centers of population; distant</td></tr>
+            <tr><td>Reprobate</td><td>A reprobate is so bad they would be "rejected by probation."</td><td>An unprincipled person; a scoundrel</td></tr>
+            <tr><td>Turbid</td><td>Turbid sounds like "disturbed." If you disturb the mud in a pond, the water becomes turbid</td><td>(of a liquid) cloudy, opaque, or thick</td></tr>
+            <tr><td>Turgid</td><td>A "turkey" can get turgid with stuffing. Turgid prose is stuffed with too many big words</td><td>1. Swollen or congested. 2. (of language) tediously pompous or bombastic</td></tr>
+            <tr><td>Vacuous</td><td>A "vacuum" is empty space; a vacuous mind is empty of thought</td><td>Having or showing a lack of thought or intelligence; mindless</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group33">
+        <h3 class="group-title">Group 33</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Affluent</td><td>An affluent person has a "fluent" stream of money flowing in</td><td>Having a great deal of money; wealthy</td></tr>
+            <tr><td>Allegorical</td><td>An allegory about "alligators" could actually be a symbolic story about people</td><td>Containing a story in which characters and events are symbols for ideas or events</td></tr>
+            <tr><td>Allude</td><td>To allude is to "elude" a direct statement</td><td>To suggest or call attention to indirectly; hint at</td></tr>
+            <tr><td>Amplify</td><td>An "amp" is used to amplify the sound of a guitar</td><td>To increase the volume or amount of something</td></tr>
+            <tr><td>Catastrophic</td><td>A "cat" chasing a mouse knocks over a "trophy," leading to a catastrophic mess</td><td>Involving or causing sudden great damage or suffering</td></tr>
+            <tr><td>Contemporary</td><td>"Con" (with) + "tempo" (time) = happening in the same time</td><td>1. Living or occurring at the same time. 2. Belonging to the present</td></tr>
+            <tr><td>Conundrum</td><td>"Cone under drum" — how did it get there? It's a confusing conundrum</td><td>A confusing and difficult problem or question</td></tr>
+            <tr><td>Defame</td><td>To "de-fame" someone is to take away their fame with lies</td><td>To damage the good reputation of someone; slander or libel</td></tr>
+            <tr><td>Detract</td><td>To pull something "de-track" is to reduce its progress or value</td><td>To reduce or take away the worth or value of</td></tr>
+            <tr><td>Detrimental</td><td>Getting into a "ditch" is detrimental to your car</td><td>Tending to cause harm</td></tr>
+            <tr><td>Devious</td><td>A devious person "deviates" from the straight, honest path</td><td>Showing a skillful use of underhanded tactics to achieve goals</td></tr>
+            <tr><td>Dormant</td><td>A "dormitory" is for sleeping. Dormant things are sleeping</td><td>Having physical functions suspended or slowed down; as if in a deep sleep</td></tr>
+            <tr><td>Draconian</td><td>Named after Draco, an ancient lawmaker with harsh codes. Think of Dracula, who was also harsh</td><td>(of laws) excessively harsh and severe</td></tr>
+            <tr><td>Egalitarian</td><td>Sounds like "equal-itarian."</td><td>Believing that all people are equal and deserve equal rights</td></tr>
+            <tr><td>Elusive</td><td>Sounds like "exclusive." Something exclusive is hard to get, or elusive</td><td>Difficult to find, catch, or achieve</td></tr>
+            <tr><td>Erstwhile</td><td>"Erst-while" -&gt; "First-while." Your erstwhile friend was your friend in a former time</td><td>Former</td></tr>
+            <tr><td>Gloat</td><td>A "goat" might gloat after winning a race against other farm animals</td><td>To dwell on one's own success or another's misfortune with smugness</td></tr>
+            <tr><td>Harrowing</td><td>Harrowing sounds like "horror." A harrowing experience is full of horror</td><td>Acutely distressing</td></tr>
+            <tr><td>Indefinite</td><td>The time is "not definite."</td><td>Lasting for an unknown or unstated length of time</td></tr>
+            <tr><td>Ingenious</td><td>An ingenious person is a "genius."</td><td>Clever, original, and inventive</td></tr>
+            <tr><td>Keen</td><td>You are keen to see the "queen."</td><td>Having or showing eagerness or enthusiasm</td></tr>
+            <tr><td>Multifaceted</td><td>"Multi" (many) + "facet" (side, like on a gem)</td><td>Having many facets or aspects</td></tr>
+            <tr><td>Omniscient</td><td>"Omni" (all) + "scient" (knowing, as in science)</td><td>Knowing everything</td></tr>
+            <tr><td>Remarkable</td><td>So good you want to "make a remark" about it</td><td>Worthy of attention; striking</td></tr>
+            <tr><td>Sober</td><td>1. You're "so over" being drunk. 2. A sober judge is a serious one</td><td>1. Not affected by alcohol. 2. Serious, sensible, and solemn</td></tr>
+            <tr><td>Stem From</td><td>A plant's flower and leaves stem from its main stem</td><td>To originate in or be caused by</td></tr>
+            <tr><td>Subdued</td><td>A submarine is "sub-dued" (down deep) and quiet</td><td>(of a person) quiet and rather reflective or depressed</td></tr>
+            <tr><td>Token</td><td>A token for an arcade is a tangible representation of your right to play a game</td><td>A thing serving as a visible or tangible representation of a fact, quality, feeling, etc</td></tr>
+            <tr><td>Unravel</td><td>You unravel a knot in a string, just as you unravel a mystery</td><td>To investigate and solve something complicated or puzzling</td></tr>
+            <tr><td>Withstand</td><td>To "stand with" the force against you and not fall</td><td>To remain undamaged or unaffected by; resist</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group" id="group34">
+        <h3 class="group-title">Group 34</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Mnemonic</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abrasive</td><td>An abrasive personality "abrades" or scrapes on your nerves</td><td>1. Capable of polishing a surface by rubbing. 2. (of a person) harsh and showing little concern for others' feelings</td></tr>
+            <tr><td>Artful</td><td>So clever and skillful, it's like an "art."</td><td>Clever or skillful, especially in a crafty or cunning way</td></tr>
+            <tr><td>Avert</td><td>To "avoid" and "divert" your gaze</td><td>To turn away (one's eyes); to prevent or ward off</td></tr>
+            <tr><td>Avid</td><td>An avid reader is very enthusiastic about reading</td><td>Having or showing a keen interest in or enthusiasm for something</td></tr>
+            <tr><td>Brevity</td><td>Brevity is being "brief."</td><td>Concise and exact use of words</td></tr>
+            <tr><td>Bromide</td><td>"Bro, I'd avoid that cliché; it's a bromide."</td><td>A trite and unoriginal idea or remark, intended to soothe</td></tr>
+            <tr><td>Circumstantial</td><td>The evidence forms a "circle" around the suspect but doesn't point directly</td><td>Pointing indirectly toward someone's guilt but not proving it</td></tr>
+            <tr><td>Cloying</td><td>An overly sweet, "clay-like" icing can be cloying</td><td>Disgusting or sickeningly sweet</td></tr>
+            <tr><td>Counterfeit</td><td>"Counter" (against) + "feit" (make) = made to go against the real thing</td><td>Made in exact imitation of something valuable to deceive</td></tr>
+            <tr><td>Denigrate</td><td>To put someone "down" and ruin their "great" reputation</td><td>To criticize unfairly; disparage</td></tr>
+            <tr><td>Disciple</td><td>A disciple follows a certain "discipline."</td><td>A follower or student of a teacher, leader, or philosopher</td></tr>
+            <tr><td>Extol</td><td>To "exalt" someone until they seem "tall."</td><td>To praise enthusiastically</td></tr>
+            <tr><td>Forebode</td><td>"Before" it happens, it "bodes" ill</td><td>To act as a warning of something bad</td></tr>
+            <tr><td>Ideologue</td><td>Someone devoted to an "idea" or "ideology."</td><td>An adherent of an ideology, especially one who is uncompromising</td></tr>
+            <tr><td>Impediment</td><td>Something that "impedes" your progress</td><td>A hindrance or obstruction</td></tr>
+            <tr><td>Imperative</td><td>It is imperative that you know the meaning of "important."</td><td>Of vital importance; crucial</td></tr>
+            <tr><td>Impulsive</td><td>Driven by an "impulse."</td><td>Acting or done without forethought</td></tr>
+            <tr><td>Interminable</td><td>"In-terminable" -&gt; not able to be terminated</td><td>Endless (often used hyperbolically)</td></tr>
+            <tr><td>Intuitive</td><td>Based on "intuition."</td><td>Using what one feels to be true without conscious reasoning</td></tr>
+            <tr><td>Lassitude</td><td>Lassitude gives you a "lazy attitude."</td><td>A state of physical or mental weariness; lack of energy</td></tr>
+            <tr><td>Omit</td><td>"Oh, I missed it." You omitted it</td><td>To leave out or exclude</td></tr>
+            <tr><td>Ornate</td><td>Decorated with many "ornaments."</td><td>Made in an intricate shape or decorated with complex patterns</td></tr>
+            <tr><td>Paltry</td><td>Your "pal" tries to pay you for a big job, but it's a paltry amount</td><td>(of an amount) small or meager</td></tr>
+            <tr><td>Pejorative</td><td>A "judge" might make a pejorative comment if they disapprove</td><td>Expressing contempt or disapproval</td></tr>
+            <tr><td>Prefigure</td><td>A "pre-figure" is an early version of what's to come</td><td>To be an early indication or version of something</td></tr>
+            <tr><td>Presage</td><td>A "sage" gives a "pre-message" or presage about the future</td><td>A sign or warning that something bad will happen</td></tr>
+            <tr><td>Prescribe</td><td>"Pre" (before) + "scribe" (write). A doctor writes it down before you can get the medicine</td><td>1. To authorize the use of medicine. 2. To recommend an action as beneficial</td></tr>
+            <tr><td>Prevail</td><td>To prevail is to "prove" you're more powerful and win</td><td>To prove more powerful than opposing forces; be victorious</td></tr>
+            <tr><td>Propitiate</td><td>To propitiate a "prophet," you might give them a pleasing gift</td><td>To win or regain the favor of a god, spirit, or person by doing something that pleases them</td></tr>
+            <tr><td>Recapitulate</td><td>To "re-cap" the main points</td><td>To summarize and state again the main points of</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  
+  <a href="#toc" class="back-to-top">↑</a>
+</body>
+</html>
+O
